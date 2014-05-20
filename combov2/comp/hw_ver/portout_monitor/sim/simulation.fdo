@@ -3,12 +3,14 @@
 set FIRMWARE_BASE         "../../../.."
 set COMP_BASE             "$FIRMWARE_BASE/comp"
 set PORTOUT_MONITOR_BASE  "$COMP_BASE/hw_ver/portout_monitor"
+set FL_SIM_BASE      	  "$COMP_BASE/fl_tools/debug/sim"
 
 set SIG_FILE              "$PORTOUT_MONITOR_BASE/sim/portout_monitor_sig.fdo"
 set TB_FILE               "$PORTOUT_MONITOR_BASE/sim/testbench.vhd"
 
 set COMPONENTS [list \
                   [ list "PORTOUT_MONITOR" $PORTOUT_MONITOR_BASE "FULL" ] \
+                  [ list "FL_SIM"               $FL_SIM_BASE            "FULL"   ] \
                ]
 
 source "$FIRMWARE_BASE/build/Modelsim.inc.fdo"
