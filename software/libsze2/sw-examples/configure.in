@@ -1,0 +1,31 @@
+dnl $Id: configure.in 7549 2009-03-16 09:29:52Z xhanka00 $
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT
+
+dnl Checks for programs.
+AC_PROG_CC
+
+dnl Check for libraries - pkg-config macros
+dnl libcombo
+PKG_CHECK_MODULES(LIBCOMBO, libcombo, , [
+	AC_MSG_RESULT(no)
+	AC_MSG_WARN([libcombo not found - some tools may not compile])
+])
+LIBS="$LIBCOMBO_LIBS $LIBS"
+CPPFLAGS="$CPPFLAGS $LIBCOMBO_CFLAGS"
+dnl libsze2
+PKG_CHECK_MODULES(LIBSZE2, libsze2, , [
+	AC_MSG_RESULT(no)
+	AC_MSG_WARN([libsze2 not found - some tools may not compile])
+])
+LIBS="$LIBSZE2_LIBS $LIBS"
+CPPFLAGS="$CPPFLAGS $LIBSZE2_CFLAGS"
+dnl libpcap-sze2
+AC_CHECK_LIB([pcap],[pcap_sze2_read], 
+	[ LIBPCAP_LIBS=-lpcap ],
+	[ AC_MSG_WARN([libpcap with sze2 support not found - some tools may not compile])
+])
+LIBS="$LIBPCAP_LIBS $LIBS"
+AC_SUBST(LIBPCAP_LIBS)
+
+AC_OUTPUT(Makefile.conf)

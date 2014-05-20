@@ -1,0 +1,42 @@
+These examples demonstrate basic work with NetCOPE libraries.
+It is recommended to read doxygen documentation via /usr/share/netcope/sw-examples/doxygen. You can also obtain information using netcope manual pages:
+man netcope(1) and man netcope-platform(7).
+
+To compile all examples please run
+$ aclocal
+$ autoconf
+$ ./configure
+$ make
+
+Description of individual examples
+==================================
+
+Example tool
+------------
+This tool introduces basic read/write operation of firmware registers. It is recommended to read Quick Start Guide prior modifying the source code. This example does not need any cabling of physical ports.
+
+PCAP
+----
+This example describes how to use a modified PCAP library to receive or send packets from/to COMBOv2 card. It is recommended to read Users Manual prior modifying the source code. 
+Usage: 
+1. Connect with a cable physical port 0 and port 1 of COMBOv2 card. 
+2. Enable receiving data on interface 1 using: ibufctl -i 1 -e 1
+3. Enable transmitting data on interface 0 using: obufctl -i 0 -e 1
+4. Open new terminal as root and start ./read and leave it running
+5. Open second terminal as root and run ./write
+6. You have successfully transferred packets from interface 0 to interface 1.
+
+
+SZE
+---
+This example describes how to use a raw access to SZE library to read or write packets from/to COMBOv2 card. It is recommended to read Users Manual prior modifying the source code. 
+Usage: 
+1. Connect with a cable physical port 0 and port 1 of COMBOv2 card. 
+2. Enable receiving data on interface 1 using: ibufctl -i 1 -e 1
+3. Enable transmitting data on interface 0 using: obufctl -i 0 -e 1
+4. Open new terminal and start ./read and leave it running
+5. Open second terminal and run ./write
+6. You have successfully transferred packets from interface 0 to interface 1.
+
+
+
