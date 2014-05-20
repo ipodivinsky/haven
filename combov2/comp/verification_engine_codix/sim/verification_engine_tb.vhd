@@ -73,18 +73,6 @@ architecture test of testbench is
    signal mi32_ardy     : std_logic;
    signal mi32_drdy     : std_logic;
 
-
-   -- Reverse function to change bit-order inside byte.
-   function reverse( src: std_logic_vector ) return std_logic_vector is
-     variable result: std_logic_vector( src'range );
-     alias r_src: std_logic_vector( src'reverse_range ) is src;
-     begin
-       for ii in r_src'range loop
-         result(ii) := r_src(ii);
-        end loop;
-       return result;
-   end function;
-
 begin
 
    -- -----------------------------------------------------------------------
@@ -148,96 +136,75 @@ begin
       wait for CLK_PERIOD/2;
    end process;
 
+   -- -------------------------------------------------------------------------
+   --                           Input FL_BFM
+   -- -------------------------------------------------------------------------
+   FL_BFM_I: entity work.FL_BFM
+   generic map (
+      DATA_WIDTH => FL_DATA_WIDTH,
+      FL_BFM_ID => 00
+   )
+   port map (
+      -- Common interface
+      RESET           => reset,
+      CLK             => clk,
+
+      TX_DATA         => rx_data,
+      TX_REM          => rx_rem,
+      TX_SOF_N        => rx_sof_n,
+      TX_EOF_N        => rx_eof_n,
+      TX_SOP_N        => rx_sop_n,
+      TX_EOP_N        => rx_eop_n,
+      TX_SRC_RDY_N    => rx_src_rdy_n,
+      TX_DST_RDY_N    => rx_dst_rdy_n
+   ); 
+   
+   -- -------------------------------------------------------------------------
+   --                           Output FL_MONITOR
+   -- -------------------------------------------------------------------------
+   FL_MONITOR_I : entity work.MONITOR
+   generic map (
+      RX_TX_DATA_WIDTH => FL_DATA_WIDTH,
+      FILE_NAME  => "./output/monitor",
+      FRAME_PARTS => 2,
+      RDY_DRIVER => RND
+   )
+   port map (
+      -- Common interface
+      FL_RESET        => reset,
+      FL_CLK          => clk,
+
+      RX_DATA         => tx_data,
+      RX_REM          => tx_rem,
+      RX_SOF_N        => tx_sof_n,
+      RX_EOF_N        => tx_eof_n,
+      RX_SOP_N        => tx_sop_n,
+      RX_EOP_N        => tx_eop_n,
+      RX_SRC_RDY_N    => tx_src_rdy_n,
+      RX_DST_RDY_N    => tx_dst_rdy_n
+   ); 
+   
    -- -----------------------------------------------------------------------
    --                                 Test
    -- -----------------------------------------------------------------------
    tb : process
 
-      file my_input : text open READ_MODE is "input/input_program";
-      variable my_line : line;
-      variable my_input_line : line;
-      variable my_input_slv  : std_logic_vector(63 downto 0);
-
    begin
-
-      tx_dst_rdy_n <= '0';
-      -- initialisation of signals
-      mi32_rd    <= '0';
-      mi32_wr    <= '0';
-      mi32_be    <= "1111";
-      mi32_dwr   <= (others => '0');
-      mi32_addr  <= X"DEADBEEF";
-
       wait for RESET_TIME;
 
       report "========== start of core simulation ==========";
-
-      wait until rising_edge(clk) and RX_DST_RDY_N = '0';
-
-      -- start header
-      RX_DATA <= X"0000000100000000";
-      RX_REM  <= "111";
-      RX_SOF_N <= '0';
-      RX_EOF_N <= '0';
-      RX_SOP_N <= '0';
-      RX_EOP_N <= '0';
-      RX_SRC_RDY_N <= '0';
-
-      wait until rising_edge(clk) and RX_DST_RDY_N = '0';
-
-      -- data packet - header
-      RX_DATA <= X"0000000000000000";
-      RX_REM  <= "111";
-      RX_SOF_N <= '0';
-      RX_EOF_N <= '1';
-      RX_SOP_N <= '0';
-      RX_EOP_N <= '1';
-      RX_SRC_RDY_N <= '0';
-
-      -- ================ loop ==================
-      while not endfile(my_input) loop
-
-        wait until rising_edge(clk) and RX_DST_RDY_N = '0';
-
-        readline(my_input, my_input_line);
-        read(my_input_line, my_input_slv);
-        -- data packet - data
-        RX_DATA <= reverse(my_input_slv(39 downto 32)) & reverse(my_input_slv(47 downto 40)) & reverse(my_input_slv(55 downto 48)) & reverse(my_input_slv(63 downto 56)) & reverse(my_input_slv(7 downto 0)) & reverse(my_input_slv(15 downto 8)) & reverse(my_input_slv(23 downto 16)) & reverse(my_input_slv(31 downto 24));
-
-        RX_REM  <= "111";
-        RX_SOF_N <= '1';
-        RX_EOF_N <= '1';
-        RX_SOP_N <= '1';
-        RX_EOP_N <= '1';
-        RX_SRC_RDY_N <= '0';
-
-      end loop;
-      -- ============= end of loop ===============
-      
-      wait until rising_edge(clk) and RX_DST_RDY_N = '0';
-
-      -- data packet last line
-      RX_DATA <= X"0000000000000000";
-      RX_REM  <= "111";
-      RX_SOF_N <= '1';
-      RX_EOF_N <= '0';
-      RX_SOP_N <= '1';
-      RX_EOP_N <= '0';
-      RX_SRC_RDY_N <= '0';
-
-      wait until rising_edge(clk) and RX_DST_RDY_N = '0';
-
-      -- stop header
-      RX_DATA <= X"0000000400000000";
-      RX_REM  <= "111";
-      RX_SOF_N <= '0';
-      RX_EOF_N <= '0';
-      RX_SOP_N <= '0';
-      RX_EOP_N <= '0';
-      RX_SRC_RDY_N <= '0';
+      SendWriteFile("./input/input_program_hex", RND, flCmd_0, 0);
+      wait for 1500 us;
+      SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
 
       wait;
 
    end process;
+   
+   mi32_dwr      <= (others => '0');
+   mi32_addr     <= (others => '0');
+   mi32_rd       <= '0';
+   mi32_wr       <= '0';
+   mi32_be       <= (others => '0');
 
 end architecture;
