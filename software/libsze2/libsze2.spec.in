@@ -1,0 +1,52 @@
+Summary: Library libsze2 - Fast Zero Copy Data Interface Version 2
+Name: libsze2
+Version: %(cut -f1 ./VERSION | tr -d '\n')
+Release: @RELEASE@
+URL: http://www.liberouter.org/
+Source: https://www.liberouter.org/repo/SOURCES/%{name}-%{version}-%{release}.tar.gz
+Group: Liberouter
+License: BSD
+Vendor: CESNET, z.s.p.o.
+Packager: @USERNAME@ <@USERMAIL@>
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+BuildRequires: gcc make doxygen pkgconfig
+BuildRequires: combo-driver-devel >= 0.5.4
+BuildRequires: libcommlbr-devel >= 2.0.0 , libcommlbr-devel < 3.0.0
+Requires: libcommlbr >= 2.0.0 , libcommlbr < 3.0.0
+
+%description
+Library provides both low-level and more user friendly high level functions to work with libsze2 - Fast Zero Copy Data Interface Version 2 Library.
+
+%package devel
+Summary: libsze2 development package
+Group: Liberouter
+Requires: libsze2 = %{version}-%{release}
+
+%description devel
+This package contains header files for libsze2 library, eventually some static libraries and symlinks to dynamic ones. Install this package if you want to write or compile a program that uses libsze2.
+
+%prep
+%setup
+
+%build
+./configure --with-distro=@DISTRO@ --prefix=%{_prefix};
+make
+make doc
+
+%install
+make DESTDIR=$RPM_BUILD_ROOT install
+
+%post
+ldconfig
+
+%files
+%{_libdir}/libsze2.so.*
+
+%files devel
+%{_bindir}/sze2bufferdump
+%{_libdir}/pkgconfig/libsze2.pc
+%{_libdir}/libsze2.so
+%{_libdir}/libsze2.a
+%{_prefix}/include/libsze2.h
+%{_prefix}/share/libsze2/doxygen/*

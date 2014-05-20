@@ -1,0 +1,2 @@
+*.c	filter=idexpansion
+*.h	filter=idexpansion

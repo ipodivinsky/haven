@@ -1,0 +1,60 @@
+/*! \mainpage libsze2 - Fast Zero Copy Data Interface Version 2 Library
+
+\section general General information
+To achieve high throughput from Liberouter Combo cards to software, Fast Zero
+Copy Data Intarface Version 2 has been created.
+
+This library provides both low-level and more user friendly high level
+functions to work with this interface.
+
+The library uses and is linked against libcommlbr library for simple common
+tasks and debug functions.
+
+\section write Write functions overview
+	There are more possibilities to send data through szedata interface.
+	Each function is suitable for different purposes and whole throughput
+	can significantly differ. Please see detailed description of each
+	possibility.
+	- szedata_prepare_packet() and szedata_try_write_next()
+	- szedata_prepare_and_try_write_next()
+	- szedata_burst_write_next() and szedata_burst_write_flush()
+
+\section sig_variables Significant variables
+	SZE2_BURST_WRITE_SIZE - size of burst buffer - see detailed description
+	of szedata_burst_write function
+
+\section debug Debugging
+	Many useful information can be gathered in debug mode. DEBUG macro must
+	be specified during compilation and external variable "debug" must be
+	set to desired level to turn debug messages on.
+
+\section work_order Standard order of function calls
+See szetest2.c
+
+1. szedata_open() - open device
+
+2. szedata_subscribe() - subscribe requested interfaces, set poll timeouts and
+packet wait-for sizes
+
+3. szedata_start() - start reading/sending data
+
+4. reading/writing in a loop
+\code
+short events = SZEDATA_POLLRX | SZEDATA_POLLTX;
+while (1) {
+	rx_active = tx_active = false;
+	/* process received data */
+	if (events & SZEDATA_POLLRX)
+		rx_active = szedata_read_next()
+	/* create data to send */
+	if (events & SZEDATA_POLLTX)
+		tx_active = szedata_*write*()
+
+	events = SZEDATA_POLLRX | SZEDATA_POLLTX;
+	if (!rx_active && !tx_active)
+		szedata_poll(events)
+}
+\endcode
+5. szedata_close() - close device, flush buffers
+
+*/
