@@ -1,12 +1,40 @@
--- verification_core_ent.vhd: Entity of verification core
--- Author(s): Martin Funiak - xfunia00(at)stud.fit.vutbr.cz
+--  ---------------------------------------------------------
+--  Hardware Accelerated Functional Verification of Processor
+--  ---------------------------------------------------------
+
+--  \file   verification_core_ent.vhd
+--  \date   03-05-2014
+--  \brief  Entity of verification core
+--  \author Jakub Podivinsky, ipodivinsky@fit.vutbr.cz
 --
--- $Id$
+--  \inputs: FrameLink protocol, 3 packets of 8 bytes:
+--             1st = start packet:  00000001 00000000 - start header
 --
+--             2nd =  data packets: 00000000 00000000 - header               
+--                                   inst 1   inst 0  - instructions
+--                                   inst 3   inst 2  - instructions
+--                                     .        .     - instructions
+--                                     .        .     - instructions
+--                                     .        .     - instructions
+--             bits significance:  [31]..[0] [31]..[0]   
+--       
+--             3rd = stop packet:   00000004 00000000 - stop header
+--            bytes significance:  [7].............[0]
+--
+--           MI32 Interface  -  actually unused
+--
+--	\output:	FrameLink protocol, 1 packet of 12 bytes (send as 8B + 4B): 
+--				   8B = header
+--					4B = data				
+--					Header format: 
+--    				header[5:7] 	unsused
+--						header[4] 		TRANSACTION TYPE (only DATA_TYPE, X"00") 
+--						header[2:3]		unsused
+--						header[1]			PROTOCOL ID (actualy unused)
+--						header[0]			ENDPOINT ID	(portout monitor is X"01")			
 
 library ieee;
 use ieee.std_logic_1164.all;
---use work.math_pack.all;
 
 -- HAVEN constants
 use work.haven_const.all;
@@ -17,11 +45,11 @@ use work.haven_const.all;
 entity verification_core is
    generic
    (
-      -- data width
-      FL_DATA_WIDTH      : integer := 64;
-      CODIX_DATA_WIDTH   : integer := 32; 
+      FL_DATA_WIDTH      : integer := 64; -- FrameLink data width
+      CODIX_DATA_WIDTH   : integer := 32; -- processor data width
 
       -- the CORE_TYPE generic specifies the verified unit in the core
+      -- actually there is only codasip_codix
       CORE_TYPE          : core_type := codasip_codix
    );
    port
@@ -29,7 +57,7 @@ entity verification_core is
       CLK                :  in std_logic;
       RESET              :  in std_logic;
 
-      -- input interface - framelink
+      -- FrameLink input interface
       RX_DATA            :  in std_logic_vector(FL_DATA_WIDTH-1 downto 0);
       RX_REM             :  in std_logic_vector(2 downto 0);
       RX_SOF_N           :  in std_logic;
@@ -39,7 +67,7 @@ entity verification_core is
       RX_SRC_RDY_N       :  in std_logic;
       RX_DST_RDY_N       : out std_logic;
 
-      -- output interface - framelink
+      -- FrameLink output interface - framelink
       TX_DATA            : out std_logic_vector(FL_DATA_WIDTH-1 downto 0);
       TX_REM             : out std_logic_vector(2 downto 0);
       TX_SOF_N           : out std_logic;
