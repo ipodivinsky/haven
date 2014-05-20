@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <!-- original name: _codix_ca_top_dut_HDL_DUT_U_codix_ca_core_main_ex2_ex2_controller_semanticsContentFrame4.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">ModelSim</span> Condition Coverage Report</h1>
+  <h3>Scope: /<a href="z000156.htm">codix_ca_top</a>/<a href="z000158.htm">dut</a>/<a href="z000159.htm">HDL_DUT_U</a>/<a href="z000160.htm">codix_ca</a>/<a href="z000170.htm">core</a>/<a href="z000393.htm">main_ex2_ex2_controller_semantics</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg425"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#207">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:207</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_rsc /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(d_mem_frd_stall_Q0 /= '0')</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_rsc /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c425_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_rsc /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(d_mem_frd_stall_Q0 /= '0')_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(d_mem_frd_stall_Q0 /= '0')_1</td><td class="even" align="center"><a href="pertest.htm?bin=c425_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div><a name="cvg427"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#208">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:208</a></th><td class="bgYellow">50.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c427_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c427_1&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_rd_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c427_3&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg429"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#209">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:209</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_wsc /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(d_mem_frd_stall_Q0 /= '0')</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_wsc /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c429_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_wsc /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(d_mem_frd_stall_Q0 /= '0')_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(d_mem_frd_stall_Q0 /= '0')_1</td><td class="even" align="center"><a href="pertest.htm?bin=c429_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div><a name="cvg431"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#212">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:212</a></th><td class="bgYellow">50.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c431_0&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_0_1384, 2))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c431_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(lv_bb_1_ex_request_wr_rc /= (<type>)RESIZE(CONSTANT_1_1823, 2))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c431_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="covered"><a name="cvg433"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#317">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:317</a></th><td class="bgGreen">100.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c433_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c433_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c433_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c433_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="covered"><a name="cvg435"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#319">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:319</a></th><td class="bgGreen">100.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c435_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c435_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c435_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c435_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="covered"><a name="cvg437"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#321">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:321</a></th><td class="bgGreen">100.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c437_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c437_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c437_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c437_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="covered"><a name="cvg439"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#323">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:323</a></th><td class="bgGreen">100.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c439_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c439_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c439_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c439_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 11 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg441"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#324">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:324</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c441_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c441_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 111 } </td></tr>
+  </table>
+</div><div><a name="cvg443"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#325">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:325</a></th><td class="bgRed">33.33%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c443_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c443_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 100 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c443_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 100 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c443_4&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 100 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 101 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg445"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#331">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:331</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c445_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c445_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c445_5&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg447"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#333">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:333</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c447_0&scope=000393" rel="popup 200 200">2</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c447_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c447_5&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg449"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#335">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:335</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c449_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c449_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c449_5&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  </table>
+</div><div><a name="cvg451"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#338">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:338</a></th><td class="bgYellow">66.66%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_12 /= 0)</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="green">Yes</td><td class="even" align="center"></td><td class="even" align="center"></td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c451_0&scope=000393" rel="popup 200 200">4</a></td><td class="even" align="center"> { 0-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center"><a href="pertest.htm?bin=c451_1&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_12 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 10- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_12 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c451_3&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c451_4&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c451_5&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 111 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg453"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#339">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:339</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_11 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_9 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c453_0&scope=000393" rel="popup 200 200">4</a></td><td class="even" align="center"> { 0---- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_11 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c453_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10--- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_11 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 1110- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 11110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11111 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg455"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#340">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:340</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_10 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_9 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c455_0&scope=000393" rel="popup 200 200">4</a></td><td class="even" align="center"> { 0---- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11010 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_10 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c455_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10--- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_10 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11010 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 11010 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 111-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 1100- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11010 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 11010 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 11011 } </td></tr>
+  </table>
+</div><div class="missing"><a name="cvg457"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><th colspan="3">FEC Condition: <a href="__HDL_srcfile_7.htm#343">../vhdl/codix_ca_core_main_ex2_ex2_controller_semantics_t.vhd:343</a></th><td class="bgRed">0.00%</td></tr>
+  <tr><th class="even" colspan="1">Input Term</th><th class="even">Covered</th><th class="even">Reason For No Coverage</th><th class="even">Hint</th></tr>
+  <tr><td class="even" colspan="1" align="center">(ACT = CONSTANT_1_1823(0))</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_9 /= 0)</td><td class="red">No</td><td class="even" align="center">'_1' not hit</td><td class="even" align="center">Hit '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_8 /= 0)</td><td class="red">No</td><td class="even" align="center">No hits</td><td class="even" align="center">Hit '_0' and '_1'</td></tr>
+  <tr><td class="even" colspan="1" align="center">(tmp_sig_7 /= 0)</td><td class="red">No</td><td class="even" align="center">'_0' not hit</td><td class="even" align="center">Hit '_0'</td></tr>
+  <tr><th class="even" colspan="2">FEC Target</th><th class="even">Hits</th><th class="even">Matching Input Patterns</th></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_0</td><td class="even" align="center"><a href="pertest.htm?bin=c457_0&scope=000393" rel="popup 200 200">3</a></td><td class="even" align="center"> { 0--- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(ACT = CONSTANT_1_1823(0))_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 1110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_0</td><td class="even" align="center"><a href="pertest.htm?bin=c457_2&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 10-- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_9 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 1110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 110- } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_8 /= 0)_1</td><td class="even" align="center">0</td><td class="even" align="center"> { 1110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_0</td><td class="even" align="center">0</td><td class="even" align="center"> { 1110 } </td></tr>
+  <tr><td class="even" align="center" colspan="2" >(tmp_sig_7 /= 0)_1</td><td class="even" align="center"><a href="pertest.htm?bin=c457_7&scope=000393" rel="popup 200 200">1</a></td><td class="even" align="center"> { 1111 } </td></tr>
+  </table>
+</div>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

@@ -89,7 +89,7 @@ int c_sendData(const svOpenArrayHandle inhwpkt){
   // set pointer to hwpacket  
   auxPkt = (unsigned char*) svGetArrayPtr(inhwpkt);
   
-	for (iter = 0; iter < pktSize; iter += 4)
+/*	for (iter = 0; iter < pktSize; iter += 4)
 	{
 		for (iterIn = min(3, pktSize - iter - 1); iterIn >= 0; --iterIn)
 		{
@@ -99,7 +99,7 @@ int c_sendData(const svOpenArrayHandle inhwpkt){
 		fprintf(stderr, "\n");
 	}
 
-	fprintf(stderr, "\n#\n\n");
+	fprintf(stderr, "\n#\n\n");*/
 
   // prepare packet for transfer to hardware    
   test_data = szedata_prepare_packet(sze, NULL, 0, auxPkt, pktSize, &len);  

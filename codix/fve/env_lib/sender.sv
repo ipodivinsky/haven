@@ -67,6 +67,7 @@ class Sender extends ovm_component;
     task createNetCOPETrans();
         int fd;                        // input file descriptor
         int index;                     // line index
+        int num;                       // number of lines in input program
         string input_program[int];     // associative array for input program
 
         index = 0;
@@ -93,19 +94,33 @@ class Sender extends ovm_component;
         $fclose(fd);
 
         createControlTransaction(input_program);
+//        num = 10; 
+        num = input_program.num;
 
         // create transaction from loaded file with program
-//        for(int i = 0; i < input_program.num; i++) begin
-        for(int i = 0; i < 10 ; i+=2) begin
+        for(int i = 0; i < num ; i+=2) begin
 
             // last transaction
-            if(i == (input_program.num-1)) begin
+            if(i == (num-2)) begin
                 createDataTransaction(input_program, 1, 1, i);
             end
             // all transactions except last
             else begin
                 createDataTransaction(input_program, 0, 1, i);
             end
+
+            if( (i%1000) == 0) begin
+                $write(".");
+            end
+
+            if(i == (num/2)) begin
+                $write("\n1/2 of transactions sent to HW. Index is: %d\n", i);
+            end
+
+            if((i+1) == (num/2)) begin
+                $write("\n1/2 of transactions sent to HW. Index is: %d\n", i);
+            end
+
         end
 
     endtask : createNetCOPETrans
@@ -123,6 +138,8 @@ class Sender extends ovm_component;
                               input int part);
       
       NetCOPETransaction dataTrans = new();
+
+      //$write("input_program: %s\nlastPart: %d\nallData: %d\npart: %d\n",input_program, lastPart, allData, part);
 
       const int NetCOPE_hdr_size = 8;
       const int data_size = 8;
@@ -156,7 +173,7 @@ class Sender extends ovm_component;
       dataTrans.data = new[size];
       
       // data
-/*      for (int i=0; i<size ; i++) begin
+      for (int i=0; i<size ; i++) begin
         octet = input_program[part+second_half].substr(start_pos, end_pos);
         dataTrans.data[i] = octet.atobin;
 
@@ -178,19 +195,9 @@ class Sender extends ovm_component;
         for(int i = size ; i<data_size ; i++) begin
           dataTrans.data[i] = 0;
         end
-      end*/
-
-      dataTrans.data[0] = 1;
-      dataTrans.data[1] = 2;
-      dataTrans.data[2] = 3;
-      dataTrans.data[3] = 4;
-      dataTrans.data[4] = 5;
-      dataTrans.data[5] = 6;
-      dataTrans.data[6] = 7;
-      dataTrans.data[7] = 8;
+      end
 
       //dataTrans.display("DATA");
-
       pport.put(dataTrans);    // send data transaction to input wrapper
       this.dataTrs++;
 

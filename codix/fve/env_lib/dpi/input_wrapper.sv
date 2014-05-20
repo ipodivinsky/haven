@@ -47,6 +47,7 @@ class InputWrapper extends ovm_component;
     // Run Input Wrapper - receives transactions and sends them through DPI to HW
     task run();
       int res;
+      int cntT = 0;
       NetCOPETransaction ntr;
       syncT sync_tr;
 
@@ -70,28 +71,26 @@ class InputWrapper extends ovm_component;
         // get port connected to sender.sv
         gport.get(ntr);
 
-        // printout
-        if(DEBUG_LEVEL == ALL) begin
-          if(ntr.transType == 1) begin
-            ntr.display("InputWrapper: START TRANSACTION");
-          end
-          else if (ntr.transType == 0) begin
-            ntr.display("InputWrapper: DATA TRANSACTION");
-          end
-          else if (ntr.transType == 5) begin
-            ntr.display("InputWrapper: CONTROL TRANSACTION");
-          end
-          else if (ntr.transType == 4) begin
-            ntr.display("InputWrapper: STOP TRANSACTION");
-            break;
-          end
-          else begin
-            `ovm_error( get_name(), "Unknown transaction!\n" );
-          end
+        if(ntr.transType == 1) begin
+          ntr.display("InputWrapper: START TRANSACTION");
+        end
+        else if (ntr.transType == 0) begin
+          //ntr.display("InputWrapper: DATA TRANSACTION");
+        end
+        else if (ntr.transType == 5) begin
+          //ntr.display("InputWrapper: CONTROL TRANSACTION");
+        end
+        else if (ntr.transType == 4) begin
+          ntr.display("InputWrapper: STOP TRANSACTION");
+          break;
+        end
+        else begin
+          `ovm_error( get_name(), "Unknown transaction!\n" );
         end
 
         // data transfer to hardware through DMA channel
         res = c_sendData(ntr.data);
+        cntT++;
         if(res != 0) begin
           `ovm_error( get_name(), "Send data failure!" );
         end
@@ -102,9 +101,12 @@ class InputWrapper extends ovm_component;
 
       // data transfer to hardware through DMA channel - last stop transaction
       res = c_sendData(ntr.data);
+      cntT++;
       if(res != 0) begin
         `ovm_error( get_name(), "Send data failure!" );
       end
+
+      `ovm_info( get_name(), $sformatf("\n-> transactions: %d\n", cntT), OVM_MEDIUM);
 
    endtask : run 
 

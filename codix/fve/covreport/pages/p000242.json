@@ -1,0 +1,6 @@
+var binData={ /* Global Variable */
+s242_4:[1],
+
+};
+
+processJSON();

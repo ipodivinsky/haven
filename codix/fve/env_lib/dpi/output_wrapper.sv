@@ -66,6 +66,7 @@ class OutputWrapper extends ovm_component;
 
       // wait for input wrapper
       syncport.get(str);
+      $write("Output Wrapper - waiting for data from HW\n");
 
       while(1) begin
 
@@ -97,16 +98,16 @@ class OutputWrapper extends ovm_component;
             // printout
             if(DEBUG_LEVEL == ALL) begin
               if(ntr.transType == 1) begin
-                ntr.display("OutputWrapper: START TRANSACTION");
+                //ntr.display("OutputWrapper: START TRANSACTION");
               end
               else if (ntr.transType == 0) begin
-                ntr.display("OutputWrapper: DATA TRANSACTION");
+                //ntr.display("OutputWrapper: DATA TRANSACTION");
               end
               else if (ntr.transType == 5) begin
-                ntr.display("OutputWrapper: CONTROL TRANSACTION");
+                //ntr.display("OutputWrapper: CONTROL TRANSACTION");
               end
               else if (ntr.transType == 4) begin
-                ntr.display("OutputWrapper: STOP TRANSACTION");
+                //ntr.display("OutputWrapper: STOP TRANSACTION");
                 break;
               end
               else begin

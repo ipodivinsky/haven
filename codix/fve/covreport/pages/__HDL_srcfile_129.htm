@@ -1,0 +1,120 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <link rel="StyleSheet" media="screen" href="../css/hdl2html.css"/>
+</head>
+<body id="hdl2html">
+  <tt><a name="1"/><span style="color:red">%s%%s%%s%%s%%s%1%s%%s%</span><span class="comment">/******************************************************************************</span><br/>
+<a name="2"/><span style="color:red">%s%%s%%s%%s%%s%2%s%%s%</span><span class="comment">%s%*%s%%s%%s%%s%%s%"Copyright%s%(C)%s%2013,%s%ApS%s%s.r.o%s%Brno,%s%All%s%Rights%s%Reserved"%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%%s%*</span><br/>
+<a name="3"/><span style="color:red">%s%%s%%s%%s%%s%3%s%%s%</span><span class="comment">%s%******************************************************************************/</span><br/>
+<a name="4"/><span style="color:red">%s%%s%%s%%s%%s%4%s%%s%</span><span class="comment">/**</span><br/>
+<a name="5"/><span style="color:red">%s%%s%%s%%s%%s%5%s%%s%</span><span class="comment">%s%*%s%%s%\file</span><br/>
+<a name="6"/><span style="color:red">%s%%s%%s%%s%%s%6%s%%s%</span><span class="comment">%s%*%s%%s%\date%s%%s%%s%Mon%s%Mar%s%%s%4%s%13:49:04%s%2013,%s%generated%s%by%s%Codasip%s%HW%s%generator%s%v2.0.0.</span><br/>
+<a name="7"/><span style="color:red">%s%%s%%s%%s%%s%7%s%%s%</span><span class="comment">%s%*%s%%s%\brief%s%%s%Contains%s%interconnection%s%between%s%design%s%under%s%test%s%in%s%HDL%s%and%s%SystemVerilog%s%environment.</span><br/>
+<a name="8"/><span style="color:red">%s%%s%%s%%s%%s%8%s%%s%</span><span class="comment">%s%*/</span><br/>
+<a name="9"/><span style="color:red">%s%%s%%s%%s%%s%9%s%%s%</span><br/>
+<a name="10"/><span style="color:red">%s%%s%%s%%s%10%s%%s%</span><span class="comment">//%s%Module%s%declaration</span><br/>
+<a name="11"/><span style="color:red">%s%%s%%s%%s%11%s%%s%</span><span class="keyword">module</span>%s%DUT(%s%<span class="keyword">input</span>%s%<span class="keyword">logic</span>%s%CLK,%s%<span class="keyword">input</span>%s%<span class="keyword">logic</span>%s%RST%s%);<br/>
+<a name="12"/><span style="color:red">%s%%s%%s%%s%12%s%%s%</span><br/>
+<a name="13"/><span style="color:red">%s%%s%%s%%s%13%s%%s%</span>%t%<span class="comment">//%s%Black%s%box%s%signals%s%mapping%s%(from%s%top%s%module%s%ENTITY)</span><br/>
+<a name="14"/><span style="color:red">%s%%s%%s%%s%14%s%%s%</span>%t%CODIX_CA_SOC_T%s%HDL_DUT_U(<br/>
+<a name="15"/><span style="color:red">%s%%s%%s%%s%15%s%%s%</span>%t%%t%.RST%s%(RST),<br/>
+<a name="16"/><span style="color:red">%s%%s%%s%%s%16%s%%s%</span>%t%%t%.CLK%s%(CLK)%s%);<br/>
+<a name="17"/><span style="color:red">%s%%s%%s%%s%17%s%%s%</span><br/>
+<a name="18"/><span style="color:red">%s%%s%%s%%s%18%s%%s%</span>%t%<span class="comment">//%s%instantiate%s%DUTs%s%interfaces</span><br/>
+<a name="19"/><span style="color:red">%s%%s%%s%%s%19%s%%s%</span>%t%icodix_ca_core_regs%s%icodix_ca_core_regs_if(%s%CLK,%s%RST%s%);<br/>
+<a name="20"/><span style="color:red">%s%%s%%s%%s%20%s%%s%</span>%t%icodix_ca_core_main_instr_hw_instr_hw%s%icodix_ca_core_main_instr_hw_instr_hw_if(%s%CLK,%s%RST%s%);<br/>
+<a name="21"/><span style="color:red">%s%%s%%s%%s%21%s%%s%</span>%t%icodix_ca_mem%s%icodix_ca_mem_if(%s%CLK,%s%RST%s%);<br/>
+<a name="22"/><span style="color:red">%s%%s%%s%%s%22%s%%s%</span>%t%ihalt%s%ihalt_if(%s%CLK,%s%RST%s%);<br/>
+<a name="23"/><span style="color:red">%s%%s%%s%%s%23%s%%s%</span>%t%icodix_ca_out%s%icodix_ca_out_if(%s%CLK,%s%RST%s%);<br/>
+<a name="24"/><span style="color:red">%s%%s%%s%%s%24%s%%s%</span>%t%icodix_ca_inout%s%icodix_ca_inout_if(%s%CLK,%s%RST%s%);<br/>
+<a name="25"/><span style="color:red">%s%%s%%s%%s%25%s%%s%</span>%t%<span class="comment">//%s%instance%s%of%s%the%s%input%s%interface</span><br/>
+<a name="26"/><span style="color:red">%s%%s%%s%%s%26%s%%s%</span>%t%icodix_ca_in%s%icodix_ca_in_if%s%(<br/>
+<a name="27"/><span style="color:red">%s%%s%%s%%s%27%s%%s%</span>%t%%t%.CLK(CLK),<br/>
+<a name="28"/><span style="color:red">%s%%s%%s%%s%28%s%%s%</span>%t%%t%.RST(RST),<br/>
+<a name="29"/><span style="color:red">%s%%s%%s%%s%29%s%%s%</span>%t%%t%.codix_ca_irq(HDL_DUT_U.codix_ca.irq)%s%);<br/>
+<a name="30"/><span style="color:red">%s%%s%%s%%s%30%s%%s%</span><br/>
+<a name="31"/><span style="color:red">%s%%s%%s%%s%31%s%%s%</span>%t%<span class="comment">//%s%White%s%box%s%signals%s%mapping%s%(from%s%the%s%internal%s%architecture%s%of%s%the%s%design)</span><br/>
+<a name="32"/><span style="color:red">%s%%s%%s%%s%32%s%%s%</span>%t%<span class="keyword">initial</span>%s%<span class="keyword">begin</span><br/>
+<a name="33"/><span style="color:red">%s%%s%%s%%s%33%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RA0%s%=%s%HDL_DUT_U.codix_ca.core.regs.RA0;<br/>
+<a name="34"/><span style="color:red">%s%%s%%s%%s%34%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RE0%s%=%s%HDL_DUT_U.codix_ca.core.regs.RE0;<br/>
+<a name="35"/><span style="color:red">%s%%s%%s%%s%35%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RA1%s%=%s%HDL_DUT_U.codix_ca.core.regs.RA1;<br/>
+<a name="36"/><span style="color:red">%s%%s%%s%%s%36%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RE1%s%=%s%HDL_DUT_U.codix_ca.core.regs.RE1;<br/>
+<a name="37"/><span style="color:red">%s%%s%%s%%s%37%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RA2%s%=%s%HDL_DUT_U.codix_ca.core.regs.RA2;<br/>
+<a name="38"/><span style="color:red">%s%%s%%s%%s%38%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_RE2%s%=%s%HDL_DUT_U.codix_ca.core.regs.RE2;<br/>
+<a name="39"/><span style="color:red">%s%%s%%s%%s%39%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_D0%s%=%s%HDL_DUT_U.codix_ca.core.regs.D0;<br/>
+<a name="40"/><span style="color:red">%s%%s%%s%%s%40%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_WE0%s%=%s%HDL_DUT_U.codix_ca.core.regs.WE0;<br/>
+<a name="41"/><span style="color:red">%s%%s%%s%%s%41%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_WA0%s%=%s%HDL_DUT_U.codix_ca.core.regs.WA0;<br/>
+<a name="42"/><span style="color:red">%s%%s%%s%%s%42%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_Q0%s%=%s%HDL_DUT_U.codix_ca.core.regs.Q0;<br/>
+<a name="43"/><span style="color:red">%s%%s%%s%%s%43%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_Q1%s%=%s%HDL_DUT_U.codix_ca.core.regs.Q1;<br/>
+<a name="44"/><span style="color:red">%s%%s%%s%%s%44%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_Q2%s%=%s%HDL_DUT_U.codix_ca.core.regs.Q2;<br/>
+<a name="45"/><span style="color:red">%s%%s%%s%%s%45%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_main_instr_hw_instr_hw_if.codix_ca_core_main_instr_hw_instr_hw_ACT%s%=%s%HDL_DUT_U.codix_ca.core.main_instr_hw_instr_hw.ACT;<br/>
+<a name="46"/><span style="color:red">%s%%s%%s%%s%46%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_main_instr_hw_instr_hw_if.codix_ca_core_main_instr_hw_instr_hw_id_instr_Q0%s%=%s%HDL_DUT_U.codix_ca.core.main_instr_hw_instr_hw.id_instr_Q0;<br/>
+<a name="47"/><span style="color:red">%s%%s%%s%%s%47%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RA0%s%=%s%HDL_DUT_U.codix_ca.mem.RA0;<br/>
+<a name="48"/><span style="color:red">%s%%s%%s%%s%48%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RE0%s%=%s%HDL_DUT_U.codix_ca.mem.RE0;<br/>
+<a name="49"/><span style="color:red">%s%%s%%s%%s%49%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RSC0%s%=%s%HDL_DUT_U.codix_ca.mem.RSC0;<br/>
+<a name="50"/><span style="color:red">%s%%s%%s%%s%50%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RSI0%s%=%s%HDL_DUT_U.codix_ca.mem.RSI0;<br/>
+<a name="51"/><span style="color:red">%s%%s%%s%%s%51%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RA1%s%=%s%HDL_DUT_U.codix_ca.mem.RA1;<br/>
+<a name="52"/><span style="color:red">%s%%s%%s%%s%52%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RE1%s%=%s%HDL_DUT_U.codix_ca.mem.RE1;<br/>
+<a name="53"/><span style="color:red">%s%%s%%s%%s%53%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RSC1%s%=%s%HDL_DUT_U.codix_ca.mem.RSC1;<br/>
+<a name="54"/><span style="color:red">%s%%s%%s%%s%54%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RSI1%s%=%s%HDL_DUT_U.codix_ca.mem.RSI1;<br/>
+<a name="55"/><span style="color:red">%s%%s%%s%%s%55%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_D0%s%=%s%HDL_DUT_U.codix_ca.mem.D0;<br/>
+<a name="56"/><span style="color:red">%s%%s%%s%%s%56%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_WE0%s%=%s%HDL_DUT_U.codix_ca.mem.WE0;<br/>
+<a name="57"/><span style="color:red">%s%%s%%s%%s%57%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_WA0%s%=%s%HDL_DUT_U.codix_ca.mem.WA0;<br/>
+<a name="58"/><span style="color:red">%s%%s%%s%%s%58%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_WSC0%s%=%s%HDL_DUT_U.codix_ca.mem.WSC0;<br/>
+<a name="59"/><span style="color:red">%s%%s%%s%%s%59%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_WSI0%s%=%s%HDL_DUT_U.codix_ca.mem.WSI0;<br/>
+<a name="60"/><span style="color:red">%s%%s%%s%%s%60%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_Q0%s%=%s%HDL_DUT_U.codix_ca.mem.Q0;<br/>
+<a name="61"/><span style="color:red">%s%%s%%s%%s%61%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RR0%s%=%s%HDL_DUT_U.codix_ca.mem.RR0;<br/>
+<a name="62"/><span style="color:red">%s%%s%%s%%s%62%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_FR0%s%=%s%HDL_DUT_U.codix_ca.mem.FR0;<br/>
+<a name="63"/><span style="color:red">%s%%s%%s%%s%63%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_Q1%s%=%s%HDL_DUT_U.codix_ca.mem.Q1;<br/>
+<a name="64"/><span style="color:red">%s%%s%%s%%s%64%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RR1%s%=%s%HDL_DUT_U.codix_ca.mem.RR1;<br/>
+<a name="65"/><span style="color:red">%s%%s%%s%%s%65%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_FR1%s%=%s%HDL_DUT_U.codix_ca.mem.FR1;<br/>
+<a name="66"/><span style="color:red">%s%%s%%s%%s%66%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_RW0%s%=%s%HDL_DUT_U.codix_ca.mem.RW0;<br/>
+<a name="67"/><span style="color:red">%s%%s%%s%%s%67%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_mem_if.codix_ca_mem_FW0%s%=%s%HDL_DUT_U.codix_ca.mem.FW0;<br/>
+<a name="68"/><span style="color:red">%s%%s%%s%%s%68%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%ihalt_if.codix_ca_core_main_controller_main_halt_halt_fu_semantics_ACT%s%=%s%HDL_DUT_U.codix_ca.core.main_controller.main_halt_halt_fu_semantics_ACT;<br/>
+<a name="69"/><span style="color:red">%s%%s%%s%%s%69%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_out_if.codix_ca_port_halt%s%=%s%HDL_DUT_U.codix_ca.port_halt;<br/>
+<a name="70"/><span style="color:red">%s%%s%%s%%s%70%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_out_if.codix_ca_port_output%s%=%s%HDL_DUT_U.codix_ca.port_output;<br/>
+<a name="71"/><span style="color:red">%s%%s%%s%%s%71%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_out_if.codix_ca_port_output_en%s%=%s%HDL_DUT_U.codix_ca.port_output_en;<br/>
+<a name="72"/><span style="color:red">%s%%s%%s%%s%72%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_out_if.codix_ca_port_error%s%=%s%HDL_DUT_U.codix_ca.port_error;<br/>
+<a name="73"/><span style="color:red">%s%%s%%s%%s%73%s%%s%</span>%t%%t%<span class="comment">//%s%assign%s%content%s%of%s%register%s%file%s%'regs'</span><br/>
+<a name="74"/><span style="color:red">%s%%s%%s%%s%74%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[0]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[0];<br/>
+<a name="75"/><span style="color:red">%s%%s%%s%%s%75%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[1]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[1];<br/>
+<a name="76"/><span style="color:red">%s%%s%%s%%s%76%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[2]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[2];<br/>
+<a name="77"/><span style="color:red">%s%%s%%s%%s%77%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[3]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[3];<br/>
+<a name="78"/><span style="color:red">%s%%s%%s%%s%78%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[4]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[4];<br/>
+<a name="79"/><span style="color:red">%s%%s%%s%%s%79%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[5]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[5];<br/>
+<a name="80"/><span style="color:red">%s%%s%%s%%s%80%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[6]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[6];<br/>
+<a name="81"/><span style="color:red">%s%%s%%s%%s%81%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[7]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[7];<br/>
+<a name="82"/><span style="color:red">%s%%s%%s%%s%82%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[8]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[8];<br/>
+<a name="83"/><span style="color:red">%s%%s%%s%%s%83%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[9]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[9];<br/>
+<a name="84"/><span style="color:red">%s%%s%%s%%s%84%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[10]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[10];<br/>
+<a name="85"/><span style="color:red">%s%%s%%s%%s%85%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[11]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[11];<br/>
+<a name="86"/><span style="color:red">%s%%s%%s%%s%86%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[12]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[12];<br/>
+<a name="87"/><span style="color:red">%s%%s%%s%%s%87%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[13]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[13];<br/>
+<a name="88"/><span style="color:red">%s%%s%%s%%s%88%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[14]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[14];<br/>
+<a name="89"/><span style="color:red">%s%%s%%s%%s%89%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[15]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[15];<br/>
+<a name="90"/><span style="color:red">%s%%s%%s%%s%90%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[16]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[16];<br/>
+<a name="91"/><span style="color:red">%s%%s%%s%%s%91%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[17]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[17];<br/>
+<a name="92"/><span style="color:red">%s%%s%%s%%s%92%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[18]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[18];<br/>
+<a name="93"/><span style="color:red">%s%%s%%s%%s%93%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[19]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[19];<br/>
+<a name="94"/><span style="color:red">%s%%s%%s%%s%94%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[20]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[20];<br/>
+<a name="95"/><span style="color:red">%s%%s%%s%%s%95%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[21]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[21];<br/>
+<a name="96"/><span style="color:red">%s%%s%%s%%s%96%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[22]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[22];<br/>
+<a name="97"/><span style="color:red">%s%%s%%s%%s%97%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[23]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[23];<br/>
+<a name="98"/><span style="color:red">%s%%s%%s%%s%98%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[24]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[24];<br/>
+<a name="99"/><span style="color:red">%s%%s%%s%%s%99%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[25]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[25];<br/>
+<a name="100"/><span style="color:red">%s%%s%%s%100%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[26]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[26];<br/>
+<a name="101"/><span style="color:red">%s%%s%%s%101%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[27]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[27];<br/>
+<a name="102"/><span style="color:red">%s%%s%%s%102%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[28]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[28];<br/>
+<a name="103"/><span style="color:red">%s%%s%%s%103%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[29]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[29];<br/>
+<a name="104"/><span style="color:red">%s%%s%%s%104%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[30]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[30];<br/>
+<a name="105"/><span style="color:red">%s%%s%%s%105%s%%s%</span>%t%%t%<span class="keyword">assign</span>%s%icodix_ca_core_regs_if.codix_ca_core_regs_init[31]%s%=%s%HDL_DUT_U.codix_ca.core.regs.memory_0[31];<br/>
+<a name="106"/><span style="color:red">%s%%s%%s%106%s%%s%</span>%t%<span class="keyword">end</span><br/>
+<a name="107"/><span style="color:red">%s%%s%%s%107%s%%s%</span><span class="keyword">endmodule</span>%s%:%s%DUT<br/>
+</tt>
+<script type="text/javascript" src="../scripts/buildsrcpage.js"></script>
+  
+</body>
+</html>

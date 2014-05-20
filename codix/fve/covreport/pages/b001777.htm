@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>ModelSim Coverage Report</title>
+  <!-- original name: _codix_ca_top_dut_HDL_DUT_U_codix_ca_core_main_controller_main_fe_fe_controllerContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">ModelSim</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000173.htm">codix_ca_top</a>/<a href="z000175.htm">dut</a>/<a href="z000176.htm">HDL_DUT_U</a>/<a href="z000177.htm">codix_ca</a>/<a href="z000187.htm">core</a>/<a href="z001709.htm">main_controller</a>/<a href="z001777.htm">main_fe_fe_controller</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg1778"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">39:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#39">		if ( RST = '0' ) then</a></td><td class="bgRed">0.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">IF</td><td class="even"><span style="color:red">39:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#39">		if ( RST = '0' ) then</a></td><td class="odd_r">0</td><td class="red">ZERO</td></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">ELSE</td><td class="even"><span style="color:red">41:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#41">		elsif ( rising_edge(CLK) ) then</a></td><td class="odd_r">0</td><td class="red">ZERO</td></tr>
+  </table>
+  </div><div class="covered"><a name="cvg1779"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">49:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#49">		case state_reg_Q0 is</a></td><td class="bgGreen">100.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">TRUE</td><td class="even"><span style="color:red">50:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#50">			when s0 =&gt;</a></td><td class="odd_r"><a href="pertest.htm?bin=b1779_0&scope=001777" rel="popup 200 200">2</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">TRUE</td><td class="even"><span style="color:red">56:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#56">			when s1 =&gt;</a></td><td class="odd_r"><a href="pertest.htm?bin=b1779_1&scope=001777" rel="popup 200 200">1</a></td><td class="green">Covered</td></tr>
+  </table>
+  </div><div class="covered"><a name="cvg1780"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">51:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#51">				if ( (main_fe_fe_controller_ACT = CONSTANT_1_13321) ) then</a></td><td class="bgGreen">100.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">IF</td><td class="even"><span style="color:red">51:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#51">				if ( (main_fe_fe_controller_ACT = CONSTANT_1_13321) ) then</a></td><td class="odd_r"><a href="pertest.htm?bin=b1780_0&scope=001777" rel="popup 200 200">1</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">ELSE</td><td class="even"><span style="color:red">53:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#53">				else</a></td><td class="odd_r"><a href="pertest.htm?bin=b1780_1&scope=001777" rel="popup 200 200">1</a></td><td class="green">Covered</td></tr>
+  </table>
+  </div><div><a name="cvg1781"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">57:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#57">				if ( (main_fe_fe_controller_ACT = CONSTANT_1_13321) ) then</a></td><td class="bgYellow">50.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">IF</td><td class="even"><span style="color:red">57:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#57">				if ( (main_fe_fe_controller_ACT = CONSTANT_1_13321) ) then</a></td><td class="odd_r"><a href="pertest.htm?bin=b1781_0&scope=001777" rel="popup 200 200">1</a></td><td class="green">Covered</td></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">ALL FALSE</td><td class="even"><span style="color:red">57:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#57">				if ( (main_fe_fe_controller_ACT = CONSTANT_1_13321) ) then</a></td><td class="odd_r">0</td><td class="red">ZERO</td></tr>
+  </table>
+  </div><div><a name="cvg1782"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">65:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#65">	main_fe_fe_controller_semantics_ACT &lt;= CONSTANT_1_13321(0) whe...</a></td><td class="bgYellow">50.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">IF</td><td class="even"><span style="color:red">65:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#65">	main_fe_fe_controller_semantics_ACT &lt;= CONSTANT_1_13321(0) whe...</a></td><td class="odd_r"><a href="pertest.htm?bin=b1782_0&scope=001777" rel="popup 200 200">3</a></td><td class="green">Covered</td></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">ELSE</td><td class="even"><span style="color:red">65:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#65">	main_fe_fe_controller_semantics_ACT &lt;= CONSTANT_1_13321(0) whe...</a></td><td class="odd_r">0</td><td class="red">ZERO</td></tr>
+  </table>
+  </div><div><a name="cvg1783"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="4"><span style="color:red">67:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#67">	main_flow_logic_control_flow_logic_control_fu_semantics_ACT &lt;=...</a></td><td class="bgYellow">50.00%</td></tr><tr><th class="odd" colspan="2">Branch</th><th class="even">Source</th><th class="odd">Hits</th><th class="even">Status</th></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">IF</td><td class="even"><span style="color:red">67:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#67">	main_flow_logic_control_flow_logic_control_fu_semantics_ACT &lt;=...</a></td><td class="odd_r"><a href="pertest.htm?bin=b1783_0&scope=001777" rel="popup 200 200">3</a></td><td class="green">Covered</td></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">ELSE</td><td class="even"><span style="color:red">67:&nbsp;&nbsp;</span><a href="__HDL_srcfile_124.htm#67">	main_flow_logic_control_flow_logic_control_fu_semantics_ACT &lt;=...</a></td><td class="odd_r">0</td><td class="red">ZERO</td></tr>
+  </table>
+  </div>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>
