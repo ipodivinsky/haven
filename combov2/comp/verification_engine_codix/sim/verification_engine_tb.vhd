@@ -63,6 +63,17 @@ architecture test of testbench is
    signal tx_src_rdy_n  : std_logic;
    signal tx_dst_rdy_n  : std_logic;
 
+   -- MI32 interface
+   signal mi32_dwr      : std_logic_vector(31 downto 0);
+   signal mi32_addr     : std_logic_vector(31 downto 0);
+   signal mi32_rd       : std_logic;
+   signal mi32_wr       : std_logic;
+   signal mi32_be       : std_logic_vector(3 downto 0);
+   signal mi32_drd      : std_logic_vector(31 downto 0);
+   signal mi32_ardy     : std_logic;
+   signal mi32_drdy     : std_logic;
+
+
    -- Reverse function to change bit-order inside byte.
    function reverse( src: std_logic_vector ) return std_logic_vector is
      variable result: std_logic_vector( src'range );
@@ -106,7 +117,17 @@ begin
       TX_SOP_N       => tx_sop_n,
       TX_EOP_N       => tx_eop_n,
       TX_SRC_RDY_N   => tx_src_rdy_n,
-      TX_DST_RDY_N   => tx_dst_rdy_n
+      TX_DST_RDY_N   => tx_dst_rdy_n,
+
+      -- MI32 interface
+      MI32_DWR       => mi32_dwr,
+      MI32_ADDR      => mi32_addr,
+      MI32_RD        => mi32_rd,
+      MI32_WR        => mi32_wr,
+      MI32_BE        => mi32_be,
+      MI32_DRD       => mi32_drd,
+      MI32_ARDY      => mi32_ardy,
+      MI32_DRDY      => mi32_drdy
 
    );
 
@@ -140,6 +161,12 @@ begin
    begin
 
       tx_dst_rdy_n <= '0';
+      -- initialisation of signals
+      mi32_rd    <= '0';
+      mi32_wr    <= '0';
+      mi32_be    <= "1111";
+      mi32_dwr   <= (others => '0');
+      mi32_addr  <= X"DEADBEEF";
 
       wait for RESET_TIME;
 

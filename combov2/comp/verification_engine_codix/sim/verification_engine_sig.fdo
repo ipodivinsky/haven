@@ -25,10 +25,10 @@ add wave -divider "INTERFACE"
 add wave -divider "****************************"
 blk_VER_ENGINE              $VERIFICATION_ENGINE_PATH
 
-add wave -divider "****************************"
-add wave -divider "DUT INTERFACE" 
-add wave -divider "****************************"
-blk_VER_CORE_DUT_IFC        $VER_CORE_PATH
+#add wave -divider "****************************"
+#add wave -divider "DUT INTERFACE" 
+#add wave -divider "****************************"
+#blk_VER_CORE_DUT_IFC        $VER_CORE_PATH
 
 restart -f
 run 4096 us
