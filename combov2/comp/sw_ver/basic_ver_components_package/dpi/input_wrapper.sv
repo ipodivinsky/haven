@@ -80,6 +80,7 @@
         wait(inputMbx.num()!=0) 
         busy = 1;
         inputMbx.get(tr);
+		$write("INPUT_WRAPPER");
         //tr.display(); 
         $cast(ntr,tr);
         

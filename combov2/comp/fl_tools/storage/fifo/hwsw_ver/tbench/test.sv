@@ -237,10 +237,9 @@ program TEST (
         HW_FULL     : if (assertReporter.busy|covReporter.busy) busy = 1; 
       endcase 
       
-     /* $write("Looping at time %t ps\n", $time);
+      /*$write("Looping at time %t ps\n", $time);
       $write("InputWrapper busy: %d\n", inputWrapper.busy);
-      $write("OutputWrapper counter: %d/%d\n", outputWrapper.counter,
-        TRANSACTION_COUNT);
+      //$write("OutputWrapper counter: %d/%d\n", outputWrapper.counter, TRANSACTION_COUNT);
       $write("FlOutCnt busy: %d\n", flOutCnt.busy);
       $write("AssertReporter busy: %d\n", assertReporter.busy);
       $write("SignalReporter busy: %d\n", sigReporter.busy);

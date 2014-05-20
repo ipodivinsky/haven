@@ -82,6 +82,8 @@
            
       //! Create hardware sender
       hwFlSender   = new("Hardware FrameLink Sender", 0, transMbx, inputMbx); 
+	  
+	  $write("INPUT_CONTROLLER\n");
     endfunction: new  
     
    /*! 
