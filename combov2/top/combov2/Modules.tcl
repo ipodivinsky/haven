@@ -101,8 +101,12 @@ set NETWORK_MOD_BASE    "$NETCOPE_BASE/comp/network_mod"
 set DMA_MOD_BASE        "$COMP_BASE/proc/dma_mod/dma_mod_$DMA_MOD" 
 set TS_ASYNC_BASE       "$COMP_BASE/tsu/tsu_async"
 set STAT_BASE           "$COMP_BASE/fl_tools/debug/stat"
-#set VER_ENGINE_BASE     "$COMP_BASE/verification_engine_codix"
-set VER_ENGINE_BASE     "$COMP_BASE/verification_engine"
+
+if { $VER_ENGINE == "CODIX" }  {
+    set VER_ENGINE_BASE     "$COMP_BASE/verification_engine_codix"
+} else {
+    set VER_ENGINE_BASE     "$COMP_BASE/verification_engine"
+} 
 
 # List of instances
 set PACODAG_INST     [list [list "PACODAG_I"             "FULL"]]
