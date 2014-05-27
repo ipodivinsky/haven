@@ -45,7 +45,7 @@ proc blk_PROGRAM_DRIVER { BASE } {
   add_wave "-noupdate -label mem_done" $BASE/program_driver_in_mem_done
 
   add wave -divider "program driver - out"
-
+  add_wave "-noupdate -label proc_reset" $BASE/program_driver_proc_reset
   add_wave "-noupdate -label dbg_mode_mem" $BASE/program_driver_out_dbg
   add_wave "-noupdate -label done" $BASE/program_driver_out_done
 
@@ -92,4 +92,21 @@ proc blk_VER_CORE_DUT_IFC { BASE } {
   add_wave "-noupdate -label port_output -hex"        $BASE/dut_out_port_output
   add_wave "-noupdate -label port_output_en"          $BASE/dut_out_port_output_en
 
+}
+
+proc blk_HALT_MONITOR { BASE } {
+  add wave -divider "halt monitor - in"
+  add_wave "-noupdate -label halt" $BASE/halt_monitor_in_port_halt
+  add_wave "-noupdate -label driver_done" $BASE/halt_monitor_in_driver_done
+
+  add wave -divider "halt monitor - out"
+  add_wave "-noupdate -label rst_n" $BASE/halt_monitor_out_rst_n
+
+}
+
+proc blk_MEMORY_MONITOR { BASE } {
+  add wave -divider "memory monitor - in"
+  add_wave "-noupdate -label memory_monitor_in_regs_done" $BASE/memory_monitor_in_regs_done
+  add wave -divider "memory monitor - out"
+  add_wave "-noupdate -label memory_monitor_out_done" $BASE/memory_monitor_out_done
 }

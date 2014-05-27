@@ -209,6 +209,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '0';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= init_state;
             end if;
 

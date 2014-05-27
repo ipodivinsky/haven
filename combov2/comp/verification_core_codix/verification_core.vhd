@@ -110,12 +110,25 @@ architecture arch of verification_core is
    signal portout_monitor_out_sof_n          : std_logic;
    signal portout_monitor_out_eop_n          : std_logic;
    signal portout_monitor_out_eof_n          : std_logic;
+   
+-- --------------------------------------------------------------------------
+-- HALT MONITOR signals
+-- -------------------------------------------------------------------------- 
+   signal halt_monitor_in_port_halt          : std_logic;
+   signal halt_monitor_in_driver_done        : std_logic;
+   signal halt_monitor_out_rst_n             : std_logic;
+   
+-- --------------------------------------------------------------------------
+-- MEMORY MONITOR signals
+-- -------------------------------------------------------------------------- 
+   signal memory_monitor_in_regs_done        : std_logic;
+   signal memory_monitor_out_done            : std_logic;
 
 -- ==========================================================================
 
 begin
    -- TODO: 
-   program_driver_in_mem_done    <= '0';
+   --program_driver_in_mem_done    <= '0';
    dut_in_irq                    <= '0';
 
    -- ------------------------------------------------------------------------
@@ -238,12 +251,37 @@ begin
    );
 
    -- ------------------------------------------------------------------------
+   --              HW_SW_CODASIP - halt monitor
+   -- ------------------------------------------------------------------------
+   halt_monitor_i: entity work.HALT_MONITOR
+   port map (
+      CLK            => CLK,
+      RESET          => RESET,
+      
+      port_halt      => halt_monitor_in_port_halt,
+      RST_n          => halt_monitor_out_rst_n, 
+      DRIVER_DONE    => halt_monitor_in_driver_done
+      );
+
+   -- ------------------------------------------------------------------------
+   --              HW_SW_CODASIP - memorz monitor (simulation)
+   -- ------------------------------------------------------------------------      
+      memory_monitor_i: entity work.MEMORY_MONITOR
+      port map (
+         CLK               => CLK,
+         RESET             => RESET,
+
+         REGS_DONE         => memory_monitor_in_regs_done,
+         DONE              => memory_monitor_out_done
+      );
+      
+   -- ------------------------------------------------------------------------
    --                          Connection of components
    -- ------------------------------------------------------------------------
 
    -- =====  dut input signal mapping =====
    -- program driver -> dut
-   dut_in_rst_n      <= program_driver_proc_reset;
+   dut_in_rst_n      <= program_driver_proc_reset and halt_monitor_out_rst_n;
    dut_in_mem_dbg    <= program_driver_out_dbg;
    dut_in_mem_d0     <= program_driver_out_d0;
    dut_in_mem_wa0    <= program_driver_out_wa0;
@@ -253,8 +291,9 @@ begin
 
    -- =====  dut output signal mapping =====
    -- dut -> portout monitor
-   portout_monitor_in_port_output    <= dut_out_port_output;
-   portout_monitor_in_port_output_en <= dut_out_port_output_en;
+   portout_monitor_in_port_output      <= dut_out_port_output;
+   portout_monitor_in_port_output_en   <= dut_out_port_output_en;
+   halt_monitor_in_port_halt           <= dut_out_port_halt;
    
    -- DUT - processor input interface - read from memory
    dut_in_mem_ra0    <= "0000000000000000000";
@@ -266,6 +305,14 @@ begin
    dut_in_regs_dbg   <= '0';
    dut_in_regs_ra0   <= "00000";
    dut_in_regs_re0   <= '0';
+   
+   -- =====  halt monitor mapping signals =====
+   halt_monitor_in_driver_done   <= program_driver_out_done;
+   
+   -- =====  memory monitor mapping signals=====
+   
+   memory_monitor_in_regs_done <= dut_out_port_halt;
+   program_driver_in_mem_done <= memory_monitor_out_done;
 
    -- ------------------------------------------------------------------------
    --              Mapping of outputs - FrameLink output interface

@@ -8,6 +8,8 @@ set FL_BASE                "$COMP_BASE/fl_tools"
 # HW_SW_CODASIP verification environment architecture
 set PROGRAM_DRIVER_BASE    "$COMP_BASE/hw_ver/program_driver"
 set PORTOUT_MONITOR_BASE   "$COMP_BASE/hw_ver/portout_monitor"
+set HALT_MONITOR_BASE      "$COMP_BASE/hw_ver/halt_monitor"
+set MEMORY_MONITOR_BASE    "$COMP_BASE/hw_ver/memory_monitor"
 
 # DUT - codix
 set CODIX_BASE             "$FIRMWARE_BASE/../codix/vhdl"
@@ -21,7 +23,9 @@ set MOD "$MOD $ENTITY_BASE/verification_core.vhd"
 
 # Componentss
 set COMPONENTS [list \
-   [ list "PROGRAM_DRIVER"     $PROGRAM_DRIVER_BASE      "FULL"] \
-   [ list "codix_ca_t"         $CODIX_BASE               "FULL"] \
-   [ list "PORTOUT_MONITOR"    $PORTOUT_MONITOR_BASE     "FULL"] \
+   [ list "PROGRAM_DRIVER"    $PROGRAM_DRIVER_BASE     "FULL"] \
+   [ list "codix_ca_t"        $CODIX_BASE              "FULL"] \
+   [ list "PORTOUT_MONITOR"   $PORTOUT_MONITOR_BASE    "FULL"] \
+   [ list "HALT_MONITOR"      $HALT_MONITOR_BASE       "FULL"] \
+   [ list "MEMORY_MONITOR"     $MEMORY_MONITOR_BASE    "FULL"] \
 ]

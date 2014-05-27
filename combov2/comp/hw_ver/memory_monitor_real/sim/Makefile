@@ -26,13 +26,13 @@ whole_library :     $(WORK__testbench__behavioral) \
     $(WORK__memory_monitor)
 
 $(WORK__memory_monitor) \
-$(WORK__memory_monitor__arch) : /home/ipodivinsky/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd \
+$(WORK__memory_monitor__arch) : /home/xfunia00/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd \
 		$(IEEE__numeric_std) \
 		$(IEEE__std_logic_unsigned) \
 		$(IEEE__std_logic_arith) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164)
-	$(VCOM) -93 -explicit -work work /home/ipodivinsky/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd
+	$(VCOM) -93 -explicit -work work /home/xfunia00/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd
 
 $(WORK__testbench) \
 $(WORK__testbench__behavioral) : ../../../../comp/hw_ver/memory_monitor/sim/testbench.vhd \

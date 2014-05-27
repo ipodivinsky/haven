@@ -22,7 +22,7 @@ end entity testbench;
 architecture behavioral of testbench is
 
    constant clkper     : time := 10 ns; 
-   constant reset_time : time := 10 ns;
+   constant reset_time : time := 40 ns;
 
    -- signals
    signal clk          : std_logic;
@@ -35,7 +35,6 @@ architecture behavioral of testbench is
 
    -- UUT output signals
    signal RST_n        : std_logic;
-   signal HALT         : std_logic;
 
 -- ----------------------------------------------------------------------------
 --                      Architecture body
@@ -51,7 +50,6 @@ begin
          RESET       => reset,
          port_halt   => port_halt,
          RST_n       => RST_n, 
-         HALT        => HALT,
          DRIVER_DONE => driver_done
       );
 
@@ -80,12 +78,17 @@ begin
       driver_done <= '0';
 
       -- program driver finished loading memory
-      wait for 40 ns;
+      wait for 60 ns;
       driver_done <= '1';
 
       -- processor finished computation
       wait for 40 ns;
       port_halt <= '1';
+      wait for clkper;
+      port_halt <= '0';
+      
+      wait for 40 ns;
+      driver_done <= '0';
 
 --      report "signal HALT is " & std_logic'image(HALT) & " at time " & time'image(now);
 

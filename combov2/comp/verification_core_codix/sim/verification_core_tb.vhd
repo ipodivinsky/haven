@@ -277,7 +277,7 @@ begin
 
       report "========== start of core simulation ==========";
       SendWriteFile("./input/input_program_hex", RND, flCmd_0, 0);
-      wait for 1500 us;
+      wait for 1200 us;
       SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
 
       wait;
