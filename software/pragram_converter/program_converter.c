@@ -10,8 +10,8 @@
 #include <stdlib.h>
 #define BYTE_LENGHT 8
 #define LINE_SIZE 4
-#define input "input_program"
-#define output "input_program_hex"
+#define input "input"
+#define output "input_hex"
 
 
 int main(int argc, char *argv[])
