@@ -22,6 +22,11 @@ int main(int argc, char **argv) {
    FILE *program;;
    program = fopen("input_program_hex", "r");
    
+   int r = 0;
+   //send program for two times - debugging purposses
+   for (r = 0; r<2; r++)
+   {
+   
    int i = 0;
    int j;
    int byte_size = 8;
@@ -168,6 +173,8 @@ int main(int argc, char **argv) {
       
    if (c_closeDMAChannel())
       printf("nezavre DMA channel");
+   
+   }
    
    //==================================================
 

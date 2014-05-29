@@ -224,6 +224,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= data1_state;
             --wait for data header
             else
@@ -234,6 +235,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= start_state;
             end if;
         
@@ -248,6 +250,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '1';
+               sig_proc_reset       <= '0';
                state_next <= data2_state;
             -- read 4b data and write to memmory
             -- it was received only fisrt half
@@ -260,6 +263,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '1';
+               sig_proc_reset       <= '0';
                state_next <= stop_state;
             else
             -- wait for data
@@ -270,6 +274,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= data1_state;
             end if;
          -- data was received, fisrt half war written in memory 
@@ -287,6 +292,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '1';
+               sig_proc_reset       <= '0';
                state_next <= stop_state;
             -- more packets will follow
             else
@@ -297,6 +303,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '1';
+               sig_proc_reset       <= '0';
                state_next <= data1_state;
             end if;
          -- last data from packet was received, waiting for STOP packet or new data packet
@@ -310,7 +317,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '0';
                sig_out_we           <= '0';
-               sig_proc_reset       <= '0';
+               sig_proc_reset       <= '1';
                state_next <= wait_state;
             -- new data will be transmitted
             elsif (RX_SRC_RDY_N = '0' and sig_trans_type = DATA_TYPE and RX_SOF_N = '0') then
@@ -321,6 +328,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= data1_state;
             -- waiting for stop packet or next data packet
             else 
@@ -331,6 +339,7 @@ begin
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '1';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= stop_state;
             end if;
          
@@ -338,13 +347,14 @@ begin
          when wait_state => 
             -- memory reading is done, go to init state
             if (MEM_DONE = '1') then
-               sig_out_dst_rdy_n  	<= '0';
+               sig_out_dst_rdy_n  	<= '1';
                cnt_addr_en          <= '0';
                sig_data_reg_en      <= '0';
                sig_first_half       <= '0';
                sig_out_done         <= '0';
                sig_out_dbg_mode     <= '0';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '0';
                state_next <= init_state;
             -- waiting for memory done
             else
@@ -355,6 +365,7 @@ begin
                sig_out_done         <= '1';
                sig_out_dbg_mode     <= '0';
                sig_out_we           <= '0';
+               sig_proc_reset       <= '1';
                state_next <= wait_state;
             end if;
      end case;      
