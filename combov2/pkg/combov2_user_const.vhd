@@ -46,7 +46,7 @@ package combov2_user_const is
    -- originally: 5
    -- for HGENx1: 6
    -- for HGENx4: 7
-   constant CLK_USER0_DIV     : integer := 7;   -- CLK_USER0 freq. = Fvco / CLK_USER0_DIV
+   constant CLK_USER0_DIV     : integer := 8;   -- CLK_USER0 freq. = Fvco / CLK_USER0_DIV
 
    constant CLK_USER1_DIV     : integer := 5;   -- CLK_USER1 freq. = Fvco / CLK_USER1_DIV
    constant CLK_USER2_DIV     : integer := 5;   -- CLK_USER2 freq. = Fvco / CLK_USER2_DIV

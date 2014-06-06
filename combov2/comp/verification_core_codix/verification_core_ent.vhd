@@ -47,6 +47,7 @@ entity verification_core is
    (
       FL_DATA_WIDTH      : integer := 64; -- FrameLink data width
       CODIX_DATA_WIDTH   : integer := 32; -- processor data width
+      REGS_ADDR_WIDTH    : integer := 5;
 
       -- the CORE_TYPE generic specifies the verified unit in the core
       -- actually there is only codasip_codix

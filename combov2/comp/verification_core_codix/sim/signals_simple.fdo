@@ -84,7 +84,7 @@ proc blk_VER_CORE_DUT_IFC { BASE } {
   add wave -divider "Codix registers"
   add_wave "-noupdate -label dbg_mode_regs"           $BASE/dut_in_regs_dbg
   add_wave "-noupdate -label dbg_mode_regs_Q0 -hex"   $BASE/dut_out_regs_q0
-  add_wave "-noupdate -label dbg_mode_regs_RA0"       $BASE/dut_in_regs_ra0
+  add_wave "-noupdate -label dbg_mode_regs_RA0 -uns"       $BASE/dut_in_regs_ra0
   add_wave "-noupdate -label dbg_mode_regs_RE0"       $BASE/dut_in_regs_re0
 
   add wave -divider "Codix output"
@@ -102,6 +102,40 @@ proc blk_HALT_MONITOR { BASE } {
   add wave -divider "halt monitor - out"
   add_wave "-noupdate -label rst_n" $BASE/halt_monitor_out_rst_n
 
+}
+
+proc blk_PORTOUT_MONITOR { BASE } {
+  add wave -divider "portout monitor - in"
+  add_wave "-noupdate -label portout_monitor_in_port_output -hex" $BASE/portout_monitor_in_port_output
+  add_wave "-noupdate -label portout_monitor_in_port_output_en" $BASE/portout_monitor_in_port_output_en
+  add wave -divider "portout monitor - out"
+  add_wave "-noupdate -label portout_monitor_out_data -hex" $BASE/portout_monitor_out_data
+  add_wave "-noupdate -label portout_monitor_out_rem -bin" $BASE/portout_monitor_out_rem
+  add_wave "-noupdate -label portout_monitor_out_src_rdy_n" $BASE/portout_monitor_out_src_rdy_n
+  add_wave "-noupdate -label portout_monitor_in_dst_rdy_n" $BASE/portout_monitor_in_dst_rdy_n
+  add_wave "-noupdate -label portout_monitor_out_sop_n" $BASE/portout_monitor_out_sop_n
+  add_wave "-noupdate -label portout_monitor_out_sof_n" $BASE/portout_monitor_out_sof_n
+  add_wave "-noupdate -label portout_monitor_out_eop_n" $BASE/portout_monitor_out_eop_n
+  add_wave "-noupdate -label portout_monitor_out_eof_n" $BASE/portout_monitor_out_eof_n
+}
+
+proc blk_REGISTER_MONITOR { BASE } {
+  add wave -divider "register monitor - in"
+  add_wave "-noupdate -label register_monitor_in_start" $BASE/register_monitor_in_start
+  add_wave "-noupdate -label register_monitor_out_dbg" $BASE/register_monitor_out_dbg_mode_regs
+  add_wave "-noupdate -label register_monitor_in_q0 -hex" $BASE/register_monitor_in_dbg_mode_regs_q0
+  add_wave "-noupdate -label register_monitor_out_ra0 -uns" $BASE/register_monitor_out_dbg_mode_regs_ra0
+  add_wave "-noupdate -label register_monitor_out_re0" $BASE/register_monitor_out_dbg_mode_regs_re0
+  add wave -divider "register monitor - out"
+  add_wave "-noupdate -label register_monitor_out_done" $BASE/register_monitor_out_done
+  add_wave "-noupdate -label register_monitor_out_data -hex" $BASE/register_monitor_out_data
+  add_wave "-noupdate -label register_monitor_out_rem -bin" $BASE/register_monitor_out_rem
+  add_wave "-noupdate -label register_monitor_out_src_rdy_n" $BASE/register_monitor_out_src_rdy_n
+  add_wave "-noupdate -label register_monitor_in_dst_rdy_n" $BASE/register_monitor_in_dst_rdy_n
+  add_wave "-noupdate -label register_monitor_out_sop_n" $BASE/register_monitor_out_sop_n
+  add_wave "-noupdate -label register_monitor_out_sof_n" $BASE/register_monitor_out_sof_n
+  add_wave "-noupdate -label register_monitor_out_eop_n" $BASE/register_monitor_out_eop_n
+  add_wave "-noupdate -label register_monitor_out_eof_n" $BASE/register_monitor_out_eof_n
 }
 
 proc blk_MEMORY_MONITOR { BASE } {

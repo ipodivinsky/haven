@@ -112,6 +112,28 @@ architecture arch of verification_core is
    signal portout_monitor_out_eof_n          : std_logic;
    
 -- --------------------------------------------------------------------------
+-- REGISTER MONITOR signals
+-- -------------------------------------------------------------------------- 
+   -- register monitor - input - processor interface
+   signal register_monitor_out_dbg_mode_regs   : std_logic;
+   signal register_monitor_in_dbg_mode_regs_Q0   : std_logic_vector(CODIX_DATA_WIDTH-1 downto 0);
+   signal register_monitor_out_dbg_mode_regs_RA0   : std_logic_vector(REGS_ADDR_WIDTH-1 downto 0);
+   signal register_monitor_out_dbg_mode_regs_RE0   : std_logic;
+   
+   signal register_monitor_in_start               : std_logic;
+   signal register_monitor_out_done               : std_logic;
+
+   -- register monitor - output = FrameLink output interface
+   signal register_monitor_out_data           : std_logic_vector(FL_DATA_WIDTH-1 downto 0);
+   signal register_monitor_out_rem            : std_logic_vector(2 downto 0);
+   signal register_monitor_out_src_rdy_n      : std_logic;
+   signal register_monitor_in_dst_rdy_n       : std_logic;
+   signal register_monitor_out_sop_n          : std_logic;
+   signal register_monitor_out_sof_n          : std_logic;
+   signal register_monitor_out_eop_n          : std_logic;
+   signal register_monitor_out_eof_n          : std_logic;
+   
+-- --------------------------------------------------------------------------
 -- HALT MONITOR signals
 -- -------------------------------------------------------------------------- 
    signal halt_monitor_in_port_halt          : std_logic;
@@ -249,6 +271,41 @@ begin
       TX_SOF_N       => portout_monitor_out_sof_n,
       TX_EOF_N       => portout_monitor_out_eof_n
    );
+   
+   -- ------------------------------------------------------------------------
+   --              HW_SW_CODASIP - register monitor
+   -- ------------------------------------------------------------------------
+   register_monitor_i: entity work.REGISTER_MONITOR
+   generic map (
+      IN_DATA_WIDTH     => CODIX_DATA_WIDTH,
+      OUT_DATA_WIDTH    => FL_DATA_WIDTH
+   )
+   port map (
+      CLK               => clk,
+      RESET             => reset,
+
+      -- inputs
+      
+      
+      START             => register_monitor_in_start,
+      DONE              => register_monitor_out_done,
+
+      -- processor interface
+      dbg_mode_regs     => register_monitor_out_dbg_mode_regs,
+      dbg_mode_regs_Q0  => register_monitor_in_dbg_mode_regs_Q0,
+      dbg_mode_regs_RA0 => register_monitor_out_dbg_mode_regs_RA0,
+      dbg_mode_regs_RE0 => register_monitor_out_dbg_mode_regs_RE0,
+
+      TX_DATA           => register_monitor_out_data,
+      TX_REM            => register_monitor_out_rem,
+      TX_SRC_RDY_N      => register_monitor_out_src_rdy_n,
+      TX_SOP_N          => register_monitor_out_sop_n,
+      TX_EOP_N          => register_monitor_out_eop_n,
+      TX_SOF_N          => register_monitor_out_sof_n,
+      TX_EOF_N          => register_monitor_out_eof_n,
+      TX_DST_RDY_N      => register_monitor_in_dst_rdy_n
+
+      );
 
    -- ------------------------------------------------------------------------
    --              HW_SW_CODASIP - halt monitor
@@ -295,6 +352,12 @@ begin
    portout_monitor_in_port_output_en   <= dut_out_port_output_en;
    halt_monitor_in_port_halt           <= dut_out_port_halt;
    
+   -- dut -> register monitor
+   dut_in_regs_dbg <= register_monitor_out_dbg_mode_regs;
+   register_monitor_in_dbg_mode_regs_Q0 <= dut_out_regs_q0;
+   dut_in_regs_ra0 <= register_monitor_out_dbg_mode_regs_RA0; 
+   dut_in_regs_re0 <= register_monitor_out_dbg_mode_regs_RE0;
+         
    -- DUT - processor input interface - read from memory
    dut_in_mem_ra0    <= "0000000000000000000";
    dut_in_mem_re0    <= '0';
@@ -302,28 +365,41 @@ begin
    dut_in_mem_rsi0   <= "00";
 
    -- DUT - processor input interface - read from register file
-   dut_in_regs_dbg   <= '0';
-   dut_in_regs_ra0   <= "00000";
-   dut_in_regs_re0   <= '0';
+   --dut_in_regs_dbg   <= '0';
+   --dut_in_regs_ra0   <= "00000";
+   --dut_in_regs_re0   <= '0';
    
    -- =====  halt monitor mapping signals =====
    halt_monitor_in_driver_done   <= program_driver_out_done;
    
    -- =====  memory monitor mapping signals=====
    
-   memory_monitor_in_regs_done <= dut_out_port_halt;
+   memory_monitor_in_regs_done <= register_monitor_out_done;
    program_driver_in_mem_done <= memory_monitor_out_done;
+   
+   -- =====  register monitor mapping signals=====   
+   register_monitor_in_start <= dut_out_port_halt;
 
    -- ------------------------------------------------------------------------
    --              Mapping of outputs - FrameLink output interface
    -- ------------------------------------------------------------------------
-   TX_DATA                <= portout_monitor_out_data;
-   TX_REM                 <= portout_monitor_out_rem;
-   TX_SOF_N               <= portout_monitor_out_sof_n;
-   TX_SOP_N               <= portout_monitor_out_sop_n;
-   TX_EOP_N               <= portout_monitor_out_eop_n;
-   TX_EOF_N               <= portout_monitor_out_eof_n;
-   TX_SRC_RDY_N           <= portout_monitor_out_src_rdy_n;
-   portout_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
+--   TX_DATA                <= portout_monitor_out_data;
+--   TX_REM                 <= portout_monitor_out_rem;
+--   TX_SOF_N               <= portout_monitor_out_sof_n;
+--   TX_SOP_N               <= portout_monitor_out_sop_n;
+--   TX_EOP_N               <= portout_monitor_out_eop_n;
+--   TX_EOF_N               <= portout_monitor_out_eof_n;
+--   TX_SRC_RDY_N           <= portout_monitor_out_src_rdy_n;
+--   portout_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
+portout_monitor_in_dst_rdy_n <= '0';
+   
+   TX_DATA                <= register_monitor_out_data;
+   TX_REM                 <= register_monitor_out_rem;
+   TX_SOF_N               <= register_monitor_out_sof_n;
+   TX_SOP_N               <= register_monitor_out_sop_n;
+   TX_EOP_N               <= register_monitor_out_eop_n;
+   TX_EOF_N               <= register_monitor_out_eof_n;
+   TX_SRC_RDY_N           <= register_monitor_out_src_rdy_n;
+   register_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
 
 end architecture;
