@@ -35,4 +35,4 @@ restart -f
 # memory reading        - 1312 us
 #run 2096 us
 
-run 2096 us
+run 3096 us

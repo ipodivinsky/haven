@@ -29,13 +29,14 @@ int main(int argc, char **argv) {
 			
       //printf("START\n");
       c_receiveData(&size,&outData);
+      //printf("size: %d:", size);
       if (size != 0)
       {
 
-         char buff[100];
-         time_t now = time (0);
-         strftime (buff, 100, "%Y-%m-%d %H:%M:%S.000", localtime (&now));
-         printf ("%s\n", buff);
+         //char buff[100];
+         //time_t now = time (0);
+         //strftime (buff, 100, "%Y-%m-%d %H:%M:%S.000", localtime (&now));
+         //printf ("%s\n", buff);
 
          printf("Received data, size: %dB\n", size);
          

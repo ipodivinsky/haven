@@ -67,7 +67,7 @@ begin
          -- inputs
          dbg_mode_mem_Q0   => dbg_mode_mem_Q0,
          TX_DST_RDY_N      => TX_DST_RDY_N,
-         REGS_DONE         => START,
+         START             => START,
          DONE              => DONE,
 
          -- outputs

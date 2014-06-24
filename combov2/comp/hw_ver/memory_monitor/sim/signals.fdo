@@ -2,7 +2,7 @@
 
 proc blk_MEMORY_MONITOR_IFC { BASE } {
 
-   add_wave "-noupdate -label REGS_DONE" $BASE/REGS_DONE
+   add_wave "-noupdate -label REGS_DONE" $BASE/START
    add_wave "-noupdate -label DONE" $BASE/DONE  
 
       add wave -divider "Memory interface - IN"
@@ -30,9 +30,16 @@ proc blk_MEMORY_MONITOR_INTERNALS { BASE } {
    add wave -divider "Internals"
    add_wave "-noupdate -label state_reg" $BASE/state_reg
    add_wave "-noupdate -label state_next" $BASE/state_next
-   add_wave "-noupdate -label cnt_addr -dec" $BASE/cnt_addr
    add_wave "-noupdate -label input_reg -hex" $BASE/input_reg
    add_wave "-noupdate -label is_header" $BASE/is_header
    add_wave "-noupdate -label is_half" $BASE/is_half
+   add_wave "-noupdate -label is_2half" $BASE/is_2half
+   
+   add_wave "-noupdate -label cnt_frane -dec" $BASE/sig_cnt_frame
+    add_wave "-noupdate -label cnt_frame_rst -dec" $BASE/sig_cnt_frame_rst
+     add_wave "-noupdate -label cnt_frame_en -dec" $BASE/sig_cnt_frame_en
+     add_wave "-noupdate -label input_reg -hex" $BASE/input_reg
+     add_wave "-noupdate -label input_reg2 -hex" $BASE/input_reg2
 
+     
 }

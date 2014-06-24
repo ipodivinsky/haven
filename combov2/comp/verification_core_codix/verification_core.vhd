@@ -142,9 +142,28 @@ architecture arch of verification_core is
    
 -- --------------------------------------------------------------------------
 -- MEMORY MONITOR signals
--- -------------------------------------------------------------------------- 
-   signal memory_monitor_in_regs_done        : std_logic;
-   signal memory_monitor_out_done            : std_logic;
+-- --------------------------------------------------------------------------   
+   -- memory monitor - input - Codix interface
+   signal memory_monitor_out_dbg  : std_logic;
+   signal memory_monitor_in_q0    : std_logic_vector(CODIX_DATA_WIDTH-1 downto 0);
+   signal memory_monitor_out_ra0  : std_logic_vector(18 downto 0);
+   signal memory_monitor_out_re0  : std_logic;
+   signal memory_monitor_out_rsc0 : std_logic_vector(2 downto 0);
+   signal memory_monitor_out_rsi0 : std_logic_vector(1 downto 0);
+
+   -- memory monitor - control signal
+   signal memory_monitor_out_done : std_logic;
+   signal memory_monitor_in_start        : std_logic;
+
+   -- memory monitor - output - FL interface
+   signal memory_monitor_out_data : std_logic_vector(FL_DATA_WIDTH-1 downto 0);
+   signal memory_monitor_out_rem  : std_logic_vector(2 downto 0);
+   signal memory_monitor_out_src_rdy_n : std_logic;
+   signal memory_monitor_in_dst_rdy_n  : std_logic;
+   signal memory_monitor_out_sop_n : std_logic;
+   signal memory_monitor_out_sof_n : std_logic;
+   signal memory_monitor_out_eop_n : std_logic;
+   signal memory_monitor_out_eof_n : std_logic;
 
 -- ==========================================================================
 
@@ -321,16 +340,50 @@ begin
       );
 
    -- ------------------------------------------------------------------------
-   --              HW_SW_CODASIP - memorz monitor (simulation)
+   --              HW_SW_CODASIP - memory monitor (simulation)
    -- ------------------------------------------------------------------------      
-      memory_monitor_i: entity work.MEMORY_MONITOR
-      port map (
-         CLK               => CLK,
-         RESET             => RESET,
+--      memory_monitor_i: entity work.MEMORY_MONITOR
+--      port map (
+--         CLK               => CLK,
+--         RESET             => RESET,
+--
+--         REGS_DONE         => memory_monitor_in_start,
+--         DONE              => memory_monitor_out_done
+--      );
+   -- ------------------------------------------------------------------------
+   --              HW_SW_CODASIP - memory monitor
+   -- ------------------------------------------------------------------------
+   memory_monitor_i: entity work.MEMORY_MONITOR
+   generic map (
+      IN_DATA_WIDTH     => CODIX_DATA_WIDTH,
+      OUT_DATA_WIDTH    => FL_DATA_WIDTH
+   )
+   port map (
+      -- input clock domain
+      CLK               => CLK,
+      RESET             => RESET,
 
-         REGS_DONE         => memory_monitor_in_regs_done,
-         DONE              => memory_monitor_out_done
-      );
+      -- control signals
+      DONE              => memory_monitor_out_done,
+      START             => memory_monitor_in_start,    
+
+      -- outputs
+      dbg_mode_mem_Q0   => memory_monitor_in_q0,
+      dbg_mode_mem      => memory_monitor_out_dbg,
+      dbg_mode_mem_RA0  => memory_monitor_out_ra0,
+      dbg_mode_mem_RE0  => memory_monitor_out_re0,
+      dbg_mode_mem_RSC0 => memory_monitor_out_rsc0,
+      dbg_mode_mem_RSI0 => memory_monitor_out_rsi0,
+
+      TX_DATA           => memory_monitor_out_data,
+      TX_REM            => memory_monitor_out_rem,
+      TX_SRC_RDY_N      => memory_monitor_out_src_rdy_n,
+      TX_SOP_N          => memory_monitor_out_sop_n,
+      TX_EOP_N          => memory_monitor_out_eop_n,
+      TX_SOF_N          => memory_monitor_out_sof_n,
+      TX_EOF_N          => memory_monitor_out_eof_n,
+      TX_DST_RDY_N      => memory_monitor_in_dst_rdy_n
+   );
       
    -- ------------------------------------------------------------------------
    --                          Connection of components
@@ -339,7 +392,7 @@ begin
    -- =====  dut input signal mapping =====
    -- program driver -> dut
    dut_in_rst_n      <= program_driver_proc_reset and halt_monitor_out_rst_n;
-   dut_in_mem_dbg    <= program_driver_out_dbg;
+   dut_in_mem_dbg    <= program_driver_out_dbg or memory_monitor_out_dbg;
    dut_in_mem_d0     <= program_driver_out_d0;
    dut_in_mem_wa0    <= program_driver_out_wa0;
    dut_in_mem_we0    <= program_driver_out_we0;
@@ -359,10 +412,18 @@ begin
    dut_in_regs_re0 <= register_monitor_out_dbg_mode_regs_RE0;
          
    -- DUT - processor input interface - read from memory
-   dut_in_mem_ra0    <= "0000000000000000000";
-   dut_in_mem_re0    <= '0';
-   dut_in_mem_rsc0   <= "100";
-   dut_in_mem_rsi0   <= "00";
+   --dut_in_mem_ra0    <= "0000000000000000000";
+   --dut_in_mem_re0    <= '0';
+   --dut_in_mem_rsc0   <= "100";
+   --dut_in_mem_rsi0   <= "00";
+   
+   dut_in_mem_ra0    <= memory_monitor_out_ra0;
+   dut_in_mem_re0    <= memory_monitor_out_re0;
+   dut_in_mem_rsc0   <= memory_monitor_out_rsc0;
+   dut_in_mem_rsi0   <= memory_monitor_out_rsi0;
+   
+   memory_monitor_in_q0 <= dut_out_mem_q0;
+
 
    -- DUT - processor input interface - read from register file
    --dut_in_regs_dbg   <= '0';
@@ -374,7 +435,7 @@ begin
    
    -- =====  memory monitor mapping signals=====
    
-   memory_monitor_in_regs_done <= register_monitor_out_done;
+   memory_monitor_in_start <= register_monitor_out_done;
    program_driver_in_mem_done <= memory_monitor_out_done;
    
    -- =====  register monitor mapping signals=====   
@@ -401,5 +462,15 @@ portout_monitor_in_dst_rdy_n <= '0';
    TX_EOF_N               <= register_monitor_out_eof_n;
    TX_SRC_RDY_N           <= register_monitor_out_src_rdy_n;
    register_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
-
+-- register_monitor_in_dst_rdy_n <= '0';
+   
+--   TX_DATA                <= memory_monitor_out_data;
+--   TX_REM                 <= memory_monitor_out_rem;
+--   TX_SOF_N               <= memory_monitor_out_sof_n;
+--   TX_SOP_N               <= memory_monitor_out_sop_n;
+--   TX_EOP_N               <= memory_monitor_out_eop_n;
+--   TX_EOF_N               <= memory_monitor_out_eof_n;
+--   TX_SRC_RDY_N           <= memory_monitor_out_src_rdy_n;
+--   memory_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
+memory_monitor_in_dst_rdy_n <= '0';
 end architecture;

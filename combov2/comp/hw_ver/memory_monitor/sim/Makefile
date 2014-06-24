@@ -930,8 +930,8 @@ $(WORK__math_pack__body) : /home/ipodivinsky/haven/combov2/comp/base/pkg/math_pa
 $(WORK__memory_monitor) \
 $(WORK__memory_monitor__arch) : /home/ipodivinsky/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd \
 		$(IEEE__numeric_std) \
-		$(IEEE__std_logic_unsigned) \
 		$(IEEE__std_logic_arith) \
+		$(IEEE__std_logic_unsigned) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164)
 	$(VCOM) -93 -explicit -work work /home/ipodivinsky/haven/combov2/comp/hw_ver/memory_monitor/memory_monitor.vhd

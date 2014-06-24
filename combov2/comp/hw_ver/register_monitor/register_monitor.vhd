@@ -179,8 +179,8 @@ begin
 
          when send_hdr =>
             -- address counter signals
-            sig_cnt_addr_rst     <= '1';
-            sig_cnt_addr_en      <= '0';
+            sig_cnt_addr_rst     <= '0';
+            --sig_cnt_addr_en      <= '0';
             sig_half             <= '0';          
 
             if (TX_DST_RDY_N = '0') then
@@ -193,11 +193,15 @@ begin
                sig_tx_src_rdy_n  <= '0';
 
                -- read enable
-               sig_re0           <= '0';
-               sig_dbg_mode      <= '0';
+               sig_re0           <= '1';
+               sig_dbg_mode      <= '1';
+               
+               sig_cnt_addr_en      <= '1';
                
                state_next        <= read_1half;
             else
+               sig_cnt_addr_en      <= '0';
+            
                state_next        <= send_hdr;
             end if;
 

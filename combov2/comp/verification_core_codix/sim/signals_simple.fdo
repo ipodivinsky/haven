@@ -136,11 +136,38 @@ proc blk_REGISTER_MONITOR { BASE } {
   add_wave "-noupdate -label register_monitor_out_sof_n" $BASE/register_monitor_out_sof_n
   add_wave "-noupdate -label register_monitor_out_eop_n" $BASE/register_monitor_out_eop_n
   add_wave "-noupdate -label register_monitor_out_eof_n" $BASE/register_monitor_out_eof_n
+  add_wave "-noupdate -label state" $BASE/register_monitor_i/state_reg
+  add_wave "-noupdate -label input_reg -hex" $BASE/register_monitor_i/input_reg
+  add_wave "-noupdate -label sig_half" $BASE/register_monitor_i/sig_half
+  add_wave "-noupdate -label sig_cnt_addr_en" $BASE/register_monitor_i/sig_cnt_addr_en
 }
 
 proc blk_MEMORY_MONITOR { BASE } {
   add wave -divider "memory monitor - in"
-  add_wave "-noupdate -label memory_monitor_in_regs_done" $BASE/memory_monitor_in_regs_done
+  add_wave "-noupdate -label memory_monitor_in_regs_done" $BASE/memory_monitor_in_start
+  add_wave "-noupdate -label memory_monitor_out_dbg" $BASE/memory_monitor_out_dbg
+  add_wave "-noupdate -label memory_monitor_in_q0 -hex" $BASE/memory_monitor_in_q0
+  add_wave "-noupdate -label memory_monitor_out_ra0 -uns" $BASE/memory_monitor_out_ra0
+  add_wave "-noupdate -label memory_monitor_out_re0" $BASE/memory_monitor_out_re0
+  add_wave "-noupdate -label memory_monitor_out_rsc0" $BASE/memory_monitor_out_rsc0
+  add_wave "-noupdate -label memory_monitor_out_rsi0" $BASE/memory_monitor_out_rsi0
   add wave -divider "memory monitor - out"
   add_wave "-noupdate -label memory_monitor_out_done" $BASE/memory_monitor_out_done
+  add_wave "-noupdate -label memory_monitor_out_data -hex" $BASE/memory_monitor_out_data
+  add_wave "-noupdate -label memory_monitor_out_rem -bin" $BASE/memory_monitor_out_rem
+  add_wave "-noupdate -label memory_monitor_out_src_rdy_n" $BASE/memory_monitor_out_src_rdy_n
+  add_wave "-noupdate -label memory_monitor_in_dst_rdy_n" $BASE/memory_monitor_in_dst_rdy_n
+  add_wave "-noupdate -label memory_monitor_out_sop_n" $BASE/memory_monitor_out_sop_n
+  add_wave "-noupdate -label memory_monitor_out_sof_n" $BASE/memory_monitor_out_sof_n
+  add_wave "-noupdate -label memory_monitor_out_eop_n" $BASE/memory_monitor_out_eop_n
+  add_wave "-noupdate -label memory_monitor_out_eof_n" $BASE/memory_monitor_out_eof_n
+  add_wave "-noupdate -label state" $BASE/memory_monitor_i/state_reg
+  add_wave "-noupdate -label input_reg -hex" $BASE/memory_monitor_i/input_reg
+  add_wave "-noupdate -label sig_half" $BASE/memory_monitor_i/sig_half
+  add_wave "-noupdate -label sig_cnt_addr_en" $BASE/memory_monitor_i/sig_cnt_addr_en
+     add_wave "-noupdate -label is_2half" $BASE/memory_monitor_i/sig_2half
+   
+     add_wave "-noupdate -label input_reg -hex" $BASE/memory_monitor_i/input_reg
+     add_wave "-noupdate -label input_reg2 -hex" $BASE/memory_monitor_i/input_reg2
+     add_wave "-noupdate -label sig_last_word -hex" $BASE/memory_monitor_i/sig_last_word
 }
