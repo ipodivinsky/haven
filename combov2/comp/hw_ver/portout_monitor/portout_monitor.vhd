@@ -168,6 +168,7 @@ begin
          when data_hdr_state =>
             -- wait until destination is not ready
             if sig_tx_dst_rdy_n = '1' then
+               sig_tx_src_rdy_n  <= '0';
                state_next <= data_hdr_state;
             -- destination is ready
             else 
@@ -178,7 +179,7 @@ begin
                sig_tx_sop_n<= '0';
                sig_tx_eof_n<= '1';
                sig_tx_eop_n<= '1';
-               sig_tx_src_rdy_n<= '0';
+               sig_tx_src_rdy_n  <= '0';
 
                state_next <= data_state;
             end if;

@@ -10,6 +10,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- math package
+use work.math_pack.all;
+
 -- HAVEN constants
 use work.haven_const.all;
 
@@ -25,7 +28,7 @@ architecture arch of verification_core is
 -- ==========================================================================
 --                                    CONSTANTS
 -- ==========================================================================
-
+   constant OUTPUT_ENDPOINTS : integer := 4;
 -- ==========================================================================
 --                                     SIGNALS
 -- ==========================================================================
@@ -165,6 +168,26 @@ architecture arch of verification_core is
    signal memory_monitor_out_eop_n : std_logic;
    signal memory_monitor_out_eof_n : std_logic;
 
+   
+   -- FrameLink Binder input
+   signal fl_binder_in_data     : std_logic_vector(OUTPUT_ENDPOINTS*FL_DATA_WIDTH-1 downto 0);
+   signal fl_binder_in_rem      : std_logic_vector(OUTPUT_ENDPOINTS*log2(FL_DATA_WIDTH/8)-1 downto 0);
+   signal fl_binder_in_sof_n    : std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+   signal fl_binder_in_sop_n    : std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+   signal fl_binder_in_eop_n    : std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+   signal fl_binder_in_eof_n    : std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+   signal fl_binder_in_src_rdy_n: std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+   signal fl_binder_in_dst_rdy_n: std_logic_vector(OUTPUT_ENDPOINTS-1 downto 0);
+
+   -- FrameLink Binder output
+   signal fl_binder_out_data        : std_logic_vector(FL_DATA_WIDTH-1 downto 0);
+   signal fl_binder_out_rem         : std_logic_vector(log2(FL_DATA_WIDTH/8)-1 downto 0);
+   signal fl_binder_out_sof_n       : std_logic;
+   signal fl_binder_out_sop_n       : std_logic;
+   signal fl_binder_out_eop_n       : std_logic;
+   signal fl_binder_out_eof_n       : std_logic;
+   signal fl_binder_out_src_rdy_n   : std_logic;
+   signal fl_binder_out_dst_rdy_n   : std_logic;
 -- ==========================================================================
 
 begin
@@ -384,6 +407,57 @@ begin
       TX_EOF_N          => memory_monitor_out_eof_n,
       TX_DST_RDY_N      => memory_monitor_in_dst_rdy_n
    );
+   
+      -- ------------------------------------------------------------------------
+   --                              FL_BINDER
+   -- ------------------------------------------------------------------------
+   binder_i: entity work.FL_BINDER
+   generic map(
+      INPUT_WIDTH   => FL_DATA_WIDTH,
+      INPUT_COUNT   => OUTPUT_ENDPOINTS,
+      OUTPUT_WIDTH  => FL_DATA_WIDTH,
+      FRAME_PARTS   => 2,
+      STUPID_BINDER => true
+   )
+   port map(
+      CLK           => CLK,
+      RESET         => RESET,
+
+      -- input interface
+      RX_DATA       => fl_binder_in_data,
+      RX_REM        => fl_binder_in_rem,
+      RX_SOF_N      => fl_binder_in_sof_n,
+      RX_SOP_N      => fl_binder_in_sop_n,
+      RX_EOP_N      => fl_binder_in_eop_n,
+      RX_EOF_N      => fl_binder_in_eof_n,
+      RX_SRC_RDY_N  => fl_binder_in_src_rdy_n,
+      RX_DST_RDY_N  => fl_binder_in_dst_rdy_n,
+
+      -- output interface
+      TX_DATA       => fl_binder_out_data,
+      TX_REM        => fl_binder_out_rem,
+      TX_SOF_N      => fl_binder_out_sof_n,
+      TX_SOP_N      => fl_binder_out_sop_n,
+      TX_EOP_N      => fl_binder_out_eop_n,
+      TX_EOF_N      => fl_binder_out_eof_n,
+      TX_SRC_RDY_N  => fl_binder_out_src_rdy_n,
+      TX_DST_RDY_N  => fl_binder_out_dst_rdy_n
+   );
+
+
+   -- ------------------------------------------------------------------------
+   --                          Mapping of outputs
+   -- ------------------------------------------------------------------------
+   TX_DATA                  <= fl_binder_out_data;
+   TX_REM                   <= fl_binder_out_rem;
+   TX_SOF_N                 <= fl_binder_out_sof_n;
+   TX_SOP_N                 <= fl_binder_out_sop_n;
+   TX_EOP_N                 <= fl_binder_out_eop_n;
+   TX_EOF_N                 <= fl_binder_out_eof_n;
+   TX_SRC_RDY_N             <= fl_binder_out_src_rdy_n;
+   fl_binder_out_dst_rdy_n  <= TX_DST_RDY_N;
+   
+   
       
    -- ------------------------------------------------------------------------
    --                          Connection of components
@@ -452,16 +526,16 @@ begin
 --   TX_EOF_N               <= portout_monitor_out_eof_n;
 --   TX_SRC_RDY_N           <= portout_monitor_out_src_rdy_n;
 --   portout_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
-portout_monitor_in_dst_rdy_n <= '0';
+--portout_monitor_in_dst_rdy_n <= '0';
    
-   TX_DATA                <= register_monitor_out_data;
-   TX_REM                 <= register_monitor_out_rem;
-   TX_SOF_N               <= register_monitor_out_sof_n;
-   TX_SOP_N               <= register_monitor_out_sop_n;
-   TX_EOP_N               <= register_monitor_out_eop_n;
-   TX_EOF_N               <= register_monitor_out_eof_n;
-   TX_SRC_RDY_N           <= register_monitor_out_src_rdy_n;
-   register_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
+--   TX_DATA                <= register_monitor_out_data;
+--   TX_REM                 <= register_monitor_out_rem;
+--   TX_SOF_N               <= register_monitor_out_sof_n;
+--   TX_SOP_N               <= register_monitor_out_sop_n;
+--   TX_EOP_N               <= register_monitor_out_eop_n;
+--   TX_EOF_N               <= register_monitor_out_eof_n;
+--   TX_SRC_RDY_N           <= register_monitor_out_src_rdy_n;
+--   register_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
 -- register_monitor_in_dst_rdy_n <= '0';
    
 --   TX_DATA                <= memory_monitor_out_data;
@@ -472,5 +546,48 @@ portout_monitor_in_dst_rdy_n <= '0';
 --   TX_EOF_N               <= memory_monitor_out_eof_n;
 --   TX_SRC_RDY_N           <= memory_monitor_out_src_rdy_n;
 --   memory_monitor_in_dst_rdy_n <= TX_DST_RDY_N;
-memory_monitor_in_dst_rdy_n <= '0';
+--memory_monitor_in_dst_rdy_n <= '0';
+
+   -- FL_BINDER input mapping
+   fl_binder_in_data       <= x"0000000000000000" &
+                              memory_monitor_out_data &
+                              register_monitor_out_data &
+                              portout_monitor_out_data;
+
+   fl_binder_in_rem        <= "000" &
+                              memory_monitor_out_rem &
+                              register_monitor_out_rem &
+                              portout_monitor_out_rem;
+
+   fl_binder_in_sof_n      <= '1' &
+                              memory_monitor_out_sof_n &
+                              register_monitor_out_sof_n &
+                              portout_monitor_out_sof_n;
+
+   fl_binder_in_sop_n      <= '1' &
+                              memory_monitor_out_sop_n &
+                              register_monitor_out_sop_n &
+                              portout_monitor_out_sop_n;
+
+   fl_binder_in_eop_n      <= '1' &
+                              memory_monitor_out_eop_n &
+                              register_monitor_out_eop_n &
+                              portout_monitor_out_eop_n;
+
+   fl_binder_in_eof_n      <= '1' &
+                              memory_monitor_out_eof_n &
+                              register_monitor_out_eof_n &
+                              portout_monitor_out_eof_n;
+
+   fl_binder_in_src_rdy_n  <= '1' &
+                              memory_monitor_out_src_rdy_n &
+                              register_monitor_out_src_rdy_n &
+                              portout_monitor_out_src_rdy_n;
+
+   -- <= fl_binder_in_dst_rdy_n(3);
+   memory_monitor_in_dst_rdy_n       <= fl_binder_in_dst_rdy_n(2);
+   register_monitor_in_dst_rdy_n     <= fl_binder_in_dst_rdy_n(1);
+   portout_monitor_in_dst_rdy_n      <= fl_binder_in_dst_rdy_n(0);
+
+
 end architecture;

@@ -229,6 +229,7 @@ begin
                
                state_next        <= read_1half;
             else
+               sig_tx_src_rdy_n  <= '0';
                sig_cnt_addr_en      <= '0';
                state_next        <= send_hdr;
             end if;

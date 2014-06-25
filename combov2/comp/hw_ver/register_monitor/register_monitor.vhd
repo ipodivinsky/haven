@@ -67,7 +67,7 @@ architecture arch of REGISTER_MONITOR is
 -- ----------------------------------------------------------
 --                 FSM states
 -- ----------------------------------------------------------
-type state_type is (init_state, read_1half, read_2half, send_hdr);
+type state_type is (init_state, read_1half, read_2half, send_hdr, read_wait, read_wait2);
 
 -- ----------------------------------------------------------
 --                 constants
@@ -115,6 +115,8 @@ signal hdr_data         : std_logic_vector(OUT_DATA_WIDTH-1 downto 0);
 signal hdr_rem          : std_logic_vector(2 downto 0);
 signal sig_half         : std_logic;
 signal sig_done         : std_logic;
+signal sig_2half        : std_logic;
+signal sig_last_word    : std_logic;
 
 
 -- ----------------------------------------------------------
@@ -145,12 +147,13 @@ begin
    end process;
 
    -- next state logic
-   fsm_next_state_logic : process (state_reg, dbg_mode_regs_Q0, START, TX_DST_RDY_N,hdr_data, sig_cnt_addr, input_reg)
+   fsm_next_state_logic : process (state_reg, dbg_mode_regs_Q0, START, TX_DST_RDY_N,hdr_data, sig_cnt_addr, input_reg, sig_last_word)
    begin
       state_next            <= state_reg;
       sig_cnt_addr_rst      <= '1';
       sig_cnt_addr_en       <= '0';
       sig_half              <= '0';
+      sig_2half              <= '0';
       sig_re0               <= '0';  
       sig_dbg_mode          <= '0';
       sig_done              <= '0';
@@ -201,6 +204,7 @@ begin
                state_next        <= read_1half;
             else
                sig_cnt_addr_en      <= '0';
+               sig_tx_src_rdy_n  <= '0';
             
                state_next        <= send_hdr;
             end if;
@@ -212,25 +216,46 @@ begin
             sig_re0              <= '1';
             sig_dbg_mode         <= '1';
             
-            if (TX_DST_RDY_N = '0') then
+            
                -- address counter signals - increment address
-               sig_cnt_addr_rst     <= '0';
-               sig_cnt_addr_en      <= '1';
+               
 
                -- end of memory address space
-               if (sig_cnt_addr >= MAX_ADDRESS) then
-                  sig_tx_data       <= X"00000000" & dbg_mode_regs_Q0;
-                  sig_tx_rem        <= "011";
-                  sig_tx_sof_n      <= '1';
-                  sig_tx_sop_n      <= '1';
-                  sig_tx_eof_n      <= '0';
-                  sig_tx_eop_n      <= '0';
-                  sig_tx_src_rdy_n  <= '0';
+               if (sig_last_word = '1') then  --sig_cnt_addr >= MAX_ADDRESS) then
+                  if (TX_DST_RDY_N = '0') then
+                     sig_tx_data       <= X"00000000" & dbg_mode_regs_Q0;
+                     sig_tx_rem        <= "011";
+                     sig_tx_sof_n      <= '1';
+                     sig_tx_sop_n      <= '1';
+                     sig_tx_eof_n      <= '0';
+                     sig_tx_eop_n      <= '0';
+                     sig_tx_src_rdy_n  <= '0';
+                     
+                     sig_half          <= '0';
+                     sig_done          <= '1';
+                     
+                     sig_cnt_addr_rst     <= '0';
+                     sig_cnt_addr_en      <= '1';
+                     
+                     state_next        <= init_state;
+                     
+                     
+                  else
+                     sig_tx_rem        <= "111";
+                     sig_tx_sof_n      <= '1';
+                     sig_tx_sop_n      <= '1';
+                     sig_tx_eof_n      <= '1';
+                     sig_tx_eop_n      <= '1';
+                     sig_tx_src_rdy_n  <= '1';
+                     
+                     sig_cnt_addr_rst     <= '0';
+                     sig_cnt_addr_en      <= '0';
+                     
+                     sig_half          <= '0';
+                     sig_done          <= '0';
                   
-                  sig_half          <= '0';
-                  sig_done          <= '1';
-                  
-                  state_next        <= init_state;
+                     state_next        <= read_1half;
+                  end if;
                -- continue with reading
                else
                   sig_tx_rem        <= "111";
@@ -240,81 +265,162 @@ begin
                   sig_tx_eop_n      <= '1';
                   sig_tx_src_rdy_n  <= '1';
                   
-                  sig_half          <= '1';
-
-                  state_next        <= read_2half;
+                  if (TX_DST_RDY_N = '0') then
+                     -- address counter signals - increment address
+                     sig_cnt_addr_rst     <= '0';
+                     sig_cnt_addr_en      <= '1';
+                  
+                     sig_half          <= '1';
+                  
+                     state_next        <= read_2half;
+                  else
+                     sig_cnt_addr_rst     <= '0';
+                     sig_cnt_addr_en      <= '0';
+                  
+                     sig_half          <= '1';
+                  
+                     state_next        <= read_wait;
+                  end if;
                end if;
-            else
-               sig_tx_rem        <= "111";
-               sig_tx_sof_n      <= '1';
-               sig_tx_sop_n      <= '1';
-               sig_tx_eof_n      <= '1';
-               sig_tx_eop_n      <= '1';
-               sig_tx_src_rdy_n  <= '1';
-               
-               sig_cnt_addr_rst     <= '0';
-               sig_cnt_addr_en      <= '0';
-               
-               sig_half          <= '0';
-               sig_done          <= '0';
             
-               state_next        <= read_1half;
-            end if;
-
+         when read_wait =>
+                  sig_tx_rem        <= "111";
+                  sig_tx_sof_n      <= '1';
+                  sig_tx_sop_n      <= '1';
+                  sig_tx_eof_n      <= '1';
+                  sig_tx_eop_n      <= '1';
+                  sig_tx_src_rdy_n  <= '1';
+                  
+                                 sig_re0           <= '1';
+               sig_dbg_mode      <= '1';
+                  
+                  if (TX_DST_RDY_N = '0') then
+                  -- address counter signals - increment address
+                  sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '1';
+                  
+                  sig_half          <= '0';
+                  
+                  state_next        <= read_2half;
+                  else
+                  sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '0';
+                  
+                  sig_half          <= '0';
+                  
+                  state_next        <= read_wait;
+                  end if;
+                  
          when read_2half =>
             --read enable
             sig_re0              <= '1';
             sig_dbg_mode         <= '1';
             
-         if (TX_DST_RDY_N = '0') then
+         --if (TX_DST_RDY_N = '0') then
             -- address counter signals - increment address
             sig_cnt_addr_rst     <= '0';
-            sig_cnt_addr_en      <= '1';
             sig_half             <= '0';
 
             -- write data 1half + 2half
             sig_tx_data          <= dbg_mode_regs_Q0 & input_reg;
 
                -- end of memory address space
-               if (sig_cnt_addr >= MAX_ADDRESS) then
-                  sig_tx_rem        <= "111";
-                  sig_tx_sof_n      <= '1';
-                  sig_tx_sop_n      <= '1';
-                  sig_tx_eof_n      <= '0';
-                  sig_tx_eop_n      <= '0';
-                  sig_tx_src_rdy_n  <= '0';
+               if (sig_last_word = '1') then --(sig_cnt_addr >= MAX_ADDRESS) then
+                  if (TX_DST_RDY_N = '0') then
+                     sig_tx_rem        <= "111";
+                     sig_tx_sof_n      <= '1';
+                     sig_tx_sop_n      <= '1';
+                     sig_tx_eof_n      <= '0';
+                     sig_tx_eop_n      <= '0';
+                     sig_tx_src_rdy_n  <= '0';
 
-                  sig_done          <= '1';
-                  
-                  state_next        <= init_state;
+                     sig_done          <= '1';
+                     
+                     sig_cnt_addr_en      <= '1';
+                     
+                     state_next        <= init_state;
 
                -- continue with reading
-               else
+               else   
                   sig_tx_rem        <= "111";
                   sig_tx_sof_n      <= '1';
                   sig_tx_sop_n      <= '1';
                   sig_tx_eof_n      <= '1';
                   sig_tx_eop_n      <= '1';
                   sig_tx_src_rdy_n  <= '0';
-
-                  state_next        <= read_1half;
+                  
+                  sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '0';
+                  
+                  sig_half             <= '0';
+                  sig_done             <= '0';
+                  
+                     
+                  state_next        <= read_2half;
                end if;
             else   
-               sig_tx_rem        <= "111";
-               sig_tx_sof_n      <= '1';
-               sig_tx_sop_n      <= '1';
-               sig_tx_eof_n      <= '1';
-               sig_tx_eop_n      <= '1';
-               sig_tx_src_rdy_n  <= '0';
-               
-               sig_cnt_addr_rst     <= '0';
-               sig_cnt_addr_en      <= '0';
-               
-               sig_half             <= '0';
-               sig_done             <= '0';
+               if (TX_DST_RDY_N = '0') then
+                  sig_tx_rem        <= "111";
+                  sig_tx_sof_n      <= '1';
+                  sig_tx_sop_n      <= '1';
+                  sig_tx_eof_n      <= '1';
+                  sig_tx_eop_n      <= '1';
+                  sig_tx_src_rdy_n  <= '0';
                   
-               state_next        <= read_2half;
+                  sig_cnt_addr_en      <= '1';
+                  
+                  state_next        <= read_1half;
+               else   
+                  sig_tx_rem        <= "111";
+                  sig_tx_sof_n      <= '1';
+                  sig_tx_sop_n      <= '1';
+                  sig_tx_eof_n      <= '1';
+                  sig_tx_eop_n      <= '1';
+                  sig_tx_src_rdy_n  <= '0';
+                  
+                  sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '0';
+                  
+                  sig_half             <= '0';
+                  sig_done             <= '0';
+                  sig_2half              <= '1';
+                  
+                     
+                  state_next        <= read_wait2;
+               end if;
             end if;
+            
+         when read_wait2 =>
+                  sig_tx_rem        <= "111";
+                  sig_tx_sof_n      <= '1';
+                  sig_tx_sop_n      <= '1';
+                  sig_tx_eof_n      <= '1';
+                  sig_tx_eop_n      <= '1';
+                  sig_tx_src_rdy_n  <= '1';
+                  
+                                 sig_re0           <= '1';
+               sig_dbg_mode      <= '1';
+               
+               sig_2half              <= '0';
+               sig_cnt_addr_rst     <= '0';
+                  
+                  if (TX_DST_RDY_N = '0') then
+                  -- address counter signals - increment address
+                  --sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '1';
+                  
+                  --sig_half          <= '0';
+                  
+                  state_next        <= read_2half;
+                  else
+                  --sig_cnt_addr_rst     <= '0';
+                  sig_cnt_addr_en      <= '0';
+                  
+                  --sig_half          <= '0';
+                  
+                  state_next        <= read_wait2;
+                  end if;
+                  
      end case;
   end process;
 
@@ -325,10 +431,26 @@ begin
            sig_cnt_addr    <= "00000";
         elsif (sig_cnt_addr_en = '1') then
            sig_cnt_addr    <= sig_cnt_addr + 1;
+        elsif (sig_2half = '1') then
+           sig_cnt_addr    <= sig_cnt_addr - 1;
         end if;
      end if;
   end process;
 
+    last_word_comparator : process (CLK, sig_cnt_addr)
+  begin
+      if (rising_edge(CLK)) then
+        if (RESET = '1') then 
+           sig_last_word    <= '0';
+        elsif (sig_cnt_addr >= MAX_ADDRESS) then
+           sig_last_word <= '1';
+        else
+           sig_last_word <= '0';
+        end if; 
+     end if;
+
+  end process;
+  
   input_register : process (CLK)
   begin
      if (rising_edge(CLK)) then

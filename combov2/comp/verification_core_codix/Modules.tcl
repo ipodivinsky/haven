@@ -11,6 +11,7 @@ set PORTOUT_MONITOR_BASE   "$COMP_BASE/hw_ver/portout_monitor"
 set HALT_MONITOR_BASE      "$COMP_BASE/hw_ver/halt_monitor"
 set REGISTER_MONITOR_BASE  "$COMP_BASE/hw_ver/register_monitor"
 set MEMORY_MONITOR_BASE    "$COMP_BASE/hw_ver/memory_monitor"
+set FL_BINDER_BASE         "$FL_BASE/flow/binder"
 
 # DUT - codix
 set CODIX_BASE             "$FIRMWARE_BASE/../codix/vhdl"
@@ -28,6 +29,7 @@ set COMPONENTS [list \
    [ list "codix_ca_t"        $CODIX_BASE              "FULL"] \
    [ list "PORTOUT_MONITOR"   $PORTOUT_MONITOR_BASE    "FULL"] \
    [ list "HALT_MONITOR"      $HALT_MONITOR_BASE       "FULL"] \
-   [ list "REGISTER_MONITOR"  $REGISTER_MONITOR_BASE     "FULL"] \
+   [ list "REGISTER_MONITOR"  $REGISTER_MONITOR_BASE   "FULL"] \
    [ list "MEMORY_MONITOR"    $MEMORY_MONITOR_BASE     "FULL"] \
+   [ list "FL_BINDER"         $FL_BINDER_BASE          "FULL"] \
 ]

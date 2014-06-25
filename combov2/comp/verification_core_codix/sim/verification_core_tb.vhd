@@ -222,7 +222,7 @@ begin
       RX_TX_DATA_WIDTH => FL_DATA_WIDTH,
       FILE_NAME  => "./output/monitor",
       FRAME_PARTS => 1,
-      RDY_DRIVER => EVER
+      RDY_DRIVER => RND
    )
    port map (
       -- Common interface
@@ -276,9 +276,9 @@ begin
       wait for RESET_TIME;
 
       report "========== start of core simulation ==========";
-      SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
+      SendWriteFile("./input/input_program_hex", RND, flCmd_0, 0);
       wait for 1200 us;
-      SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
+      --SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
       wait for 50us;--1200 us;
       --SendWriteFile("./input/input_program_hex", EVER, flCmd_0, 0);
 
