@@ -1,0 +1,12 @@
+#executable;GM cycles;DUT cycles;verification result
+;codix_risc_platform_ca;xexes/sha.c.xexe;-1;-1;fail
+** Error: (vsim-4000) A design must be loaded before the "cover" command can be used.
+** Error: (vsim-4000) A design must be loaded before the "cover" command can be used.
+
+    while executing
+"mti_cover -setdefault byfile"
+    invoked from within
+"vsim_kernel mti_cover -setdefault byfile"
+    ("eval" body line 1)
+    invoked from within
+"eval vsim_kernel mti_cover -setdefault $PrefCoverage(DefaultCoverageMode)"

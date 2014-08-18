@@ -74,7 +74,7 @@ type state_type is (init_state, read_1half, read_2half, send_hdr, read_wait, rea
 -- ----------------------------------------------------------
 constant DATA_TYPE      : std_logic_vector(7 downto 0) := X"00";
 
-constant MAX_ADDRESS    : std_logic_vector(4 downto 0) := "11111";
+constant MAX_ADDRESS    : std_logic_vector(4 downto 0) := "11110";
 
 -- register monitor endpoint is 8'h02
 constant ENDPOINT_ID    : std_logic_vector(7 downto 0) := X"02";
@@ -199,7 +199,8 @@ begin
                sig_re0           <= '1';
                sig_dbg_mode      <= '1';
                
-               sig_cnt_addr_en      <= '1';
+               -- !!! zmena pro spravne cteni registru
+               sig_cnt_addr_en      <= '0';
                
                state_next        <= read_1half;
             else
@@ -437,7 +438,8 @@ begin
      end if;
   end process;
 
-    last_word_comparator : process (CLK, sig_cnt_addr)
+  -- !!! zmena pro spravne cteni registru
+  last_word_comparator : process (CLK, sig_cnt_addr)
   begin
       if (rising_edge(CLK)) then
         if (RESET = '1') then 

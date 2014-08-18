@@ -143,6 +143,7 @@ export PCIE_CORE_PATH $(PCIE_CORE_PATH)
 
 # Architecture
 SRC = combov2_core.vhd
+#SRC = /home/ipodivinsky/haven/combov2/comp/verification_core_codix/verification_core.vhd
 
 APP_MCS_DEPENDS = 
 
@@ -169,7 +170,7 @@ APP_MODULES += $(FL_TRANSFORMER_PATH)/$(FL_TRANSFORMER_128TO64) \
 
 # Application specific flags
 APP_NGDBUILDFLAGS = -sd $(FIFO_PATH)
-APP_MAPFLAGS      = -xe n -ol high -register_duplication on
+APP_MAPFLAGS      = -xe n -ol high -register_duplication on -detail
 APP_PARFLAGS      = -xe n -ol high
 
 ADDUCF = haven.ucf

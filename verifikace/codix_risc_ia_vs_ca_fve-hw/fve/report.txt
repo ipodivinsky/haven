@@ -1,0 +1,3641 @@
+#executable;GM cycles;DUT cycles;verification result
+;codix_risc_platform_ca;./xexes/19990407-1.c.xexe;121;120;ok
+;codix_risc_platform_ca;./xexes/20000112-1.c.xexe;312;311;ok
+;codix_risc_platform_ca;./xexes/20000113-1.c.xexe;63;62;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2114
+    on index 7: gold='h0 vs. DUT='h80808080
+    on index 8: gold='h0 vs. DUT='h2a2a2a2a
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000121-1.c.xexe;72;71;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2114
+    on index 7: gold='h0 vs. DUT='h80808080
+    on index 8: gold='h0 vs. DUT='h2a2a2a2a
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000205-1.c.xexe;63;62;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2114
+    on index 7: gold='h0 vs. DUT='h80808080
+    on index 8: gold='h0 vs. DUT='h2a2a2a2a
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000217-1.c.xexe;63;62;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2114
+    on index 7: gold='h0 vs. DUT='h80808080
+    on index 8: gold='h0 vs. DUT='h2a2a2a2a
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000223-1.c.xexe;72;71;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2114
+    on index 7: gold='h0 vs. DUT='h80808080
+    on index 8: gold='h0 vs. DUT='h2a2a2a2a
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000224-1.c.xexe;321;320;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000225-1.c.xexe;63;62;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2b50
+    on index 7: gold='h0 vs. DUT='h69
+    on index 8: gold='h0 vs. DUT='h7
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/20000227-1.c.xexe;72;71;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h2b50
+    on index 7: gold='h0 vs. DUT='h69
+    on index 8: gold='h0 vs. DUT='h7
+    on index 9: gold='h0 vs. DUT='h2a2a0000
+    on index 10: gold='h0 vs. DUT='hfeff0001
+    on index 11: gold='h0 vs. DUT='h80800000
+;codix_risc_platform_ca;./xexes/out1.xexe;872;871;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='hc0c616fd vs. DUT='hc0c616f8
+    on index 13: gold='h1ffff vs. DUT='h20004
+    on index 25: gold='h5 vs. DUT='h0
+6 miscompare(s) for 'mem':
+    on index 324: gold='h38038002 vs. DUT='h38030000
+    on index 364: gold='ha30acca0 vs. DUT='hacca0
+    on index 139112: gold='h1 vs. DUT='h0
+    on index 143948: gold='habbf vs. DUT='hab9f
+    on index 148064: gold='h200000 vs. DUT='h0
+    on index 207316: gold='he1000000 vs. DUT='h1000000
+;codix_risc_platform_ca;./xexes/out2.xexe;850;849;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h19 vs. DUT='h0
+    on index 25: gold='h20 vs. DUT='h10000
+6 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 207336: gold='hf0000 vs. DUT='h0
+    on index 210020: gold='hca4f0000 vs. DUT='h73f10000
+    on index 216228: gold='hca4f0000 vs. DUT='h73f10000
+    on index 226216: gold='hf vs. DUT='h0
+    on index 228040: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out3.xexe;868;867;fail
+5 miscompare(s) for 'mem':
+    on index 146884: gold='he vs. DUT='h0
+    on index 152360: gold='h0 vs. DUT='h5ae4
+    on index 161924: gold='h0 vs. DUT='h29a0000
+    on index 199964: gold='h0 vs. DUT='h5ae4
+    on index 218464: gold='hc0000 vs. DUT='h200000
+;codix_risc_platform_ca;./xexes/out4.xexe;716;715;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h20 vs. DUT='h0
+    on index 18: gold='h5 vs. DUT='h0
+    on index 24: gold='h20 vs. DUT='h0
+    on index 26: gold='ha vs. DUT='h4b
+4 miscompare(s) for 'mem':
+    on index 150140: gold='h1a vs. DUT='h0
+    on index 157812: gold='h11000000 vs. DUT='h0
+    on index 197432: gold='hca00 vs. DUT='h7e00
+    on index 217448: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out5.xexe;794;793;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h5 vs. DUT='h0
+    on index 13: gold='h5 vs. DUT='h0
+    on index 22: gold='h5 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out6.xexe;885;884;fail
+3 miscompare(s) for 'mem':
+    on index 147256: gold='h560000 vs. DUT='h920000
+    on index 157128: gold='he0000 vs. DUT='h2400000
+    on index 210396: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out7.xexe;835;834;fail
+1 miscompare(s) for 'mem':
+    on index 816: gold='h40d8000 vs. DUT='h4008000
+;codix_risc_platform_ca;./xexes/out8.xexe;817;816;fail
+1 miscompare(s) for 'mem':
+    on index 217128: gold='h5000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out9.xexe;777;776;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h1 vs. DUT='hffffa7ea
+    on index 15: gold='h1998c8cf vs. DUT='h1998c8d1
+    on index 19: gold='h1998c9b1 vs. DUT='h1998c9b3
+    on index 25: gold='h1 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 136608: gold='h1 vs. DUT='h0
+    on index 157960: gold='hc8cf0000 vs. DUT='hc8d10000
+    on index 212040: gold='h1 vs. DUT='h0
+    on index 223984: gold='h1998c8cf vs. DUT='h1998c8d1
+;codix_risc_platform_ca;./xexes/out10.xexe;736;735;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h1f vs. DUT='h0
+    on index 19: gold='h1 vs. DUT='h0
+    on index 21: gold='h1 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 140756: gold='h300 vs. DUT='h0
+    on index 214724: gold='h20 vs. DUT='h2150
+;codix_risc_platform_ca;./xexes/out11.xexe;900;899;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out12.xexe;801;800;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hb4979 vs. DUT='hb4596
+    on index 5: gold='h112e91 vs. DUT='h113657
+    on index 8: gold='h11342606 vs. DUT='hc385ba95
+    on index 12: gold='h112a8de0 vs. DUT='hc37c226f
+    on index 14: gold='h4b232 vs. DUT='h4aa6c
+    on index 22: gold='heed5721f vs. DUT='h3c83dd90
+3 miscompare(s) for 'mem':
+    on index 135872: gold='h5 vs. DUT='h0
+    on index 151324: gold='h1a vs. DUT='hffffffe0
+    on index 216804: gold='h46cb4 vs. DUT='h36cb8
+;codix_risc_platform_ca;./xexes/out13.xexe;800;799;fail
+1 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out14.xexe;806;805;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h1d35f vs. DUT='h810ac6f
+    on index 12: gold='hfffe3eac vs. DUT='hfffdb716
+    on index 19: gold='h1 vs. DUT='h0
+    on index 24: gold='h2372 vs. DUT='h922f
+    on index 26: gold='h21b7 vs. DUT='h2901
+3 miscompare(s) for 'mem':
+    on index 148476: gold='h100000 vs. DUT='h41000000
+    on index 154224: gold='h80000 vs. DUT='h0
+    on index 211060: gold='hd35f vs. DUT='hac6f
+;codix_risc_platform_ca;./xexes/out15.xexe;835;834;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='hffffefb2 vs. DUT='hfffff2d4
+    on index 13: gold='h74c68 vs. DUT='h752ac
+    on index 21: gold='h74c20 vs. DUT='h75284
+    on index 23: gold='h3428 vs. DUT='h374a
+2 miscompare(s) for 'mem':
+    on index 149040: gold='h688d0000 vs. DUT='h688e0000
+    on index 223052: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out16.xexe;817;816;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 1: gold='h0 vs. DUT='h28
+    on index 7: gold='he vs. DUT='h2200000
+4 miscompare(s) for 'mem':
+    on index 744: gold='h11c8926d vs. DUT='h926d
+    on index 135312: gold='h20 vs. DUT='h0
+    on index 139536: gold='h38b vs. DUT='h36b
+    on index 147720: gold='h4670 vs. DUT='h4650
+;codix_risc_platform_ca;./xexes/out17.xexe;755;754;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 27: gold='hffff9eb5 vs. DUT='hffff9ea4
+4 miscompare(s) for 'mem':
+    on index 131196: gold='h11000000 vs. DUT='h0
+    on index 142768: gold='hffff8892 vs. DUT='hffff8882
+    on index 159996: gold='h9200 vs. DUT='h8200
+    on index 206024: gold='h88920000 vs. DUT='h88820000
+;codix_risc_platform_ca;./xexes/out18.xexe;880;879;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hffff872f vs. DUT='hffff8734
+    on index 8: gold='h20 vs. DUT='h0
+    on index 11: gold='hffff8f3c vs. DUT='hffff8f1c
+    on index 16: gold='hffff82a0 vs. DUT='hffff82c0
+    on index 22: gold='h401f vs. DUT='h3fff
+2 miscompare(s) for 'mem':
+    on index 145820: gold='h1b0000 vs. DUT='h200000
+    on index 205100: gold='h110000 vs. DUT='hd40000
+;codix_risc_platform_ca;./xexes/out19.xexe;756;755;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 152568: gold='h93ae vs. DUT='hffe0
+    on index 160764: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out20.xexe;683;682;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='hc00000
+    on index 9: gold='h0 vs. DUT='h21ea8
+    on index 15: gold='hffffd023 vs. DUT='h20
+5 miscompare(s) for 'mem':
+    on index 150860: gold='h20000000 vs. DUT='h0
+    on index 204456: gold='h1b30 vs. DUT='hd810
+    on index 206304: gold='h3000 vs. DUT='h1000
+    on index 220132: gold='h10 vs. DUT='h0
+    on index 266124: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out21.xexe;823;822;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='h7 vs. DUT='h0
+8 miscompare(s) for 'mem':
+    on index 488: gold='h4098020 vs. DUT='h0
+    on index 146440: gold='h1a0000 vs. DUT='h200000
+    on index 148160: gold='h50000 vs. DUT='h40800000
+    on index 153276: gold='h1a vs. DUT='h20
+    on index 156816: gold='h18 vs. DUT='h0
+    on index 158820: gold='h1a0000 vs. DUT='h200000
+    on index 218548: gold='h3200000 vs. DUT='h3e00000
+    on index 222216: gold='h0 vs. DUT='h60
+;codix_risc_platform_ca;./xexes/out22.xexe;640;639;fail
+1 miscompare(s) for 'mem':
+    on index 856: gold='h38048002 vs. DUT='h38040000
+;codix_risc_platform_ca;./xexes/out23.xexe;937;936;fail
+5 miscompare(s) for 'mem':
+    on index 436: gold='h68113f18 vs. DUT='h68110000
+    on index 141548: gold='hf0000 vs. DUT='h0
+    on index 146288: gold='hcd9a vs. DUT='h0
+    on index 152424: gold='hf vs. DUT='h0
+    on index 217632: gold='haf0000 vs. DUT='h900000
+;codix_risc_platform_ca;./xexes/out24.xexe;786;785;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hca9b1000 vs. DUT='heffc025c
+    on index 4: gold='hffff9280 vs. DUT='hffff92ce
+    on index 5: gold='hffff929f vs. DUT='hffff927f
+    on index 9: gold='h3f vs. DUT='h91
+    on index 13: gold='hffff92a0 vs. DUT='hffff92ee
+    on index 26: gold='h1a vs. DUT='h20
+    on index 27: gold='hca9b3800 vs. DUT='heffc235c
+7 miscompare(s) for 'mem':
+    on index 133624: gold='h76ec0000 vs. DUT='h229e0000
+    on index 133984: gold='he0 vs. DUT='he4
+    on index 143564: gold='h5a200000 vs. DUT='h5a260000
+    on index 158132: gold='h150000 vs. DUT='h600000
+    on index 200660: gold='h28e40000 vs. DUT='hb6e00000
+    on index 217652: gold='h15 vs. DUT='h5460
+    on index 228780: gold='ha132 vs. DUT='ha112
+;codix_risc_platform_ca;./xexes/out25.xexe;856;855;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='he vs. DUT='hfffe0000
+    on index 17: gold='h7 vs. DUT='h0
+    on index 20: gold='hfffe0027 vs. DUT='hfffe0020
+2 miscompare(s) for 'mem':
+    on index 139008: gold='h3 vs. DUT='h2c7e
+    on index 214904: gold='h3 vs. DUT='h7e
+;codix_risc_platform_ca;./xexes/out26.xexe;785;784;ok
+;codix_risc_platform_ca;./xexes/out27.xexe;811;810;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h20 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 135848: gold='h20 vs. DUT='h0
+    on index 152292: gold='h20 vs. DUT='h0
+    on index 162292: gold='h12 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out28.xexe;831;830;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h3 vs. DUT='h0
+    on index 27: gold='h5 vs. DUT='h4340
+7 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 232: gold='he8000 vs. DUT='h8000
+    on index 588: gold='h83044200 vs. DUT='h0
+    on index 132900: gold='h1a vs. DUT='h20
+    on index 146288: gold='hfffdffe0 vs. DUT='hfffe0000
+    on index 196952: gold='h0 vs. DUT='hb00
+    on index 210808: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out29.xexe;867;866;fail
+2 miscompare(s) for 'mem':
+    on index 139900: gold='h1a000000 vs. DUT='h80000000
+    on index 202264: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out30.xexe;798;797;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out31.xexe;781;780;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 26: gold='hf vs. DUT='h1
+2 miscompare(s) for 'mem':
+    on index 432: gold='h58bdebc vs. DUT='h0
+    on index 148428: gold='h200000 vs. DUT='hbe5f0000
+;codix_risc_platform_ca;./xexes/out32.xexe;700;699;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='hfffff29e vs. DUT='hfffff2be
+    on index 16: gold='h11 vs. DUT='h2600000
+    on index 27: gold='h49a0d93 vs. DUT='h49a0d73
+2 miscompare(s) for 'mem':
+    on index 684: gold='h6181902a vs. DUT='h902a
+    on index 136716: gold='hfffff29e vs. DUT='hfffff2be
+;codix_risc_platform_ca;./xexes/out33.xexe;595;594;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='he8080 vs. DUT='hfff17060
+    on index 7: gold='hfff17f5f vs. DUT='he8f9f
+    on index 12: gold='h0 vs. DUT='h20
+    on index 17: gold='h1 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 146532: gold='h5 vs. DUT='h0
+    on index 158156: gold='h100000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out34.xexe;837;836;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h5 vs. DUT='h0
+    on index 10: gold='hfce2df7b vs. DUT='hfce2df95
+    on index 11: gold='h4063 vs. DUT='h4081
+    on index 20: gold='hfce2dfb0 vs. DUT='hfce2dfb5
+7 miscompare(s) for 'mem':
+    on index 772: gold='h5660299 vs. DUT='h5660200
+    on index 133936: gold='h1a452790 vs. DUT='h1846166c
+    on index 134368: gold='h120000 vs. DUT='hbe0000
+    on index 138584: gold='h97000000 vs. DUT='he0000000
+    on index 151976: gold='h100 vs. DUT='h0
+    on index 221096: gold='h12 vs. DUT='hffffdfbe
+    on index 224568: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out35.xexe;849;848;ok
+;codix_risc_platform_ca;./xexes/out36.xexe;905;904;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='he vs. DUT='hfffda244
+1 miscompare(s) for 'mem':
+    on index 144012: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out37.xexe;605;604;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 26: gold='h9 vs. DUT='hfffffe00
+;codix_risc_platform_ca;./xexes/out38.xexe;785;784;fail
+4 miscompare(s) for 'mem':
+    on index 488: gold='h380c0002 vs. DUT='h0
+    on index 133680: gold='h20 vs. DUT='h0
+    on index 137460: gold='hffffa75c vs. DUT='hffffa75d
+    on index 153080: gold='h66 vs. DUT='h6c
+;codix_risc_platform_ca;./xexes/out39.xexe;742;741;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h2 vs. DUT='h10000
+    on index 22: gold='h5 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 133516: gold='h5 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out40.xexe;939;938;ok
+;codix_risc_platform_ca;./xexes/out41.xexe;900;899;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='he vs. DUT='h8002
+    on index 13: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out42.xexe;852;851;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hec4c797f vs. DUT='hec53906a
+2 miscompare(s) for 'mem':
+    on index 133436: gold='h5703 vs. DUT='h5700
+    on index 208008: gold='h40020 vs. DUT='h644d4
+;codix_risc_platform_ca;./xexes/out43.xexe;773;772;fail
+1 miscompare(s) for 'mem':
+    on index 142912: gold='hf0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out44.xexe;833;832;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='h10 vs. DUT='h0
+    on index 22: gold='h1a vs. DUT='h0
+6 miscompare(s) for 'mem':
+    on index 392: gold='h44bb4768 vs. DUT='h44bb0068
+    on index 135640: gold='hfffdf096 vs. DUT='hfffe05a0
+    on index 142308: gold='h21000000 vs. DUT='hae000000
+    on index 211208: gold='h4f41ebb7 vs. DUT='h65db1c00
+    on index 226712: gold='h0 vs. DUT='h2000
+    on index 229240: gold='he0661449 vs. DUT='hc9cce400
+;codix_risc_platform_ca;./xexes/out45.xexe;911;910;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h11 vs. DUT='h0
+    on index 14: gold='hf vs. DUT='h0
+    on index 27: gold='h10 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 232: gold='he8000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out46.xexe;833;832;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h47e93 vs. DUT='h47e84
+1 miscompare(s) for 'mem':
+    on index 219076: gold='h5 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out47.xexe;844;843;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h20 vs. DUT='hffffbe60
+    on index 24: gold='h0 vs. DUT='h8fd
+4 miscompare(s) for 'mem':
+    on index 136700: gold='h20 vs. DUT='h400000
+    on index 140728: gold='h200000 vs. DUT='h0
+    on index 147224: gold='h20 vs. DUT='h0
+    on index 213020: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out48.xexe;869;868;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='he vs. DUT='h0
+    on index 11: gold='he vs. DUT='h13b
+    on index 15: gold='h236be vs. DUT='h236cc
+    on index 27: gold='h11 vs. DUT='h20000
+2 miscompare(s) for 'mem':
+    on index 200092: gold='h120000 vs. DUT='h22d50000
+    on index 210788: gold='h120000 vs. DUT='hd50000
+;codix_risc_platform_ca;./xexes/out49.xexe;751;750;fail
+1 miscompare(s) for 'mem':
+    on index 162644: gold='h8900 vs. DUT='h9300
+;codix_risc_platform_ca;./xexes/out50.xexe;826;825;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h20 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 136684: gold='h1b00 vs. DUT='h0
+    on index 137864: gold='ha3f10000 vs. DUT='ha3d70000
+    on index 145684: gold='h1a vs. DUT='h0
+    on index 215944: gold='h1a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out51.xexe;787;786;fail
+5 miscompare(s) for 'mem':
+    on index 135928: gold='h5 vs. DUT='h0
+    on index 146876: gold='h500 vs. DUT='h0
+    on index 197584: gold='h1 vs. DUT='h20
+    on index 220092: gold='hfffdde9c vs. DUT='hfffdda9c
+    on index 227292: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out52.xexe;781;780;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 27: gold='h20 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 740: gold='h61819458 vs. DUT='h61810000
+    on index 151000: gold='h110000 vs. DUT='h800000
+    on index 151340: gold='h20000000 vs. DUT='h0
+    on index 159668: gold='h51f8 vs. DUT='hb3f2
+    on index 205180: gold='h100000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out53.xexe;687;686;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h1c79 vs. DUT='h7460d53
+1 miscompare(s) for 'mem':
+    on index 162544: gold='h86 vs. DUT='h66
+;codix_risc_platform_ca;./xexes/out54.xexe;845;844;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h1e vs. DUT='hfffffff4
+    on index 16: gold='h2 vs. DUT='h0
+    on index 18: gold='h1 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 151544: gold='h200000 vs. DUT='h0
+    on index 216584: gold='hff767e80 vs. DUT='hff767680
+    on index 281740: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out55.xexe;804;803;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h0 vs. DUT='hd491a047
+    on index 21: gold='h5 vs. DUT='hffffbd9f
+;codix_risc_platform_ca;./xexes/out56.xexe;785;784;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h1a vs. DUT='h0
+    on index 15: gold='h20 vs. DUT='h0
+7 miscompare(s) for 'mem':
+    on index 132208: gold='h20000000 vs. DUT='h8000000
+    on index 137664: gold='h48000000 vs. DUT='h20000000
+    on index 155544: gold='h7b84 vs. DUT='hc260
+    on index 212604: gold='h200000 vs. DUT='h21830000
+    on index 213116: gold='h200000 vs. DUT='h830000
+    on index 213176: gold='h9d000000 vs. DUT='he1000000
+    on index 223708: gold='h1a vs. DUT='hdf
+;codix_risc_platform_ca;./xexes/out57.xexe;815;814;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h1f684 vs. DUT='h1f685
+    on index 14: gold='h31d3c vs. DUT='h10000
+    on index 22: gold='h20 vs. DUT='h0
+    on index 24: gold='h20000000 vs. DUT='h221d2
+6 miscompare(s) for 'mem':
+    on index 232: gold='he8000 vs. DUT='h0
+    on index 134872: gold='h10000 vs. DUT='h0
+    on index 138244: gold='h20 vs. DUT='h0
+    on index 140716: gold='h20000000 vs. DUT='he0000000
+    on index 204092: gold='h1 vs. DUT='h0
+    on index 214780: gold='h100000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out58.xexe;756;755;fail
+2 miscompare(s) for 'mem':
+    on index 816: gold='h81096100 vs. DUT='h81090000
+    on index 215856: gold='h20 vs. DUT='h9
+;codix_risc_platform_ca;./xexes/out59.xexe;785;784;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h10000 vs. DUT='h0
+    on index 9: gold='h20 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 148456: gold='h91000000 vs. DUT='h81000000
+    on index 200996: gold='h0 vs. DUT='hffffffe0
+    on index 221372: gold='h0 vs. DUT='hffffffe0
+;codix_risc_platform_ca;./xexes/out60.xexe;829;828;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 432: gold='h55b6536d vs. DUT='h55b65300
+    on index 159488: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out61.xexe;690;689;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+6 miscompare(s) for 'mem':
+    on index 144568: gold='h20 vs. DUT='h0
+    on index 146580: gold='h1b0000 vs. DUT='h42000000
+    on index 152828: gold='h4000 vs. DUT='h0
+    on index 157104: gold='hf0000 vs. DUT='h0
+    on index 210368: gold='h4 vs. DUT='h0
+    on index 223224: gold='hdd90 vs. DUT='hdd8f
+;codix_risc_platform_ca;./xexes/out62.xexe;822;821;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 20: gold='h11 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 198216: gold='h0 vs. DUT='hc4c00000
+    on index 199912: gold='h0 vs. DUT='hdc
+    on index 200500: gold='h1a vs. DUT='h0
+    on index 209504: gold='h0 vs. DUT='hdc000000
+;codix_risc_platform_ca;./xexes/out63.xexe;896;895;fail
+5 miscompare(s) for 'mem':
+    on index 198464: gold='h4ca0 vs. DUT='h4c20
+    on index 198896: gold='hc0000 vs. DUT='hbe0000
+    on index 203024: gold='h7bbe0000 vs. DUT='h0
+    on index 204732: gold='heafa vs. DUT='h6268
+    on index 216692: gold='h0 vs. DUT='ha000
+;codix_risc_platform_ca;./xexes/out64.xexe;790;789;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h1 vs. DUT='h4d22
+;codix_risc_platform_ca;./xexes/out65.xexe;747;746;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 208: gold='hd0000 vs. DUT='h0
+    on index 212796: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out66.xexe;575;574;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h40 vs. DUT='h0
+    on index 15: gold='hfffe0002 vs. DUT='hfffe0000
+2 miscompare(s) for 'mem':
+    on index 220852: gold='h40 vs. DUT='h0
+    on index 222544: gold='h253d vs. DUT='h26d7
+;codix_risc_platform_ca;./xexes/out67.xexe;836;835;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 20: gold='h1 vs. DUT='h1c0
+2 miscompare(s) for 'mem':
+    on index 40: gold='h28000 vs. DUT='h20000
+    on index 224872: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out68.xexe;800;799;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h12 vs. DUT='h0
+    on index 9: gold='hfffe4a2a vs. DUT='h108e3df4
+    on index 10: gold='h20 vs. DUT='h0
+    on index 16: gold='h20 vs. DUT='h0
+    on index 23: gold='hfbfe263f vs. DUT='hfb8e77ff
+    on index 25: gold='hdda60 vs. DUT='h0
+    on index 27: gold='hfffe4a2a vs. DUT='h108e3df4
+5 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 137012: gold='h4 vs. DUT='h109077da
+    on index 155484: gold='h16 vs. DUT='h0
+    on index 206232: gold='h200000 vs. DUT='h0
+    on index 223820: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out69.xexe;683;682;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h20 vs. DUT='hfffffe60
+    on index 8: gold='h20 vs. DUT='hfffffe60
+    on index 15: gold='h0 vs. DUT='hffffffff
+    on index 20: gold='h0 vs. DUT='h20000
+    on index 23: gold='h13dc vs. DUT='h121c
+1 miscompare(s) for 'mem':
+    on index 139404: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out70.xexe;828;827;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h8000000 vs. DUT='h0
+    on index 17: gold='hf7ffffff vs. DUT='hffffffff
+    on index 18: gold='h80015e8 vs. DUT='h15e8
+    on index 27: gold='h5 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 268: gold='h81845300 vs. DUT='h0
+    on index 149960: gold='h20000000 vs. DUT='h0
+    on index 225092: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out71.xexe;914;913;fail
+4 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 146280: gold='h200000 vs. DUT='h0
+    on index 215080: gold='h20 vs. DUT='h0
+    on index 220920: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out72.xexe;671;670;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='hd vs. DUT='h5a1e0
+    on index 21: gold='hc4f3dca8 vs. DUT='hc4edd728
+;codix_risc_platform_ca;./xexes/out73.xexe;713;712;fail
+7 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 149680: gold='hff00022f vs. DUT='hff000215
+    on index 157520: gold='h110000 vs. DUT='h0
+    on index 157796: gold='h7e00000 vs. DUT='h8000000
+    on index 197216: gold='h1a vs. DUT='h0
+    on index 201416: gold='h7e0 vs. DUT='h800
+    on index 203404: gold='h2ffe0000 vs. DUT='h8cec0000
+;codix_risc_platform_ca;./xexes/out74.xexe;612;611;fail
+1 miscompare(s) for 'mem':
+    on index 138408: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out75.xexe;840;839;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hfffdfd74 vs. DUT='hfffdfb74
+    on index 27: gold='ha8d71ab4 vs. DUT='ha8d718b4
+6 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 153660: gold='h3a vs. DUT='h20
+    on index 158416: gold='hffffffed vs. DUT='hffffffe0
+    on index 200736: gold='h3a vs. DUT='h20
+    on index 211196: gold='h20 vs. DUT='hffe0
+    on index 214920: gold='h100 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out76.xexe;658;657;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='hffffd977 vs. DUT='hfffdf37b
+    on index 17: gold='h1a vs. DUT='h0
+    on index 21: gold='h8c50003a vs. DUT='h8c500020
+    on index 24: gold='h73afffc5 vs. DUT='h73afffdf
+1 miscompare(s) for 'mem':
+    on index 212412: gold='h57000000 vs. DUT='h5b000000
+;codix_risc_platform_ca;./xexes/out77.xexe;840;839;fail
+2 miscompare(s) for 'mem':
+    on index 136896: gold='h20 vs. DUT='h0
+    on index 148284: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out78.xexe;769;768;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h6cf2 vs. DUT='h6ce3
+    on index 8: gold='hc vs. DUT='h260
+    on index 9: gold='h11 vs. DUT='h0
+    on index 10: gold='h76e1 vs. DUT='h7485
+    on index 17: gold='h1 vs. DUT='h26e62
+    on index 18: gold='h20 vs. DUT='h0
+    on index 20: gold='h20 vs. DUT='h0
+    on index 22: gold='hdd vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 204564: gold='hffffe77f vs. DUT='h40d678e
+    on index 224864: gold='h110000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out79.xexe;721;720;fail
+4 miscompare(s) for 'mem':
+    on index 720: gold='h80866620 vs. DUT='h80860000
+    on index 141184: gold='h1a0000 vs. DUT='hf3430000
+    on index 143108: gold='h44040000 vs. DUT='h372d0000
+    on index 148124: gold='hffffae9d vs. DUT='hffffaebd
+;codix_risc_platform_ca;./xexes/out80.xexe;864;863;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h20 vs. DUT='h0
+    on index 20: gold='hfff30b9b vs. DUT='hfff30b7b
+2 miscompare(s) for 'mem':
+    on index 159988: gold='h5 vs. DUT='hffffbcc0
+    on index 162332: gold='h37 vs. DUT='h17
+;codix_risc_platform_ca;./xexes/out81.xexe;782;781;fail
+4 miscompare(s) for 'mem':
+    on index 138792: gold='h1 vs. DUT='hac27900a
+    on index 141232: gold='haeab vs. DUT='h2eb4
+    on index 151940: gold='h0 vs. DUT='h20000000
+    on index 157020: gold='hd16 vs. DUT='h2d16
+;codix_risc_platform_ca;./xexes/out82.xexe;797;796;fail
+2 miscompare(s) for 'mem':
+    on index 198580: gold='h6577 vs. DUT='h76a0
+    on index 206428: gold='h74 vs. DUT='h54
+;codix_risc_platform_ca;./xexes/out83.xexe;615;614;fail
+4 miscompare(s) for 'mem':
+    on index 504: gold='h828331a0 vs. DUT='h82833100
+    on index 760: gold='h38378371 vs. DUT='h0
+    on index 152872: gold='hffffa5d4 vs. DUT='hfffdb4d0
+    on index 211820: gold='h30 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out84.xexe;839;838;fail
+5 miscompare(s) for 'mem':
+    on index 304: gold='h68031f8c vs. DUT='h1f8c
+    on index 143132: gold='h281c61 vs. DUT='h100b5a0
+    on index 145376: gold='hed vs. DUT='had
+    on index 158308: gold='h940000 vs. DUT='h600000
+    on index 201312: gold='h5c98dce0 vs. DUT='h5818dce0
+;codix_risc_platform_ca;./xexes/out85.xexe;725;724;fail
+5 miscompare(s) for 'mem':
+    on index 156700: gold='h730000 vs. DUT='h5f0000
+    on index 158288: gold='h6bdf vs. DUT='h6bcb
+    on index 209680: gold='h7300 vs. DUT='h5f00
+    on index 221416: gold='h0 vs. DUT='h40000
+    on index 222936: gold='h20 vs. DUT='ha0
+;codix_risc_platform_ca;./xexes/out86.xexe;857;856;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='hb1500 vs. DUT='h30700
+2 miscompare(s) for 'mem':
+    on index 198056: gold='h8799e vs. DUT='h6b9e
+    on index 219868: gold='hffdf0000 vs. DUT='hffff0000
+;codix_risc_platform_ca;./xexes/out87.xexe;812;811;fail
+1 miscompare(s) for 'mem':
+    on index 227792: gold='he0df0000 vs. DUT='hf0000000
+;codix_risc_platform_ca;./xexes/out88.xexe;793;792;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h20 vs. DUT='h0
+    on index 18: gold='h2 vs. DUT='h34ef0000
+2 miscompare(s) for 'mem':
+    on index 104: gold='h68000 vs. DUT='h0
+    on index 696: gold='h4c3354b4 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out89.xexe;704;703;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h4ebf1441 vs. DUT='h4ebf1461
+    on index 16: gold='h10 vs. DUT='h41a0
+    on index 24: gold='he3040020 vs. DUT='he3040000
+1 miscompare(s) for 'mem':
+    on index 215388: gold='h14410000 vs. DUT='h14610000
+;codix_risc_platform_ca;./xexes/out90.xexe;834;833;fail
+4 miscompare(s) for 'mem':
+    on index 388: gold='h4048000 vs. DUT='h4040000
+    on index 556: gold='h4080020 vs. DUT='h20
+    on index 143372: gold='h7530 vs. DUT='h74f0
+    on index 151952: gold='hf00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out91.xexe;664;663;fail
+1 miscompare(s) for 'mem':
+    on index 884: gold='ha28ab5a0 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out92.xexe;802;801;fail
+3 miscompare(s) for 'mem':
+    on index 133660: gold='h92000000 vs. DUT='h78000000
+    on index 135668: gold='h8e00 vs. DUT='ha800
+    on index 148564: gold='h7 vs. DUT='h300
+;codix_risc_platform_ca;./xexes/out93.xexe;614;613;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h2f112f51 vs. DUT='h2f112f50
+    on index 12: gold='h2f112f71 vs. DUT='h2f112f70
+    on index 14: gold='h2f112f51 vs. DUT='h2f112f50
+    on index 27: gold='h0 vs. DUT='h1
+8 miscompare(s) for 'mem':
+    on index 144432: gold='h0 vs. DUT='hfb00
+    on index 148032: gold='h0 vs. DUT='h1
+    on index 200864: gold='h1 vs. DUT='h0
+    on index 208388: gold='h0 vs. DUT='h5a3e0000
+    on index 213468: gold='h257520 vs. DUT='h20
+    on index 220952: gold='h7e45 vs. DUT='h6b
+    on index 222660: gold='h200000 vs. DUT='h0
+    on index 223716: gold='h0 vs. DUT='hfb
+;codix_risc_platform_ca;./xexes/out94.xexe;757;756;fail
+4 miscompare(s) for 'mem':
+    on index 680: gold='hac0002e0 vs. DUT='h2e0
+    on index 153492: gold='h39f92 vs. DUT='h0
+    on index 205888: gold='h20 vs. DUT='h0
+    on index 227960: gold='h1a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out95.xexe;871;870;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h24142
+    on index 5: gold='h0 vs. DUT='h2d26
+    on index 10: gold='h0 vs. DUT='h26
+    on index 14: gold='he vs. DUT='h0
+    on index 15: gold='h2e vs. DUT='h20
+    on index 19: gold='he vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 556: gold='h4020020 vs. DUT='h0
+    on index 616: gold='h1884632 vs. DUT='h0
+    on index 145204: gold='h1a vs. DUT='h0
+    on index 214728: gold='h20000000 vs. DUT='h0
+    on index 222064: gold='h2e vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out96.xexe;933;932;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h24696 vs. DUT='h24683
+    on index 17: gold='h13 vs. DUT='h0
+    on index 23: gold='h2c93 vs. DUT='h2c80
+3 miscompare(s) for 'mem':
+    on index 592: gold='h80082cc0 vs. DUT='h0
+    on index 141976: gold='h232d vs. DUT='h224c
+    on index 203264: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out97.xexe;746;745;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 132500: gold='h1ffff vs. DUT='hfffff00c
+    on index 216660: gold='hf0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out98.xexe;808;807;fail
+1 miscompare(s) for 'mem':
+    on index 158560: gold='h64 vs. DUT='h44
+;codix_risc_platform_ca;./xexes/out99.xexe;673;672;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 21: gold='h20000 vs. DUT='h10000
+2 miscompare(s) for 'mem':
+    on index 152696: gold='h100000 vs. DUT='h0
+    on index 219908: gold='h1000000 vs. DUT='h1e000000
+;codix_risc_platform_ca;./xexes/out100.xexe;778;777;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h320
+    on index 8: gold='he vs. DUT='h800000
+13 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 468: gold='h19b6e6e2 vs. DUT='h0
+    on index 880: gold='h561ae8c vs. DUT='h561ae00
+    on index 131204: gold='h5 vs. DUT='h0
+    on index 138216: gold='h0 vs. DUT='h99300
+    on index 146532: gold='h74000000 vs. DUT='h34000000
+    on index 149236: gold='h200000 vs. DUT='h0
+    on index 153128: gold='h20000000 vs. DUT='h0
+    on index 210064: gold='h930000 vs. DUT='hd30000
+    on index 226796: gold='h0 vs. DUT='h5800
+    on index 226848: gold='h0 vs. DUT='h40
+    on index 228668: gold='hffffa762 vs. DUT='h20
+    on index 228892: gold='h8000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out101.xexe;879;878;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h22d02 vs. DUT='h22d10
+    on index 5: gold='h29460 vs. DUT='h2946e
+    on index 6: gold='h2ed81 vs. DUT='h2ed8f
+    on index 15: gold='h20 vs. DUT='h0
+    on index 21: gold='h1a vs. DUT='h20
+4 miscompare(s) for 'mem':
+    on index 150036: gold='h1a vs. DUT='h0
+    on index 198468: gold='h1a vs. DUT='h20
+    on index 214584: gold='h6638 vs. DUT='h84ac
+    on index 225816: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out102.xexe;905;904;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h2a7c vs. DUT='hffffffef
+    on index 12: gold='hfcec0080 vs. DUT='h10100
+    on index 14: gold='h2 vs. DUT='h11
+    on index 19: gold='h3fee vs. DUT='h3ffd
+1 miscompare(s) for 'mem':
+    on index 133140: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out103.xexe;887;886;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h10 vs. DUT='h20
+1 miscompare(s) for 'mem':
+    on index 157808: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out104.xexe;670;669;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h40 vs. DUT='h20
+    on index 7: gold='h420 vs. DUT='h20
+    on index 16: gold='h20 vs. DUT='h10000
+    on index 18: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 155140: gold='h2000 vs. DUT='h0
+    on index 215220: gold='h11000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out105.xexe;748;747;fail
+1 miscompare(s) for 'mem':
+    on index 146976: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out106.xexe;753;752;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h1fc3f vs. DUT='h2c320000
+    on index 11: gold='h20 vs. DUT='h0
+    on index 15: gold='h20 vs. DUT='h0
+    on index 24: gold='h17 vs. DUT='h20000
+    on index 25: gold='h20 vs. DUT='h0
+    on index 27: gold='h40000 vs. DUT='h0
+8 miscompare(s) for 'mem':
+    on index 364: gold='h1417e55f vs. DUT='h1417e500
+    on index 788: gold='h8289d280 vs. DUT='h8289d200
+    on index 141564: gold='h20000000 vs. DUT='hf4000000
+    on index 154868: gold='h20 vs. DUT='h4bf4
+    on index 163808: gold='h20000000 vs. DUT='h0
+    on index 206372: gold='h17 vs. DUT='h20000
+    on index 214100: gold='h20 vs. DUT='h0
+    on index 323472: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out107.xexe;744;743;fail
+1 miscompare(s) for 'mem':
+    on index 212904: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out108.xexe;676;675;fail
+2 miscompare(s) for 'mem':
+    on index 137248: gold='h1b2 vs. DUT='h40d
+    on index 160164: gold='h3fb3 vs. DUT='h3fa9
+;codix_risc_platform_ca;./xexes/out109.xexe;934;933;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h20 vs. DUT='h0
+    on index 8: gold='h20 vs. DUT='h0
+    on index 14: gold='h20 vs. DUT='h0
+9 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 504: gold='h594bf48 vs. DUT='hbf48
+    on index 644: gold='h4038000 vs. DUT='h0
+    on index 142748: gold='h20000000 vs. DUT='h0
+    on index 197396: gold='h12000000 vs. DUT='h40000000
+    on index 206700: gold='h20 vs. DUT='h0
+    on index 211664: gold='h20 vs. DUT='h0
+    on index 218640: gold='hc vs. DUT='h7960
+    on index 228936: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out110.xexe;822;821;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h12 vs. DUT='h240
+    on index 12: gold='h1a vs. DUT='h0
+8 miscompare(s) for 'mem':
+    on index 134124: gold='haeddde01 vs. DUT='h10fffe01
+    on index 140776: gold='h20 vs. DUT='h0
+    on index 157424: gold='h1a vs. DUT='h20
+    on index 200776: gold='h1 vs. DUT='h0
+    on index 201504: gold='hfff0 vs. DUT='hffff
+    on index 226128: gold='h1b vs. DUT='h41
+    on index 226280: gold='h99400000 vs. DUT='h0
+    on index 321368: gold='hf vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out111.xexe;748;747;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h5 vs. DUT='h20
+    on index 14: gold='hb21b vs. DUT='h473e0
+    on index 22: gold='h20 vs. DUT='h32
+2 miscompare(s) for 'mem':
+    on index 133920: gold='h200000 vs. DUT='h0
+    on index 150808: gold='h90ea0000 vs. DUT='h90e50000
+;codix_risc_platform_ca;./xexes/out112.xexe;561;560;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='he vs. DUT='h2
+4 miscompare(s) for 'mem':
+    on index 840: gold='h908721f8 vs. DUT='h908700f8
+    on index 157872: gold='h3faa vs. DUT='hffffc043
+    on index 158876: gold='h40000000 vs. DUT='h0
+    on index 221100: gold='h1e vs. DUT='h90
+;codix_risc_platform_ca;./xexes/out113.xexe;837;836;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h36a2 vs. DUT='h36a4
+    on index 21: gold='h597283df vs. DUT='h596f7480
+3 miscompare(s) for 'mem':
+    on index 141468: gold='he1 vs. DUT='h40
+    on index 143556: gold='h20 vs. DUT='h0
+    on index 214140: gold='h597283df vs. DUT='h596f7480
+;codix_risc_platform_ca;./xexes/out114.xexe;774;773;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hdda0 vs. DUT='hdce0
+    on index 9: gold='h20 vs. DUT='h0
+    on index 19: gold='h888980 vs. DUT='h20030
+    on index 23: gold='h88ac00 vs. DUT='h222b0
+    on index 26: gold='h40 vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 496: gold='h25ab9a24 vs. DUT='h0
+    on index 136820: gold='ha6c63fc0 vs. DUT='h1a543f80
+;codix_risc_platform_ca;./xexes/out115.xexe;785;784;fail
+2 miscompare(s) for 'mem':
+    on index 159020: gold='hff0000 vs. DUT='h0
+    on index 216672: gold='h0 vs. DUT='hedd8
+;codix_risc_platform_ca;./xexes/out116.xexe;770;769;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h29300000 vs. DUT='h0
+    on index 18: gold='h2 vs. DUT='h0
+    on index 24: gold='he vs. DUT='h22fbc
+3 miscompare(s) for 'mem':
+    on index 660: gold='h8304b680 vs. DUT='h83040080
+    on index 133060: gold='h1f vs. DUT='h20
+    on index 150956: gold='h50000 vs. DUT='h200000
+;codix_risc_platform_ca;./xexes/out117.xexe;645;644;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h4a vs. DUT='h20
+    on index 8: gold='h10 vs. DUT='h0
+    on index 13: gold='h6ebb vs. DUT='h7891
+    on index 16: gold='h4 vs. DUT='h0
+    on index 19: gold='h4 vs. DUT='h0
+    on index 22: gold='h3f2 vs. DUT='h400
+3 miscompare(s) for 'mem':
+    on index 524: gold='h20eda8c2 vs. DUT='h0
+    on index 568: gold='h38080001 vs. DUT='h1
+    on index 227160: gold='h5000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out118.xexe;740;739;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='hfff20041 vs. DUT='hfff20027
+    on index 10: gold='hfffffffa vs. DUT='hffffffe0
+    on index 24: gold='h5 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 624: gold='h8506aec0 vs. DUT='h0
+    on index 137164: gold='h72004000 vs. DUT='h71fc0000
+    on index 143904: gold='h1 vs. DUT='h2c6
+    on index 153180: gold='h5 vs. DUT='h0
+    on index 226484: gold='h1 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out119.xexe;765;764;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h2dee vs. DUT='h2dec
+    on index 21: gold='hfff94e94 vs. DUT='hffffffff
+2 miscompare(s) for 'mem':
+    on index 196700: gold='hee000000 vs. DUT='hec000000
+    on index 222776: gold='h9000000 vs. DUT='h1000000
+;codix_risc_platform_ca;./xexes/out120.xexe;855;854;fail
+5 miscompare(s) for 'mem':
+    on index 154632: gold='h0 vs. DUT='h30000
+    on index 209068: gold='h1000 vs. DUT='h0
+    on index 214184: gold='h0 vs. DUT='h3
+    on index 222576: gold='h20020 vs. DUT='h20
+    on index 223516: gold='hffa2 vs. DUT='h60ce
+;codix_risc_platform_ca;./xexes/out121.xexe;782;781;ok
+;codix_risc_platform_ca;./xexes/out122.xexe;777;776;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 26: gold='h1 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out123.xexe;745;744;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='he vs. DUT='h100
+3 miscompare(s) for 'mem':
+    on index 135056: gold='h20 vs. DUT='h0
+    on index 212204: gold='h3 vs. DUT='hfe
+    on index 221916: gold='h10000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out124.xexe;815;814;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h1f21 vs. DUT='h1f41
+    on index 9: gold='hf8a1c1ca vs. DUT='hf89a2f6a
+    on index 24: gold='hffffe0de vs. DUT='hffffe0be
+6 miscompare(s) for 'mem':
+    on index 812: gold='h9283b974 vs. DUT='h92830000
+    on index 140612: gold='h11 vs. DUT='h0
+    on index 162256: gold='h21 vs. DUT='h41
+    on index 198808: gold='h1100 vs. DUT='h0
+    on index 224044: gold='h10000 vs. DUT='h0
+    on index 228908: gold='h56240000 vs. DUT='h80040000
+;codix_risc_platform_ca;./xexes/out125.xexe;732;731;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 27: gold='h1d vs. DUT='h6
+1 miscompare(s) for 'mem':
+    on index 223268: gold='h3c vs. DUT='hfffc
+;codix_risc_platform_ca;./xexes/out126.xexe;709;708;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h888 vs. DUT='h883
+    on index 8: gold='h888 vs. DUT='h7d9b
+    on index 18: gold='h0 vs. DUT='h7d99
+2 miscompare(s) for 'mem':
+    on index 152540: gold='h200000 vs. DUT='h0
+    on index 208472: gold='h2000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out127.xexe;812;811;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h1026a45 vs. DUT='h26a65
+    on index 18: gold='h1026a45 vs. DUT='h26a65
+    on index 22: gold='h0 vs. DUT='h20
+6 miscompare(s) for 'mem':
+    on index 133984: gold='h3cce0 vs. DUT='hffffffe0
+    on index 137760: gold='h11 vs. DUT='hfdbf
+    on index 138764: gold='h1000000 vs. DUT='he6000000
+    on index 198124: gold='h20 vs. DUT='h0
+    on index 223692: gold='h0 vs. DUT='h20
+    on index 227340: gold='h0 vs. DUT='he3e90000
+;codix_risc_platform_ca;./xexes/out128.xexe;743;742;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h215a vs. DUT='h2172
+    on index 25: gold='h20 vs. DUT='h53
+2 miscompare(s) for 'mem':
+    on index 163224: gold='h20 vs. DUT='h0
+    on index 205644: gold='h60000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out129.xexe;873;872;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 136148: gold='h10000 vs. DUT='h200000
+    on index 157536: gold='h20 vs. DUT='hdaf
+;codix_risc_platform_ca;./xexes/out130.xexe;832;831;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='hffff91dd vs. DUT='hffff91cf
+    on index 15: gold='h1 vs. DUT='h0
+    on index 21: gold='he vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 139736: gold='hc vs. DUT='ha38
+    on index 219028: gold='h10000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out131.xexe;841;840;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h400b17 vs. DUT='h400b13
+    on index 7: gold='h0 vs. DUT='h10000
+    on index 22: gold='h404107 vs. DUT='h404102
+6 miscompare(s) for 'mem':
+    on index 134168: gold='h20 vs. DUT='hffffd660
+    on index 151984: gold='hff000000 vs. DUT='hba000000
+    on index 199336: gold='h0 vs. DUT='h81450000
+    on index 202152: gold='hb17 vs. DUT='hb13
+    on index 211756: gold='hb17 vs. DUT='hb13
+    on index 214560: gold='h0 vs. DUT='hcc0000
+;codix_risc_platform_ca;./xexes/out132.xexe;889;888;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h0 vs. DUT='ha
+    on index 18: gold='h12ce vs. DUT='ha12ce
+4 miscompare(s) for 'mem':
+    on index 948: gold='h890d8140 vs. DUT='h890d8100
+    on index 214396: gold='hd0000 vs. DUT='h890000
+    on index 219364: gold='he vs. DUT='h0
+    on index 227484: gold='h50000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out133.xexe;680;679;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 27: gold='h11 vs. DUT='h2104
+;codix_risc_platform_ca;./xexes/out134.xexe;875;874;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='hfffe4c55 vs. DUT='h4c57
+    on index 16: gold='hfffea936 vs. DUT='ha934
+2 miscompare(s) for 'mem':
+    on index 216720: gold='h0 vs. DUT='h20000000
+    on index 227144: gold='h11 vs. DUT='h4
+;codix_risc_platform_ca;./xexes/out135.xexe;680;679;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hffffffc0 vs. DUT='hffffffe0
+    on index 24: gold='h20 vs. DUT='h0
+9 miscompare(s) for 'mem':
+    on index 139628: gold='h68f90000 vs. DUT='h68790000
+    on index 145108: gold='h68f9 vs. DUT='h6879
+    on index 147268: gold='hfb680000 vs. DUT='hfbe80000
+    on index 158440: gold='h1 vs. DUT='hffffbec0
+    on index 199560: gold='hffffff8f vs. DUT='hf
+    on index 209716: gold='hfed90000 vs. DUT='hff4b0000
+    on index 214848: gold='hff8f0000 vs. DUT='hf0000
+    on index 217136: gold='h19b2 vs. DUT='h1997
+    on index 219724: gold='hfffffdbb vs. DUT='hfffffdf4
+;codix_risc_platform_ca;./xexes/out136.xexe;766;765;fail
+1 miscompare(s) for 'mem':
+    on index 133864: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out137.xexe;850;849;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h5 vs. DUT='h0
+    on index 7: gold='h20 vs. DUT='h6594
+    on index 11: gold='ha6082 vs. DUT='h89b9
+    on index 12: gold='h11 vs. DUT='h0
+    on index 14: gold='ha820 vs. DUT='h20
+    on index 16: gold='h540 vs. DUT='h0
+    on index 22: gold='h2a vs. DUT='h0
+    on index 24: gold='h20 vs. DUT='h0
+11 miscompare(s) for 'mem':
+    on index 500: gold='h5477a8d9 vs. DUT='ha8d9
+    on index 712: gold='h5556a546 vs. DUT='h0
+    on index 136500: gold='ha6082 vs. DUT='h89b9
+    on index 158796: gold='ha3c6c vs. DUT='h65b4
+    on index 201208: gold='h11 vs. DUT='h0
+    on index 201228: gold='h11 vs. DUT='h0
+    on index 203068: gold='h200000 vs. DUT='h940000
+    on index 216132: gold='h11 vs. DUT='h0
+    on index 218968: gold='h400000 vs. DUT='h0
+    on index 223516: gold='h5 vs. DUT='h0
+    on index 322852: gold='h10 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out138.xexe;701;700;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hc7307aa0 vs. DUT='hc7307aaf
+    on index 9: gold='hc000002c vs. DUT='haa220
+    on index 20: gold='h20 vs. DUT='h0
+    on index 22: gold='h3fffff83 vs. DUT='hfff54d0f
+2 miscompare(s) for 'mem':
+    on index 134256: gold='h1 vs. DUT='h59d6
+    on index 158796: gold='hffff818b vs. DUT='ha0
+;codix_risc_platform_ca;./xexes/out139.xexe;832;831;ok
+;codix_risc_platform_ca;./xexes/out140.xexe;681;680;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h10 vs. DUT='h0
+    on index 21: gold='h6 vs. DUT='h4f
+    on index 27: gold='h1a vs. DUT='h20
+9 miscompare(s) for 'mem':
+    on index 596: gold='h19fc2e6e vs. DUT='h19002e6e
+    on index 132292: gold='hf00 vs. DUT='had00
+    on index 136672: gold='h1d vs. DUT='hd84f
+    on index 143548: gold='ha100 vs. DUT='ha000
+    on index 157920: gold='h25e88 vs. DUT='h1116060
+    on index 158728: gold='h20 vs. DUT='h0
+    on index 159288: gold='h3000000 vs. DUT='h9000000
+    on index 202804: gold='h9 vs. DUT='h42cda3
+    on index 217368: gold='h25e88 vs. DUT='h1116060
+;codix_risc_platform_ca;./xexes/out141.xexe;842;841;fail
+2 miscompare(s) for 'mem':
+    on index 153960: gold='h1000 vs. DUT='h1100
+    on index 226720: gold='h4100 vs. DUT='h4000
+;codix_risc_platform_ca;./xexes/out142.xexe;616;615;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h20 vs. DUT='h0
+    on index 8: gold='h11 vs. DUT='h20000
+    on index 19: gold='h12016 vs. DUT='h11ff6
+    on index 23: gold='h20040 vs. DUT='h20020
+5 miscompare(s) for 'mem':
+    on index 155324: gold='h20 vs. DUT='h21a2c
+    on index 215732: gold='h20 vs. DUT='h0
+    on index 217192: gold='hb11b vs. DUT='hb0fb
+    on index 220080: gold='h20 vs. DUT='h0
+    on index 294840: gold='h20 vs. DUT='h21a2c
+;codix_risc_platform_ca;./xexes/out143.xexe;775;774;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h1a vs. DUT='h0
+    on index 25: gold='h48 vs. DUT='hffffff98
+    on index 27: gold='hfffaa848 vs. DUT='hfffac998
+4 miscompare(s) for 'mem':
+    on index 142712: gold='h4000000 vs. DUT='h9c000000
+    on index 143320: gold='h20000 vs. DUT='h0
+    on index 204476: gold='hde vs. DUT='h18
+    on index 282408: gold='h1b vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out144.xexe;797;796;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 25: gold='h20 vs. DUT='h10000
+3 miscompare(s) for 'mem':
+    on index 144392: gold='h4 vs. DUT='h0
+    on index 199568: gold='h1 vs. DUT='h0
+    on index 202656: gold='h2100 vs. DUT='h8100
+;codix_risc_platform_ca;./xexes/out145.xexe;767;766;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='hb vs. DUT='h0
+    on index 12: gold='h2d vs. DUT='h20
+    on index 13: gold='h5e3a4 vs. DUT='h0
+    on index 18: gold='h87ba800 vs. DUT='h87b7000
+    on index 19: gold='he9a3d800 vs. DUT='he1499000
+    on index 20: gold='he5390 vs. DUT='h0
+    on index 22: gold='hffff8315 vs. DUT='h20300
+    on index 24: gold='h20 vs. DUT='hc0
+5 miscompare(s) for 'mem':
+    on index 142348: gold='h20 vs. DUT='h40
+    on index 142360: gold='he vs. DUT='h0
+    on index 142572: gold='h10000 vs. DUT='h0
+    on index 214992: gold='h200000 vs. DUT='h0
+    on index 225212: gold='he vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out146.xexe;857;856;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h20 vs. DUT='h0
+    on index 14: gold='h10 vs. DUT='hffffffe0
+;codix_risc_platform_ca;./xexes/out147.xexe;847;846;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h4 vs. DUT='hffff9bd0
+    on index 9: gold='h53e7818 vs. DUT='hffffc620
+    on index 11: gold='h50f00032 vs. DUT='h50f00020
+    on index 12: gold='h4543e0 vs. DUT='h6543c0
+    on index 15: gold='h53f77f8 vs. DUT='hc600
+    on index 16: gold='ha22ac1ce vs. DUT='ha24ac1ae
+    on index 20: gold='h12ec6ea0 vs. DUT='h12f37a00
+    on index 27: gold='h5dd53e32 vs. DUT='h5db53e52
+10 miscompare(s) for 'mem':
+    on index 280: gold='hd794817 vs. DUT='h0
+    on index 131200: gold='h0 vs. DUT='h20
+    on index 134912: gold='hd0000000 vs. DUT='h14f40
+    on index 136060: gold='h20 vs. DUT='h0
+    on index 147144: gold='hd7c7559d vs. DUT='hd778445d
+    on index 154568: gold='hc3570000 vs. DUT='h3c210000
+    on index 156816: gold='h40e5 vs. DUT='h6fc1
+    on index 161144: gold='h2a1f vs. DUT='h2a1e
+    on index 222300: gold='hfb0000 vs. DUT='hf60000
+    on index 227828: gold='hd8cdbf57 vs. DUT='hd8d037e1
+;codix_risc_platform_ca;./xexes/out148.xexe;777;776;ok
+;codix_risc_platform_ca;./xexes/out149.xexe;824;823;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='he vs. DUT='h0
+    on index 22: gold='h2894 vs. DUT='h28a2
+4 miscompare(s) for 'mem':
+    on index 131988: gold='h380000 vs. DUT='hffa70000
+    on index 152464: gold='h2894 vs. DUT='h28a2
+    on index 199988: gold='h0 vs. DUT='ha6
+    on index 215908: gold='h11000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out150.xexe;876;875;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h10 vs. DUT='h0
+    on index 24: gold='hffffffe6 vs. DUT='hffff0000
+    on index 26: gold='h1a4e vs. DUT='h1a3e
+2 miscompare(s) for 'mem':
+    on index 272: gold='h38038001 vs. DUT='h0
+    on index 209824: gold='h1a00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out151.xexe;572;571;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='hffd5 vs. DUT='hffdf
+6 miscompare(s) for 'mem':
+    on index 138216: gold='h1 vs. DUT='h0
+    on index 149692: gold='hd500 vs. DUT='hdf00
+    on index 152764: gold='h1e440031 vs. DUT='h1e440020
+    on index 159560: gold='h1a0000 vs. DUT='h0
+    on index 204984: gold='hc881a323 vs. DUT='hc8817bdb
+    on index 219484: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out152.xexe;864;863;ok
+;codix_risc_platform_ca;./xexes/out153.xexe;678;677;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h11 vs. DUT='h4300
+3 miscompare(s) for 'mem':
+    on index 133200: gold='h1000000 vs. DUT='h40000000
+    on index 157932: gold='h5 vs. DUT='h0
+    on index 222972: gold='h110000 vs. DUT='h6d960000
+;codix_risc_platform_ca;./xexes/out154.xexe;689;688;fail
+2 miscompare(s) for 'mem':
+    on index 196992: gold='h10f6f vs. DUT='h10f4f
+    on index 200320: gold='hffffffe0 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out155.xexe;693;692;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h20 vs. DUT='h0
+    on index 24: gold='h1a vs. DUT='hffffffdf
+2 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 206968: gold='h1000000 vs. DUT='h2a000000
+;codix_risc_platform_ca;./xexes/out156.xexe;859;858;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h32cc1 vs. DUT='h362f0000
+    on index 9: gold='hc8f40cf6 vs. DUT='hc8f40cdc
+    on index 17: gold='hf vs. DUT='h10000
+    on index 18: gold='h4401c732 vs. DUT='h4401c74c
+    on index 22: gold='hfffc0cf6 vs. DUT='hfffc0cdc
+1 miscompare(s) for 'mem':
+    on index 884: gold='h918b3a75 vs. DUT='h91003a75
+;codix_risc_platform_ca;./xexes/out157.xexe;713;712;ok
+;codix_risc_platform_ca;./xexes/out158.xexe;798;797;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hffffaad2 vs. DUT='h1637
+    on index 5: gold='hfffff30f vs. DUT='h4320
+    on index 20: gold='h20 vs. DUT='hffffbf5f
+    on index 23: gold='h1a vs. DUT='h0
+    on index 27: gold='h5 vs. DUT='h4320
+5 miscompare(s) for 'mem':
+    on index 133436: gold='h1 vs. DUT='h40a0
+    on index 136740: gold='he500 vs. DUT='h0
+    on index 145984: gold='h200000 vs. DUT='h0
+    on index 159964: gold='h161b vs. DUT='h56ba
+    on index 205668: gold='h2926 vs. DUT='h2906
+;codix_risc_platform_ca;./xexes/out159.xexe;881;880;fail
+3 miscompare(s) for 'mem':
+    on index 157028: gold='h7b9a vs. DUT='h8b74
+    on index 162728: gold='h0 vs. DUT='he0000
+    on index 163624: gold='h1a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out160.xexe;774;773;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h1a vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 134232: gold='hec000000 vs. DUT='he0000000
+    on index 146072: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out161.xexe;761;760;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h20000 vs. DUT='h5b800000
+    on index 12: gold='h20000 vs. DUT='h5b800000
+    on index 16: gold='h3 vs. DUT='h0
+    on index 23: gold='h7 vs. DUT='hffffbfa0
+2 miscompare(s) for 'mem':
+    on index 280: gold='h25496238 vs. DUT='h0
+    on index 160212: gold='h62e7 vs. DUT='h254b8
+;codix_risc_platform_ca;./xexes/out162.xexe;841;840;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hced80520 vs. DUT='hced13f60
+    on index 12: gold='h4006bf0 vs. DUT='h4006bd0
+    on index 13: gold='h20 vs. DUT='h60
+7 miscompare(s) for 'mem':
+    on index 135772: gold='h0 vs. DUT='h14000000
+    on index 148432: gold='h5885 vs. DUT='h5884
+    on index 159856: gold='h850000 vs. DUT='h840000
+    on index 197524: gold='hcf000000 vs. DUT='hef000000
+    on index 216004: gold='h20 vs. DUT='h0
+    on index 218564: gold='h20 vs. DUT='h0
+    on index 222948: gold='h9000000 vs. DUT='h11000000
+;codix_risc_platform_ca;./xexes/out163.xexe;820;819;fail
+1 miscompare(s) for 'mem':
+    on index 142724: gold='h6f00 vs. DUT='h800
+;codix_risc_platform_ca;./xexes/out164.xexe;636;635;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h3f0e vs. DUT='h3efd
+    on index 18: gold='h11 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 205116: gold='h5 vs. DUT='h0
+    on index 223844: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out165.xexe;848;847;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h1009f vs. DUT='h130021
+    on index 8: gold='hfffefff1 vs. DUT='hfffcffff
+    on index 10: gold='h70 vs. DUT='h100000
+    on index 20: gold='h15d9 vs. DUT='h215cb
+    on index 22: gold='he vs. DUT='h20000
+    on index 25: gold='h1015d9 vs. DUT='h1215cb
+3 miscompare(s) for 'mem':
+    on index 133892: gold='h66000000 vs. DUT='h46000000
+    on index 160908: gold='h660000 vs. DUT='h460000
+    on index 161216: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out166.xexe;898;897;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h20 vs. DUT='h60
+    on index 6: gold='h10 vs. DUT='h0
+    on index 24: gold='h20000000 vs. DUT='h60000000
+2 miscompare(s) for 'mem':
+    on index 768: gold='h38070002 vs. DUT='h70002
+    on index 223016: gold='h100000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out167.xexe;729;728;ok
+;codix_risc_platform_ca;./xexes/out168.xexe;829;828;fail
+3 miscompare(s) for 'mem':
+    on index 135188: gold='hfffffff0 vs. DUT='hffffffe0
+    on index 155580: gold='he0000 vs. DUT='h1a00000
+    on index 200588: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out169.xexe;923;922;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h0 vs. DUT='hffffffc0
+    on index 20: gold='h0 vs. DUT='h90da1dc1
+2 miscompare(s) for 'mem':
+    on index 155672: gold='h15 vs. DUT='h0
+    on index 204396: gold='hffffbf7b vs. DUT='hffffbf90
+;codix_risc_platform_ca;./xexes/out170.xexe;864;863;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='hb480
+    on index 4: gold='h217b vs. DUT='hd5db
+    on index 6: gold='h20 vs. DUT='hb480
+    on index 16: gold='h20 vs. DUT='hb480
+    on index 17: gold='h4fea65ba vs. DUT='hfe7562fa
+;codix_risc_platform_ca;./xexes/out171.xexe;758;757;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h5 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 155796: gold='h40 vs. DUT='h20
+    on index 201492: gold='heb590000 vs. DUT='heb190000
+    on index 221244: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out172.xexe;885;884;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out173.xexe;691;690;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 25: gold='hffdf288b vs. DUT='hffffe9cb
+    on index 27: gold='h20d170 vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 197592: gold='hfffe000e vs. DUT='hfffe0000
+    on index 209784: gold='h1a0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out174.xexe;612;611;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h12 vs. DUT='hffbffd2c
+    on index 11: gold='hffffd08e vs. DUT='hffffcf6a
+    on index 15: gold='hd0fd2978 vs. DUT='hffe759e0
+    on index 23: gold='hffffffed vs. DUT='h2d3
+3 miscompare(s) for 'mem':
+    on index 133780: gold='hddfd vs. DUT='hddef
+    on index 135040: gold='hffffffed vs. DUT='h2d3
+    on index 136760: gold='hed vs. DUT='hd3
+;codix_risc_platform_ca;./xexes/out175.xexe;759;758;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h2 vs. DUT='h4
+1 miscompare(s) for 'mem':
+    on index 140752: gold='h0 vs. DUT='h200000
+;codix_risc_platform_ca;./xexes/out176.xexe;733;732;fail
+1 miscompare(s) for 'mem':
+    on index 104: gold='h68000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out177.xexe;883;882;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h20 vs. DUT='hffffbe3f
+    on index 20: gold='hffffffdf vs. DUT='h41c0
+3 miscompare(s) for 'mem':
+    on index 372: gold='h880582a0 vs. DUT='h88050000
+    on index 200076: gold='h0 vs. DUT='hffff0000
+    on index 218536: gold='h32 vs. DUT='h12
+;codix_risc_platform_ca;./xexes/out178.xexe;667;666;fail
+2 miscompare(s) for 'mem':
+    on index 151720: gold='h5 vs. DUT='hffffffdf
+    on index 228052: gold='h0 vs. DUT='h2848
+;codix_risc_platform_ca;./xexes/out179.xexe;767;766;fail
+2 miscompare(s) for 'mem':
+    on index 133420: gold='h20 vs. DUT='h0
+    on index 224424: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out180.xexe;840;839;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h11 vs. DUT='h7278
+    on index 14: gold='hec5207e0 vs. DUT='h4587bfe0
+    on index 22: gold='h11 vs. DUT='h7278
+    on index 23: gold='h11 vs. DUT='h7278
+    on index 25: gold='hfff7af9b vs. DUT='hd57a1428
+6 miscompare(s) for 'mem':
+    on index 132736: gold='h5 vs. DUT='h0
+    on index 145336: gold='h4c61 vs. DUT='h4c41
+    on index 151368: gold='h0 vs. DUT='he38fffcb
+    on index 161464: gold='h95000000 vs. DUT='h35000000
+    on index 215208: gold='h1100 vs. DUT='h7800
+    on index 327104: gold='hd60000 vs. DUT='hb60000
+;codix_risc_platform_ca;./xexes/out181.xexe;855;854;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h10 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 155008: gold='hfffdfedf vs. DUT='hfffdfbdf
+    on index 207828: gold='hf0000 vs. DUT='h0
+    on index 227756: gold='hfffff16c vs. DUT='hfffff15c
+;codix_risc_platform_ca;./xexes/out182.xexe;769;768;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h9 vs. DUT='h411d0169
+    on index 14: gold='h20 vs. DUT='h0
+    on index 21: gold='h1d5b vs. DUT='h1d7b
+    on index 23: gold='hffffffe0 vs. DUT='hbee00000
+    on index 26: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out183.xexe;857;856;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='hfffff3dc vs. DUT='hfffff3bc
+    on index 27: gold='hffffd39e vs. DUT='hffffd37e
+5 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 139800: gold='hf3dc vs. DUT='hf3bc
+    on index 140264: gold='hf3dc vs. DUT='hf3bc
+    on index 146392: gold='hdc vs. DUT='hbc
+    on index 199664: gold='hdc0000 vs. DUT='hbc0000
+;codix_risc_platform_ca;./xexes/out184.xexe;866;865;fail
+6 miscompare(s) for 'mem':
+    on index 392: gold='hac000140 vs. DUT='h140
+    on index 131420: gold='hdfe0 vs. DUT='h2fe0
+    on index 141840: gold='h20 vs. DUT='h0
+    on index 143284: gold='h42000000 vs. DUT='h24000000
+    on index 163136: gold='h11d181e vs. DUT='h325789b6
+    on index 212124: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out185.xexe;770;769;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h0 vs. DUT='hf63f6300
+    on index 13: gold='h5 vs. DUT='h20020
+    on index 24: gold='h0 vs. DUT='h20020
+1 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out186.xexe;805;804;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='he vs. DUT='hffffff60
+2 miscompare(s) for 'mem':
+    on index 222740: gold='h21e0 vs. DUT='h46e0
+    on index 228476: gold='hf000 vs. DUT='hc800
+;codix_risc_platform_ca;./xexes/out187.xexe;862;861;fail
+5 miscompare(s) for 'mem':
+    on index 134628: gold='h20 vs. DUT='h0
+    on index 159368: gold='h200000 vs. DUT='h0
+    on index 207872: gold='h6435 vs. DUT='h6431
+    on index 208172: gold='h8000 vs. DUT='h2000
+    on index 225948: gold='h0 vs. DUT='hfff0
+;codix_risc_platform_ca;./xexes/out188.xexe;791;790;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='hf vs. DUT='h120
+4 miscompare(s) for 'mem':
+    on index 292: gold='h38090001 vs. DUT='h38090000
+    on index 160112: gold='h5000000 vs. DUT='h0
+    on index 208420: gold='h5 vs. DUT='h0
+    on index 224396: gold='h0 vs. DUT='h40a00000
+;codix_risc_platform_ca;./xexes/out189.xexe;809;808;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 20: gold='h100000 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 792: gold='hac000120 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out190.xexe;857;856;fail
+4 miscompare(s) for 'mem':
+    on index 139836: gold='h200000 vs. DUT='h0
+    on index 142632: gold='h5 vs. DUT='h0
+    on index 155028: gold='h500 vs. DUT='h0
+    on index 198640: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out191.xexe;600;599;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='h11 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out192.xexe;882;881;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='he vs. DUT='h2c0
+    on index 23: gold='h20 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 214008: gold='hc8 vs. DUT='h92
+    on index 223944: gold='h11 vs. DUT='h0
+    on index 224928: gold='he827cfc8 vs. DUT='he8271792
+    on index 225292: gold='hf vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out193.xexe;945;944;fail
+3 miscompare(s) for 'mem':
+    on index 139912: gold='h0 vs. DUT='hfd400000
+    on index 212936: gold='he000000 vs. DUT='h0
+    on index 226532: gold='h250000 vs. DUT='ha50000
+;codix_risc_platform_ca;./xexes/out194.xexe;819;818;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='hfff008c1 vs. DUT='hfff00958
+3 miscompare(s) for 'mem':
+    on index 151676: gold='h200 vs. DUT='h700
+    on index 209012: gold='hdf51c vs. DUT='hdf480
+    on index 212004: gold='hffe00000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out195.xexe;861;860;ok
+;codix_risc_platform_ca;./xexes/out196.xexe;605;604;fail
+2 miscompare(s) for 'mem':
+    on index 158912: gold='h20 vs. DUT='h0
+    on index 213924: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out197.xexe;821;820;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h62a vs. DUT='h628
+;codix_risc_platform_ca;./xexes/out198.xexe;862;861;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h25 vs. DUT='h66a
+    on index 12: gold='hc0c78 vs. DUT='h225385e
+;codix_risc_platform_ca;./xexes/out199.xexe;728;727;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h1 vs. DUT='hffffffe2
+    on index 17: gold='h10001 vs. DUT='hffffffe2
+    on index 18: gold='h500000 vs. DUT='he6000000
+    on index 26: gold='h500000 vs. DUT='he6000000
+2 miscompare(s) for 'mem':
+    on index 360: gold='h4030020 vs. DUT='h30020
+    on index 152604: gold='h1a000000 vs. DUT='h20000000
+;codix_risc_platform_ca;./xexes/out200.xexe;659;658;fail
+4 miscompare(s) for 'mem':
+    on index 820: gold='h40b0000 vs. DUT='h0
+    on index 158264: gold='h1a0000 vs. DUT='h0
+    on index 207916: gold='h7b5a vs. DUT='h7b40
+    on index 221288: gold='h5a000000 vs. DUT='h40000000
+;codix_risc_platform_ca;./xexes/out201.xexe;780;779;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h1a vs. DUT='h0
+    on index 11: gold='h6f0e vs. DUT='h26ef4
+    on index 20: gold='h6b0e vs. DUT='h26af4
+    on index 23: gold='h3a84e vs. DUT='h0
+    on index 25: gold='h1a vs. DUT='h0
+    on index 27: gold='hffffffe5 vs. DUT='hffffffff
+1 miscompare(s) for 'mem':
+    on index 176: gold='hb0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out202.xexe;818;817;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='hb45e vs. DUT='hb439
+    on index 20: gold='hffff09f0 vs. DUT='hffff09cb
+5 miscompare(s) for 'mem':
+    on index 147748: gold='hd vs. DUT='h2a8c
+    on index 149724: gold='he7000000 vs. DUT='hc2000000
+    on index 207416: gold='h5 vs. DUT='h20
+    on index 222136: gold='ha437 vs. DUT='h4ae9
+    on index 225748: gold='hde7 vs. DUT='hdc2
+;codix_risc_platform_ca;./xexes/out203.xexe;694;693;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h1 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 131724: gold='hc vs. DUT='h0
+    on index 133500: gold='h100 vs. DUT='h0
+    on index 135508: gold='hf vs. DUT='h0
+    on index 145440: gold='hfe0000 vs. DUT='hc00000
+;codix_risc_platform_ca;./xexes/out204.xexe;850;849;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h5 vs. DUT='h0
+    on index 19: gold='h20 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 161220: gold='h8000 vs. DUT='ha000
+    on index 202556: gold='h35000000 vs. DUT='h31000000
+    on index 212228: gold='he5f13d03 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out205.xexe;854;853;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h1a vs. DUT='h0
+    on index 18: gold='h5 vs. DUT='h10000
+    on index 23: gold='hf vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 138388: gold='he2 vs. DUT='h23
+;codix_risc_platform_ca;./xexes/out206.xexe;724;723;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h7d4d vs. DUT='hffffffdd
+    on index 19: gold='h1a vs. DUT='h29
+    on index 20: gold='h0 vs. DUT='h10000
+    on index 27: gold='h1b vs. DUT='hffffffd7
+1 miscompare(s) for 'mem':
+    on index 160340: gold='h10000 vs. DUT='hbd7f0000
+;codix_risc_platform_ca;./xexes/out207.xexe;893;892;fail
+1 miscompare(s) for 'mem':
+    on index 135204: gold='hd3ad0000 vs. DUT='hd3cd0000
+;codix_risc_platform_ca;./xexes/out208.xexe;922;921;fail
+4 miscompare(s) for 'mem':
+    on index 206524: gold='h20 vs. DUT='h0
+    on index 207820: gold='ha0ef vs. DUT='h1cb4b
+    on index 220640: gold='h4a0000 vs. DUT='h1c0000
+    on index 223808: gold='h11000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out209.xexe;731;730;fail
+1 miscompare(s) for 'mem':
+    on index 137208: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out210.xexe;837;836;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hffffffe0 vs. DUT='hfffeb698
+    on index 10: gold='h35e0 vs. DUT='h3488
+    on index 19: gold='h20 vs. DUT='h14968
+    on index 21: gold='hffffffe0 vs. DUT='hfffeb698
+2 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 133028: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out211.xexe;675;674;ok
+;codix_risc_platform_ca;./xexes/out212.xexe;744;743;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h0 vs. DUT='h4320
+4 miscompare(s) for 'mem':
+    on index 158068: gold='he vs. DUT='h0
+    on index 161612: gold='he0000 vs. DUT='h0
+    on index 209732: gold='h20000000 vs. DUT='h0
+    on index 210836: gold='h1e vs. DUT='h5
+;codix_risc_platform_ca;./xexes/out213.xexe;759;758;ok
+;codix_risc_platform_ca;./xexes/out214.xexe;607;606;fail
+13 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hfffffff5 vs. DUT='h20000
+    on index 5: gold='hffffffe0 vs. DUT='h7b713db8
+    on index 6: gold='h0 vs. DUT='h7b713db8
+    on index 8: gold='h5 vs. DUT='h0
+    on index 9: gold='h20000 vs. DUT='h1
+    on index 10: gold='hc248 vs. DUT='h20
+    on index 11: gold='h3fffff vs. DUT='h152f5
+    on index 14: gold='h10000 vs. DUT='h0
+    on index 19: gold='h2052a vs. DUT='h2051f
+    on index 21: gold='h0 vs. DUT='hfffdffff
+    on index 23: gold='h1f vs. DUT='hfffeffef
+    on index 24: gold='h1f vs. DUT='hfffeffef
+    on index 25: gold='hab21ffe0 vs. DUT='h26933db8
+5 miscompare(s) for 'mem':
+    on index 184: gold='hb8000 vs. DUT='hb0000
+    on index 844: gold='h4038000 vs. DUT='h8000
+    on index 225972: gold='hc248 vs. DUT='h20
+    on index 295072: gold='h3fc5e2bc vs. DUT='h3fc6629c
+    on index 314744: gold='h1 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out215.xexe;689;688;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h0
+    on index 16: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 496: gold='h9285ca59 vs. DUT='h92850000
+;codix_risc_platform_ca;./xexes/out216.xexe;822;821;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='he vs. DUT='hfffdb757
+1 miscompare(s) for 'mem':
+    on index 148772: gold='h620000 vs. DUT='h500000
+;codix_risc_platform_ca;./xexes/out217.xexe;811;810;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h1a vs. DUT='h0
+    on index 16: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 135660: gold='hf vs. DUT='hffff0000
+;codix_risc_platform_ca;./xexes/out218.xexe;725;724;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h7721 vs. DUT='h7720
+    on index 7: gold='h2535c vs. DUT='h25366
+    on index 11: gold='h2 vs. DUT='hffffffd4
+    on index 12: gold='h4826 vs. DUT='h4854
+    on index 16: gold='h0 vs. DUT='h20
+    on index 18: gold='h272b1 vs. DUT='h272bf
+    on index 20: gold='h1 vs. DUT='h0
+    on index 22: gold='h20 vs. DUT='h0
+7 miscompare(s) for 'mem':
+    on index 548: gold='h848db600 vs. DUT='h848d0000
+    on index 552: gold='h918d3a75 vs. DUT='h918d3a00
+    on index 149112: gold='h1a0000 vs. DUT='h200000
+    on index 154296: gold='hdef9fd9 vs. DUT='hdef9fdb
+    on index 200300: gold='h1 vs. DUT='h0
+    on index 207496: gold='h5c000000 vs. DUT='h66000000
+    on index 223004: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out219.xexe;742;741;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h10 vs. DUT='h0
+    on index 13: gold='hffc0 vs. DUT='h16d350c0
+    on index 22: gold='h5 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 213696: gold='h40 vs. DUT='h9280
+    on index 228856: gold='h500 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out220.xexe;842;841;fail
+1 miscompare(s) for 'mem':
+    on index 153736: gold='h6e vs. DUT='hbc
+;codix_risc_platform_ca;./xexes/out221.xexe;664;663;fail
+1 miscompare(s) for 'mem':
+    on index 215880: gold='h2000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out222.xexe;860;859;ok
+;codix_risc_platform_ca;./xexes/out223.xexe;706;705;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='hf vs. DUT='hffffffff
+    on index 19: gold='hfd328360 vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 205496: gold='h5 vs. DUT='h0
+    on index 210608: gold='h200000 vs. DUT='hf20000
+;codix_risc_platform_ca;./xexes/out224.xexe;786;785;fail
+3 miscompare(s) for 'mem':
+    on index 135044: gold='h2 vs. DUT='h0
+    on index 158300: gold='h20 vs. DUT='h0
+    on index 222444: gold='h570000 vs. DUT='h49c0000
+;codix_risc_platform_ca;./xexes/out225.xexe;856;855;fail
+4 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 155096: gold='h110000 vs. DUT='h0
+    on index 196708: gold='h11 vs. DUT='h0
+    on index 303140: gold='h98 vs. DUT='hfe
+;codix_risc_platform_ca;./xexes/out226.xexe;885;884;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h2 vs. DUT='hffffb1ac
+    on index 8: gold='h847c vs. DUT='h84b0
+    on index 19: gold='hffff7b64 vs. DUT='hffff7b30
+    on index 23: gold='h849c vs. DUT='h84d0
+    on index 26: gold='h8558 vs. DUT='h8524
+4 miscompare(s) for 'mem':
+    on index 136036: gold='hfffc0000 vs. DUT='hffae0000
+    on index 149812: gold='hafdc0000 vs. DUT='hdac0000
+    on index 214216: gold='h1ff9e vs. DUT='hffffa180
+    on index 225076: gold='hffff18c8 vs. DUT='h4e4f
+;codix_risc_platform_ca;./xexes/out227.xexe;742;741;ok
+;codix_risc_platform_ca;./xexes/out228.xexe;836;835;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h1a vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 208668: gold='hce1 vs. DUT='hcd1
+    on index 220072: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out229.xexe;800;799;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h3 vs. DUT='h0
+    on index 11: gold='hffffef64 vs. DUT='h266e
+    on index 12: gold='h8778d065 vs. DUT='h0
+    on index 17: gold='h3 vs. DUT='h0
+    on index 19: gold='hdec8aa4e vs. DUT='h4cdd4d4e
+    on index 20: gold='h20 vs. DUT='h4cdd4d4e
+    on index 24: gold='hffffffe0 vs. DUT='hb322b2b2
+1 miscompare(s) for 'mem':
+    on index 154844: gold='h30000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out230.xexe;916;915;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h20020 vs. DUT='h20040
+    on index 15: gold='h20 vs. DUT='h0
+    on index 19: gold='hfff2 vs. DUT='h20
+    on index 21: gold='he vs. DUT='h10000
+10 miscompare(s) for 'mem':
+    on index 588: gold='ha9800060 vs. DUT='h0
+    on index 696: gold='h70c79391 vs. DUT='hc79391
+    on index 135356: gold='h4c7b vs. DUT='h4c5b
+    on index 137708: gold='h5 vs. DUT='h0
+    on index 138432: gold='h0 vs. DUT='h4180
+    on index 142140: gold='hb3850000 vs. DUT='hb3a50000
+    on index 149792: gold='h20 vs. DUT='h0
+    on index 158176: gold='h20 vs. DUT='h0
+    on index 211600: gold='h20 vs. DUT='h0
+    on index 222068: gold='hf vs. DUT='hffff0000
+;codix_risc_platform_ca;./xexes/out231.xexe;830;829;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='he vs. DUT='h13fbb
+3 miscompare(s) for 'mem':
+    on index 232: gold='he8000 vs. DUT='h8000
+    on index 548: gold='h8f3d88d vs. DUT='h8f3008d
+    on index 144204: gold='h1a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out232.xexe;825;824;fail
+2 miscompare(s) for 'mem':
+    on index 808: gold='h88090140 vs. DUT='h88090000
+    on index 229328: gold='hf50000 vs. DUT='hb40000
+;codix_risc_platform_ca;./xexes/out233.xexe;744;743;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h25 vs. DUT='h20
+    on index 13: gold='h5 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 628: gold='h68834a2a vs. DUT='h0
+    on index 131564: gold='h4 vs. DUT='h0
+    on index 217908: gold='h50000 vs. DUT='h43000000
+;codix_risc_platform_ca;./xexes/out234.xexe;861;860;fail
+3 miscompare(s) for 'mem':
+    on index 216376: gold='h5 vs. DUT='h60ca
+    on index 223004: gold='h20 vs. DUT='h0
+    on index 229116: gold='h0 vs. DUT='hffa00000
+;codix_risc_platform_ca;./xexes/out235.xexe;646;645;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h48c6 vs. DUT='hfffffedf
+    on index 23: gold='h2 vs. DUT='hffffbedf
+    on index 25: gold='hfffffffd vs. DUT='h4120
+2 miscompare(s) for 'mem':
+    on index 138336: gold='h2 vs. DUT='hffffbedf
+    on index 217212: gold='h20000 vs. DUT='hbedf0000
+;codix_risc_platform_ca;./xexes/out236.xexe;910;909;fail
+2 miscompare(s) for 'mem':
+    on index 272: gold='h4028020 vs. DUT='h0
+    on index 724: gold='h40303a2 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out237.xexe;672;671;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h1a vs. DUT='h4bdc
+2 miscompare(s) for 'mem':
+    on index 372: gold='h4068000 vs. DUT='h0
+    on index 141468: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out238.xexe;779;778;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hffe29a29 vs. DUT='hffeabf41
+    on index 10: gold='hffe2f002 vs. DUT='hffead56a
+    on index 13: gold='h11 vs. DUT='h240
+    on index 15: gold='h1d0fde vs. DUT='h152a76
+    on index 22: gold='hffe29a29 vs. DUT='hffeabf41
+    on index 25: gold='h0 vs. DUT='h7437
+4 miscompare(s) for 'mem':
+    on index 784: gold='h380c0002 vs. DUT='h380c0000
+    on index 143404: gold='hff4f4a00 vs. DUT='hff6f5a00
+    on index 156616: gold='hff4f4a00 vs. DUT='hff6f5a00
+    on index 197188: gold='h130000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out239.xexe;884;883;fail
+4 miscompare(s) for 'mem':
+    on index 135740: gold='he5f01ebb vs. DUT='hbe101f3b
+    on index 155848: gold='hffff002c vs. DUT='hffff000c
+    on index 156524: gold='hffe0 vs. DUT='h20
+    on index 217548: gold='h600 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out240.xexe;747;746;fail
+2 miscompare(s) for 'mem':
+    on index 196804: gold='h0 vs. DUT='h48
+    on index 219336: gold='h0 vs. DUT='h10000
+;codix_risc_platform_ca;./xexes/out241.xexe;766;765;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h8000000 vs. DUT='h0
+    on index 8: gold='h20 vs. DUT='h0
+    on index 20: gold='hf vs. DUT='h1389b
+2 miscompare(s) for 'mem':
+    on index 142728: gold='h27ca0000 vs. DUT='h27c80000
+    on index 228828: gold='h3e000000 vs. DUT='h20000000
+;codix_risc_platform_ca;./xexes/out242.xexe;859;858;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h11 vs. DUT='hfffe0000
+    on index 11: gold='h5 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 556: gold='h38fa817a vs. DUT='h0
+    on index 624: gold='h4098000 vs. DUT='h98000
+    on index 664: gold='h44ed1a89 vs. DUT='h0
+    on index 201212: gold='he vs. DUT='h0
+    on index 215836: gold='he00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out243.xexe;833;832;ok
+;codix_risc_platform_ca;./xexes/out244.xexe;630;629;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h44000000 vs. DUT='h1a000000
+    on index 14: gold='h4510 vs. DUT='h28c68
+    on index 18: gold='hcc820000 vs. DUT='h0
+    on index 19: gold='hc3b9af80 vs. DUT='hfffbaf80
+    on index 24: gold='hc3be0000 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 158888: gold='hfb00 vs. DUT='he000
+    on index 211360: gold='hfb vs. DUT='he0
+    on index 224600: gold='he vs. DUT='h24766
+;codix_risc_platform_ca;./xexes/out245.xexe;851;850;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='h1 vs. DUT='hd9845535
+5 miscompare(s) for 'mem':
+    on index 133832: gold='h120000 vs. DUT='h0
+    on index 144664: gold='h1a0000 vs. DUT='h0
+    on index 154060: gold='h401 vs. DUT='h400
+    on index 221104: gold='h1000 vs. DUT='h0
+    on index 222412: gold='h1 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out246.xexe;773;772;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hffffd540 vs. DUT='hffff8140
+2 miscompare(s) for 'mem':
+    on index 132676: gold='hd540 vs. DUT='h8140
+    on index 199604: gold='hd5400000 vs. DUT='h81400000
+;codix_risc_platform_ca;./xexes/out247.xexe;564;563;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='hf vs. DUT='h0
+    on index 6: gold='h0 vs. DUT='h312f
+    on index 7: gold='h78dc vs. DUT='h2b355
+    on index 10: gold='hffff81db vs. DUT='hffffffff
+    on index 17: gold='h7 vs. DUT='h23a80
+    on index 25: gold='h2 vs. DUT='h7f8c
+    on index 26: gold='h312cffe0 vs. DUT='h31286b58
+;codix_risc_platform_ca;./xexes/out248.xexe;849;848;fail
+7 miscompare(s) for 'mem':
+    on index 240: gold='hf0000 vs. DUT='h0
+    on index 740: gold='h5451e83 vs. DUT='h5450083
+    on index 134184: gold='h1100 vs. DUT='h0
+    on index 153832: gold='h1a0000 vs. DUT='h0
+    on index 157280: gold='h0 vs. DUT='hffc00000
+    on index 162844: gold='h1a vs. DUT='h0
+    on index 228048: gold='hffe0 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out249.xexe;845;844;fail
+4 miscompare(s) for 'mem':
+    on index 131244: gold='hc00 vs. DUT='he000
+    on index 136988: gold='hbcd70000 vs. DUT='he7770000
+    on index 157852: gold='h20 vs. DUT='h0
+    on index 227692: gold='hd700 vs. DUT='h7700
+;codix_risc_platform_ca;./xexes/out250.xexe;722;721;ok
+;codix_risc_platform_ca;./xexes/out251.xexe;744;743;fail
+5 miscompare(s) for 'mem':
+    on index 147728: gold='hffda vs. DUT='h1f
+    on index 215224: gold='h92470000 vs. DUT='h92b20000
+    on index 217052: gold='h500 vs. DUT='h0
+    on index 221000: gold='h0 vs. DUT='h6b
+    on index 222392: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out252.xexe;744;743;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 207156: gold='h20 vs. DUT='hffffbe9f
+    on index 222852: gold='h2 vs. DUT='hffb4
+;codix_risc_platform_ca;./xexes/out253.xexe;794;793;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h20 vs. DUT='h0
+10 miscompare(s) for 'mem':
+    on index 134984: gold='h50000 vs. DUT='h79220000
+    on index 153512: gold='h500 vs. DUT='h2200
+    on index 154640: gold='h5 vs. DUT='h0
+    on index 158220: gold='h110000 vs. DUT='h0
+    on index 158692: gold='h0 vs. DUT='h180000
+    on index 163732: gold='h470000 vs. DUT='h7b0000
+    on index 203104: gold='h110000 vs. DUT='h0
+    on index 204988: gold='h0 vs. DUT='h18000000
+    on index 222328: gold='h20000 vs. DUT='h0
+    on index 225780: gold='h505a vs. DUT='h5059
+;codix_risc_platform_ca;./xexes/out254.xexe;828;827;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 18: gold='h15 vs. DUT='h6a53983f
+2 miscompare(s) for 'mem':
+    on index 209308: gold='h150000 vs. DUT='h983f0000
+    on index 211444: gold='h2 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out255.xexe;771;770;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='hffff60a0 vs. DUT='hffff60b0
+    on index 11: gold='h20 vs. DUT='h0
+    on index 13: gold='he07b vs. DUT='he06b
+    on index 16: gold='h9f60 vs. DUT='h9f50
+    on index 24: gold='h20 vs. DUT='h0
+    on index 27: gold='h40 vs. DUT='h50
+4 miscompare(s) for 'mem':
+    on index 211616: gold='h0 vs. DUT='h34000
+    on index 213636: gold='h11 vs. DUT='hffffbffe
+    on index 225216: gold='hfffd7fc0 vs. DUT='hfffd7fe0
+    on index 268796: gold='h10000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out256.xexe;786;785;fail
+5 miscompare(s) for 'mem':
+    on index 138388: gold='h4a vs. DUT='h7
+    on index 147996: gold='h313d2b75 vs. DUT='h7a9a6b3f
+    on index 198732: gold='hb4a0000 vs. DUT='hba070000
+    on index 210500: gold='h62e vs. DUT='hffffb763
+    on index 223292: gold='hcec2f57a vs. DUT='h856594d0
+;codix_risc_platform_ca;./xexes/out257.xexe;696;695;fail
+10 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hffff90ef vs. DUT='hffff910f
+    on index 9: gold='h1defbfc0 vs. DUT='h1d813640
+    on index 12: gold='h6f10 vs. DUT='h6e50
+    on index 13: gold='h3fffe09b vs. DUT='h3fffe223
+    on index 15: gold='hfffffc40 vs. DUT='hfffffdc0
+    on index 18: gold='h40 vs. DUT='hffffffc0
+    on index 20: gold='h40 vs. DUT='hffffffc0
+    on index 21: gold='h3fffe085 vs. DUT='h3fffe483
+    on index 22: gold='h20 vs. DUT='h0
+    on index 23: gold='h20 vs. DUT='h14
+2 miscompare(s) for 'mem':
+    on index 142076: gold='h5000000 vs. DUT='h0
+    on index 217744: gold='h5000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out258.xexe;690;689;ok
+;codix_risc_platform_ca;./xexes/out259.xexe;722;721;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='hdedb779e vs. DUT='hdeeb1a9e
+    on index 13: gold='h0 vs. DUT='h60d8000
+    on index 21: gold='hfff2619f vs. DUT='hfff261bf
+    on index 22: gold='h20 vs. DUT='h0
+    on index 24: gold='hffffffff vs. DUT='hfa22ccff
+    on index 25: gold='h10000 vs. DUT='h316d00
+4 miscompare(s) for 'mem':
+    on index 304: gold='h88048200 vs. DUT='h0
+    on index 132296: gold='hba250000 vs. DUT='hffe00000
+    on index 143368: gold='hffffeea0 vs. DUT='hffffee82
+    on index 227844: gold='hf162 vs. DUT='he5ba
+;codix_risc_platform_ca;./xexes/out260.xexe;792;791;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h20 vs. DUT='hffffbe7f
+;codix_risc_platform_ca;./xexes/out261.xexe;830;829;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='hffffbcc0
+    on index 18: gold='h1ffe0 vs. DUT='h20000
+    on index 24: gold='h3 vs. DUT='h0
+    on index 25: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 221096: gold='h3000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out262.xexe;801;800;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h20 vs. DUT='h260
+    on index 17: gold='h5896f vs. DUT='h188b44bf
+5 miscompare(s) for 'mem':
+    on index 680: gold='h4030020 vs. DUT='h30020
+    on index 840: gold='h4831950 vs. DUT='h4830050
+    on index 151996: gold='h6f0000 vs. DUT='hbf0000
+    on index 155992: gold='h896f vs. DUT='h44bf
+    on index 213812: gold='h940 vs. DUT='h4090
+;codix_risc_platform_ca;./xexes/out263.xexe;637;636;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='hfff45ff7 vs. DUT='hfffdfffb
+    on index 6: gold='h8b0d4fb6 vs. DUT='he2a14fb6
+    on index 7: gold='hffff60c7 vs. DUT='h6ddb60c7
+    on index 9: gold='h232f0 vs. DUT='h32f0
+    on index 12: gold='h14912 vs. DUT='hfffd4912
+    on index 17: gold='hffff0792 vs. DUT='h6ddb0792
+    on index 21: gold='h490e vs. DUT='h2490e
+    on index 24: gold='h1 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 143456: gold='h490e vs. DUT='h2490e
+;codix_risc_platform_ca;./xexes/out264.xexe;822;821;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 140624: gold='h18136ee7 vs. DUT='h18209907
+    on index 221508: gold='he00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out265.xexe;750;749;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h27 vs. DUT='h10000
+    on index 17: gold='h1031a85 vs. DUT='h818d42c0
+    on index 24: gold='h2 vs. DUT='h143c
+9 miscompare(s) for 'mem':
+    on index 136040: gold='h8155 vs. DUT='hab55
+    on index 140576: gold='hfc3fc490 vs. DUT='h403b4a
+    on index 146192: gold='h871d vs. DUT='hd788c2fe
+    on index 157760: gold='hfffb vs. DUT='h21
+    on index 157984: gold='hfb0000 vs. DUT='h210000
+    on index 199308: gold='hbde2ece vs. DUT='hfd1e77fc
+    on index 201600: gold='h0 vs. DUT='h20
+    on index 205372: gold='h10000 vs. DUT='h0
+    on index 205736: gold='ha15d1769 vs. DUT='hc511b2a2
+;codix_risc_platform_ca;./xexes/out266.xexe;687;686;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h20 vs. DUT='h0
+    on index 24: gold='h3ec40 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 135572: gold='h6c8a0000 vs. DUT='h8cb30000
+    on index 198652: gold='h5e820000 vs. DUT='h7eab0000
+    on index 218924: gold='hbb070000 vs. DUT='h5820000
+;codix_risc_platform_ca;./xexes/out267.xexe;807;806;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h0 vs. DUT='h41400000
+    on index 19: gold='h2 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 140772: gold='h22 vs. DUT='h40a0000
+    on index 272664: gold='h20002 vs. DUT='h4080020
+;codix_risc_platform_ca;./xexes/out268.xexe;715;714;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='he vs. DUT='h6bce
+2 miscompare(s) for 'mem':
+    on index 132412: gold='he000000 vs. DUT='hce000000
+    on index 132668: gold='h13 vs. DUT='h8f
+;codix_risc_platform_ca;./xexes/out269.xexe;826;825;fail
+1 miscompare(s) for 'mem':
+    on index 220428: gold='h1a000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out270.xexe;754;753;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='hffffa29a vs. DUT='hffffa27f
+    on index 10: gold='h175 vs. DUT='h2ec0
+    on index 19: gold='h50048 vs. DUT='hffffffdf
+4 miscompare(s) for 'mem':
+    on index 132816: gold='h5105 vs. DUT='h20
+    on index 163164: gold='haee0 vs. DUT='h0
+    on index 224224: gold='h200000 vs. DUT='h0
+    on index 226056: gold='h5 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out271.xexe;824;823;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h1a vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 134660: gold='h20 vs. DUT='h0
+    on index 150640: gold='h12 vs. DUT='h160
+;codix_risc_platform_ca;./xexes/out272.xexe;855;854;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h16 vs. DUT='h400
+    on index 9: gold='h20 vs. DUT='h0
+    on index 27: gold='h100000 vs. DUT='h0
+9 miscompare(s) for 'mem':
+    on index 176: gold='hb0000 vs. DUT='h0
+    on index 216: gold='hd8000 vs. DUT='hd0000
+    on index 520: gold='h40d8020 vs. DUT='h40d0000
+    on index 140488: gold='h5 vs. DUT='h0
+    on index 144824: gold='hcd100000 vs. DUT='h0
+    on index 145956: gold='h3c vs. DUT='h4c
+    on index 150324: gold='h20 vs. DUT='h0
+    on index 220988: gold='h3c000000 vs. DUT='h4c000000
+    on index 221924: gold='h0 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out273.xexe;772;771;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 145692: gold='hae9e0000 vs. DUT='hae5e0000
+    on index 149236: gold='h82000000 vs. DUT='hc2000000
+    on index 149652: gold='hff0000 vs. DUT='h0
+    on index 199400: gold='h30000 vs. DUT='hc4580000
+    on index 208220: gold='hae7e0000 vs. DUT='hae3e0000
+;codix_risc_platform_ca;./xexes/out274.xexe;466;465;ok
+;codix_risc_platform_ca;./xexes/out275.xexe;669;668;ok
+;codix_risc_platform_ca;./xexes/out276.xexe;505;504;ok
+;codix_risc_platform_ca;./xexes/out277.xexe;767;766;fail
+2 miscompare(s) for 'mem':
+    on index 138780: gold='h83 vs. DUT='h3e0
+    on index 222592: gold='h1a000000 vs. DUT='h20000000
+;codix_risc_platform_ca;./xexes/out278.xexe;921;920;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h231f4 vs. DUT='h0
+    on index 14: gold='h5 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 788: gold='ha9800140 vs. DUT='h0
+    on index 152352: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out279.xexe;788;787;ok
+;codix_risc_platform_ca;./xexes/out280.xexe;864;863;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='hc5fc7f94 vs. DUT='hc5fc7f9b
+    on index 25: gold='h1a vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 134264: gold='h50000 vs. DUT='h200000
+    on index 138012: gold='h3a03806b vs. DUT='h3a038064
+    on index 141196: gold='h5000000 vs. DUT='h20000000
+    on index 218428: gold='h6b00 vs. DUT='h6400
+;codix_risc_platform_ca;./xexes/out281.xexe;681;680;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h12 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 217308: gold='h200000 vs. DUT='h0
+    on index 224700: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out282.xexe;838;837;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h24571 vs. DUT='h4162456a
+    on index 16: gold='h7 vs. DUT='h41600000
+    on index 23: gold='h7 vs. DUT='h41600000
+1 miscompare(s) for 'mem':
+    on index 145132: gold='h363f0 vs. DUT='hf6eaf3c0
+;codix_risc_platform_ca;./xexes/out283.xexe;666;665;fail
+1 miscompare(s) for 'mem':
+    on index 149196: gold='h7621 vs. DUT='h7601
+;codix_risc_platform_ca;./xexes/out284.xexe;831;830;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h10 vs. DUT='h0
+    on index 6: gold='hba892 vs. DUT='hffff889e
+    on index 7: gold='h1a vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 142040: gold='he000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out285.xexe;748;747;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='he vs. DUT='h0
+    on index 20: gold='h3743800d vs. DUT='hffffc00d
+6 miscompare(s) for 'mem':
+    on index 792: gold='h4048000 vs. DUT='h48000
+    on index 820: gold='h828741c0 vs. DUT='h0
+    on index 145420: gold='h5 vs. DUT='h0
+    on index 150440: gold='h1ae40000 vs. DUT='h60240000
+    on index 211004: gold='h340000 vs. DUT='h940000
+    on index 215784: gold='h4bd vs. DUT='h1d0a
+;codix_risc_platform_ca;./xexes/out286.xexe;726;725;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h20 vs. DUT='h0
+    on index 18: gold='hfffe0020 vs. DUT='hfffe0000
+    on index 23: gold='h4 vs. DUT='h10
+;codix_risc_platform_ca;./xexes/out287.xexe;729;728;fail
+2 miscompare(s) for 'mem':
+    on index 158064: gold='hebd40000 vs. DUT='hebd50000
+    on index 202524: gold='h3 vs. DUT='hffffbce0
+;codix_risc_platform_ca;./xexes/out288.xexe;808;807;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out289.xexe;648;647;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hffffffff vs. DUT='hffffd691
+    on index 5: gold='h1010 vs. DUT='h1000
+    on index 7: gold='h5351 vs. DUT='h5341
+    on index 9: gold='h11 vs. DUT='h0
+    on index 10: gold='h1 vs. DUT='h296f
+    on index 18: gold='h7b7d651b vs. DUT='h7b7d651a
+    on index 19: gold='hffffe4d0 vs. DUT='hffffe4f0
+2 miscompare(s) for 'mem':
+    on index 155412: gold='hf00 vs. DUT='h0
+    on index 203760: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out290.xexe;861;860;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h1 vs. DUT='h0
+    on index 23: gold='he vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 142460: gold='haa vs. DUT='h35
+    on index 158360: gold='he vs. DUT='h22364
+    on index 224300: gold='h0 vs. DUT='h10000
+;codix_risc_platform_ca;./xexes/out291.xexe;670;669;fail
+1 miscompare(s) for 'mem':
+    on index 142908: gold='hcf80 vs. DUT='hcf93
+;codix_risc_platform_ca;./xexes/out292.xexe;874;873;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h1a vs. DUT='h0
+    on index 20: gold='h20 vs. DUT='h0
+9 miscompare(s) for 'mem':
+    on index 140004: gold='h4c60 vs. DUT='hac30
+    on index 147868: gold='ha0000 vs. DUT='h0
+    on index 151068: gold='hdf vs. DUT='h0
+    on index 156884: gold='h200000 vs. DUT='hffff0000
+    on index 211928: gold='h10 vs. DUT='h800000
+    on index 213992: gold='h2000000 vs. DUT='h0
+    on index 216096: gold='hffffffdf vs. DUT='h0
+    on index 221144: gold='hc00000 vs. DUT='h0
+    on index 224976: gold='hf600 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out293.xexe;911;910;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h0 vs. DUT='h10000
+    on index 16: gold='h11 vs. DUT='h8208a940
+    on index 17: gold='h0 vs. DUT='h10000
+    on index 21: gold='h20 vs. DUT='h10020
+5 miscompare(s) for 'mem':
+    on index 134100: gold='h5 vs. DUT='h0
+    on index 145360: gold='h0 vs. DUT='h20
+    on index 146712: gold='h11 vs. DUT='ha940
+    on index 223200: gold='h2000000 vs. DUT='h0
+    on index 225448: gold='h6b000000 vs. DUT='h70000000
+;codix_risc_platform_ca;./xexes/out294.xexe;717;716;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='he vs. DUT='h200
+    on index 21: gold='h13 vs. DUT='hffffefeb
+4 miscompare(s) for 'mem':
+    on index 120: gold='h78000 vs. DUT='h0
+    on index 248: gold='hf8000 vs. DUT='hf0000
+    on index 134044: gold='h11 vs. DUT='h0
+    on index 134396: gold='h11000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out295.xexe;739;738;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='hffffa540 vs. DUT='hffffa542
+    on index 25: gold='h1c vs. DUT='h38
+2 miscompare(s) for 'mem':
+    on index 204576: gold='h0 vs. DUT='h300
+    on index 206556: gold='h0 vs. DUT='h8d0000
+;codix_risc_platform_ca;./xexes/out296.xexe;787;786;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h11 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out297.xexe;745;744;ok
+;codix_risc_platform_ca;./xexes/out298.xexe;816;815;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hfffff767 vs. DUT='hfffff747
+    on index 12: gold='h1 vs. DUT='h0
+    on index 13: gold='h13fd vs. DUT='h13fc
+    on index 15: gold='h21d6 vs. DUT='h21d5
+    on index 24: gold='h1 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 836: gold='h4050020 vs. DUT='h20
+    on index 199764: gold='h1a vs. DUT='h0
+    on index 204868: gold='h200000 vs. DUT='h7ce60000
+    on index 214480: gold='h10000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out299.xexe;783;782;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h5 vs. DUT='h41e0
+2 miscompare(s) for 'mem':
+    on index 197152: gold='h3faf vs. DUT='h3fcf
+    on index 205180: gold='h1a0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out300.xexe;654;653;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h20 vs. DUT='hffffffdf
+3 miscompare(s) for 'mem':
+    on index 140416: gold='h8900 vs. DUT='hbb00
+    on index 157328: gold='hffba4827 vs. DUT='hffba47f7
+    on index 316092: gold='h1c9a vs. DUT='h1c6a
+;codix_risc_platform_ca;./xexes/out301.xexe;690;689;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h18f vs. DUT='h180
+    on index 13: gold='h1c vs. DUT='h20
+    on index 22: gold='h150 vs. DUT='h180
+    on index 26: gold='h5 vs. DUT='h20
+    on index 27: gold='hfffffe91 vs. DUT='hfffffea0
+;codix_risc_platform_ca;./xexes/out302.xexe;816;815;fail
+1 miscompare(s) for 'mem':
+    on index 198080: gold='h11000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out303.xexe;807;806;fail
+1 miscompare(s) for 'mem':
+    on index 221108: gold='hc00 vs. DUT='hf500
+;codix_risc_platform_ca;./xexes/out304.xexe;797;796;fail
+4 miscompare(s) for 'mem':
+    on index 740: gold='h55693fa0 vs. DUT='h693fa0
+    on index 132984: gold='h4e00 vs. DUT='h4900
+    on index 162744: gold='heb4e vs. DUT='heb49
+    on index 227748: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out305.xexe;872;871;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 25: gold='h3ffd7 vs. DUT='hfc48d23f
+4 miscompare(s) for 'mem':
+    on index 145108: gold='h4 vs. DUT='hfffd9750
+    on index 162448: gold='h4 vs. DUT='h9750
+    on index 215640: gold='h2000 vs. DUT='h0
+    on index 223820: gold='h1a0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out306.xexe;842;841;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h1a vs. DUT='h0
+    on index 27: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 228388: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out307.xexe;874;873;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h3e251 vs. DUT='h3e211
+    on index 6: gold='hf vs. DUT='hfffffe40
+    on index 7: gold='hfffe619b vs. DUT='hfffe61bb
+    on index 9: gold='h20 vs. DUT='h0
+    on index 26: gold='he1 vs. DUT='h31000
+    on index 27: gold='h20 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 424: gold='h4028000 vs. DUT='h0
+    on index 788: gold='h38018002 vs. DUT='h18002
+    on index 215452: gold='h1a000000 vs. DUT='h0
+    on index 222524: gold='h5a000000 vs. DUT='h74000000
+;codix_risc_platform_ca;./xexes/out308.xexe;765;764;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 145584: gold='h0 vs. DUT='hc518
+    on index 212644: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out309.xexe;890;889;fail
+1 miscompare(s) for 'mem':
+    on index 816: gold='h285aac3f vs. DUT='h285aac00
+;codix_risc_platform_ca;./xexes/out310.xexe;787;786;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h20 vs. DUT='h0
+    on index 27: gold='hc vs. DUT='hfffffd20
+1 miscompare(s) for 'mem':
+    on index 217532: gold='hea6c0000 vs. DUT='h8a6c0000
+;codix_risc_platform_ca;./xexes/out311.xexe;846;845;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h20 vs. DUT='h63d7
+    on index 17: gold='h4 vs. DUT='h0
+    on index 26: gold='h10 vs. DUT='h4cedb
+    on index 27: gold='hffff9c38 vs. DUT='hfffacd6d
+2 miscompare(s) for 'mem':
+    on index 153040: gold='h200000 vs. DUT='h0
+    on index 301496: gold='hffffffbf vs. DUT='hffffffdf
+;codix_risc_platform_ca;./xexes/out312.xexe;719;718;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='hf vs. DUT='hfffffd60
+    on index 9: gold='h235 vs. DUT='hffffff86
+2 miscompare(s) for 'mem':
+    on index 3640: gold='h4050000 vs. DUT='h0
+    on index 142796: gold='h5 vs. DUT='h6d10000
+;codix_risc_platform_ca;./xexes/out313.xexe;909;908;fail
+2 miscompare(s) for 'mem':
+    on index 216476: gold='hc0000 vs. DUT='h0
+    on index 277732: gold='he vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out314.xexe;828;827;fail
+1 miscompare(s) for 'mem':
+    on index 219600: gold='h9a00 vs. DUT='h800
+;codix_risc_platform_ca;./xexes/out315.xexe;785;784;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h14820 vs. DUT='h0
+    on index 16: gold='hffff8aad vs. DUT='hffff8a9e
+2 miscompare(s) for 'mem':
+    on index 209996: gold='ha79f0000 vs. DUT='ha7bf0000
+    on index 216256: gold='h3 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out316.xexe;780;779;fail
+2 miscompare(s) for 'mem':
+    on index 145408: gold='hf000000 vs. DUT='h0
+    on index 158512: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out317.xexe;798;797;fail
+1 miscompare(s) for 'mem':
+    on index 159644: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out318.xexe;850;849;fail
+3 miscompare(s) for 'mem':
+    on index 812: gold='h8a088340 vs. DUT='h8a080040
+    on index 144608: gold='h2e95c756 vs. DUT='h2e8e78c2
+    on index 199624: gold='h3435ee28 vs. DUT='hbe91ee28
+;codix_risc_platform_ca;./xexes/out319.xexe;866;865;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h20 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 156268: gold='h0 vs. DUT='he3a00000
+    on index 214540: gold='hbaf7 vs. DUT='h45ea
+    on index 222884: gold='h9fe0 vs. DUT='ha000
+;codix_risc_platform_ca;./xexes/out320.xexe;798;797;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='hf vs. DUT='h4b0900
+    on index 27: gold='hf vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out321.xexe;958;957;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h2f405 vs. DUT='h27425
+3 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 156296: gold='h200000 vs. DUT='h0
+    on index 219696: gold='h20 vs. DUT='hffff8000
+;codix_risc_platform_ca;./xexes/out322.xexe;862;861;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='hffc2229f vs. DUT='h294
+    on index 21: gold='h3dd560 vs. DUT='hfffff50b
+    on index 25: gold='hffc48010 vs. DUT='h26005
+4 miscompare(s) for 'mem':
+    on index 492: gold='h40b8000 vs. DUT='h4008000
+    on index 163660: gold='h5bc7 vs. DUT='h2e60
+    on index 204596: gold='h20000000 vs. DUT='h0
+    on index 215612: gold='h229f0000 vs. DUT='h2940000
+;codix_risc_platform_ca;./xexes/out323.xexe;802;801;fail
+3 miscompare(s) for 'mem':
+    on index 160088: gold='h1ad04f vs. DUT='hd04f
+    on index 197812: gold='h2 vs. DUT='h0
+    on index 226672: gold='h28c0 vs. DUT='h28f4
+;codix_risc_platform_ca;./xexes/out324.xexe;679;678;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 26: gold='h6070 vs. DUT='h5f10
+1 miscompare(s) for 'mem':
+    on index 137880: gold='h400 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out325.xexe;722;721;fail
+4 miscompare(s) for 'mem':
+    on index 324: gold='h890c8260 vs. DUT='h890c8200
+    on index 136860: gold='h0 vs. DUT='h23390000
+    on index 155860: gold='h1000000 vs. DUT='h3e000000
+    on index 156956: gold='h19 vs. DUT='h36b00
+;codix_risc_platform_ca;./xexes/out326.xexe;844;843;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h20 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 133092: gold='h4 vs. DUT='h0
+    on index 154792: gold='hc9ac0000 vs. DUT='hc9b00000
+    on index 199808: gold='h60000 vs. DUT='h0
+    on index 204888: gold='h3 vs. DUT='h0
+    on index 227864: gold='h4 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out327.xexe;738;737;fail
+3 miscompare(s) for 'mem':
+    on index 141784: gold='hfff8 vs. DUT='h0
+    on index 144732: gold='h7db0 vs. DUT='h7da8
+    on index 160856: gold='h70f4 vs. DUT='hffff8f4f
+;codix_risc_platform_ca;./xexes/out328.xexe;842;841;fail
+2 miscompare(s) for 'mem':
+    on index 652: gold='ha481c760 vs. DUT='h0
+    on index 206132: gold='h10 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out329.xexe;754;753;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 140560: gold='h100000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out330.xexe;735;734;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h20 vs. DUT='h0
+    on index 27: gold='h1 vs. DUT='hffff87cd
+3 miscompare(s) for 'mem':
+    on index 139428: gold='hdb853e40 vs. DUT='h0
+    on index 149420: gold='h10000 vs. DUT='h87cd0000
+    on index 216856: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out331.xexe;858;857;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 21: gold='h0 vs. DUT='hfffffec0
+    on index 25: gold='h0 vs. DUT='h45db
+8 miscompare(s) for 'mem':
+    on index 136116: gold='h18800006 vs. DUT='h265d0007
+    on index 139188: gold='he1000000 vs. DUT='he0000000
+    on index 149284: gold='h200000 vs. DUT='hbd3f0000
+    on index 154544: gold='hd6 vs. DUT='hf5
+    on index 202936: gold='habe10000 vs. DUT='hac020000
+    on index 209408: gold='habe1 vs. DUT='hac02
+    on index 212856: gold='h20 vs. DUT='hffffbd3f
+    on index 224432: gold='hba80003f vs. DUT='hbe5d0040
+;codix_risc_platform_ca;./xexes/out332.xexe;877;876;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='ha vs. DUT='h0
+    on index 13: gold='h0 vs. DUT='hffffffff
+    on index 17: gold='h12 vs. DUT='hfffffe7f
+    on index 20: gold='h40000 vs. DUT='h40001
+    on index 23: gold='h1708efb8 vs. DUT='h20000
+;codix_risc_platform_ca;./xexes/out333.xexe;675;674;fail
+4 miscompare(s) for 'mem':
+    on index 140620: gold='h100 vs. DUT='h0
+    on index 153268: gold='h1a0000 vs. DUT='h0
+    on index 155752: gold='h6a56 vs. DUT='hd4ac0
+    on index 211288: gold='h10000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out334.xexe;845;844;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h6 vs. DUT='h4f9e
+    on index 13: gold='h6b9f vs. DUT='h6f9f
+    on index 14: gold='hc vs. DUT='h0
+    on index 18: gold='h20 vs. DUT='hffffbf60
+2 miscompare(s) for 'mem':
+    on index 712: gold='h18aac9e6 vs. DUT='hc9e6
+    on index 148772: gold='he vs. DUT='h58
+;codix_risc_platform_ca;./xexes/out335.xexe;884;883;fail
+1 miscompare(s) for 'mem':
+    on index 197060: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out336.xexe;806;805;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h400 vs. DUT='h0
+    on index 16: gold='hfffffa3d vs. DUT='h26954
+    on index 17: gold='h20 vs. DUT='h0
+    on index 21: gold='h20 vs. DUT='h0
+    on index 24: gold='h0 vs. DUT='h26f17
+    on index 27: gold='h70000020 vs. DUT='h70000000
+2 miscompare(s) for 'mem':
+    on index 784: gold='h11025886 vs. DUT='h5886
+    on index 225700: gold='h0 vs. DUT='h6f170000
+;codix_risc_platform_ca;./xexes/out337.xexe;805;804;fail
+2 miscompare(s) for 'mem':
+    on index 400: gold='h40a0000 vs. DUT='h0
+    on index 225072: gold='h1000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out338.xexe;736;735;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h12 vs. DUT='hffffffe5
+    on index 12: gold='h3105 vs. DUT='h30e5
+    on index 16: gold='h74ed vs. DUT='h74cd
+    on index 22: gold='h40 vs. DUT='h20
+    on index 27: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 532: gold='h60683522 vs. DUT='h60680000
+    on index 149160: gold='hed000000 vs. DUT='hcd000000
+;codix_risc_platform_ca;./xexes/out339.xexe;770;769;fail
+2 miscompare(s) for 'mem':
+    on index 133500: gold='h200000 vs. DUT='h0
+    on index 136688: gold='hd vs. DUT='hffe0
+;codix_risc_platform_ca;./xexes/out340.xexe;600;599;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='h10 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 145476: gold='had00 vs. DUT='ha500
+    on index 154340: gold='h1a0000 vs. DUT='hff000000
+    on index 156920: gold='h1 vs. DUT='h0
+    on index 213892: gold='h10 vs. DUT='hfffeffff
+    on index 214752: gold='hee000000 vs. DUT='he6000000
+;codix_risc_platform_ca;./xexes/out341.xexe;666;665;fail
+6 miscompare(s) for 'mem':
+    on index 812: gold='h46bdd5c vs. DUT='h0
+    on index 135788: gold='h3f770000 vs. DUT='h7f3f0000
+    on index 196608: gold='h0 vs. DUT='hd7ec52a4
+    on index 203100: gold='hd7ec52a4 vs. DUT='h0
+    on index 214568: gold='h88538ea vs. DUT='hb6992ba
+    on index 219560: gold='h17b vs. DUT='h173
+;codix_risc_platform_ca;./xexes/out342.xexe;848;847;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 18: gold='h0 vs. DUT='h2d9e1f7e
+    on index 25: gold='h2 vs. DUT='h25493
+;codix_risc_platform_ca;./xexes/out343.xexe;780;779;fail
+1 miscompare(s) for 'mem':
+    on index 138080: gold='h2000 vs. DUT='h9200
+;codix_risc_platform_ca;./xexes/out344.xexe;808;807;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='he00000 vs. DUT='h0
+    on index 19: gold='h5 vs. DUT='h0
+    on index 26: gold='hffff8ca1 vs. DUT='hffff8cad
+2 miscompare(s) for 'mem':
+    on index 388: gold='ha600450c vs. DUT='h0
+    on index 227092: gold='he0000 vs. DUT='h600000
+;codix_risc_platform_ca;./xexes/out345.xexe;899;898;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h1b34a3 vs. DUT='h1b34a8
+    on index 14: gold='h5 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 149872: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out346.xexe;789;788;fail
+1 miscompare(s) for 'mem':
+    on index 528: gold='h4c491643 vs. DUT='h4c001643
+;codix_risc_platform_ca;./xexes/out347.xexe;850;849;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h3799f vs. DUT='h379df
+    on index 8: gold='h400000 vs. DUT='h20
+    on index 17: gold='h4799f vs. DUT='h479df
+    on index 18: gold='h400000 vs. DUT='h20
+9 miscompare(s) for 'mem':
+    on index 756: gold='h380a0002 vs. DUT='h0
+    on index 5376: gold='h0 vs. DUT='he2
+    on index 131404: gold='h40 vs. DUT='h0
+    on index 132064: gold='h1a vs. DUT='h0
+    on index 136448: gold='he2 vs. DUT='h0
+    on index 137240: gold='h11 vs. DUT='h20
+    on index 156544: gold='h1a vs. DUT='h0
+    on index 163364: gold='h11 vs. DUT='h20
+    on index 205556: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out348.xexe;728;727;fail
+1 miscompare(s) for 'mem':
+    on index 131316: gold='h400 vs. DUT='h24d5b
+;codix_risc_platform_ca;./xexes/out349.xexe;859;858;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h1a vs. DUT='h40c0000
+1 miscompare(s) for 'mem':
+    on index 218184: gold='h110000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out350.xexe;790;789;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h20 vs. DUT='h0
+    on index 20: gold='h0 vs. DUT='h20
+5 miscompare(s) for 'mem':
+    on index 664: gold='h4050020 vs. DUT='h4050000
+    on index 133680: gold='hf vs. DUT='h0
+    on index 162548: gold='h20 vs. DUT='h0
+    on index 207456: gold='hdf000000 vs. DUT='hff000000
+    on index 226700: gold='h110000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out351.xexe;874;873;fail
+3 miscompare(s) for 'mem':
+    on index 151100: gold='h3a77 vs. DUT='hce73
+    on index 202812: gold='h200000 vs. DUT='h0
+    on index 226732: gold='h7700 vs. DUT='h7300
+;codix_risc_platform_ca;./xexes/out352.xexe;751;750;fail
+3 miscompare(s) for 'mem':
+    on index 152324: gold='h20 vs. DUT='h0
+    on index 154668: gold='hcfa40000 vs. DUT='hcfc40000
+    on index 200888: gold='ha6000000 vs. DUT='ha7000000
+;codix_risc_platform_ca;./xexes/out353.xexe;668;667;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h0
+    on index 13: gold='h62f6 vs. DUT='hfbfa6310
+    on index 20: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 528: gold='ha5003ec3 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out354.xexe;780;779;fail
+3 miscompare(s) for 'mem':
+    on index 131616: gold='h1e898 vs. DUT='h1e978
+    on index 147584: gold='h1a vs. DUT='h0
+    on index 160284: gold='hff890000 vs. DUT='h690000
+;codix_risc_platform_ca;./xexes/out355.xexe;808;807;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='h11 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 203872: gold='hffff8980 vs. DUT='hfffd8108
+;codix_risc_platform_ca;./xexes/out356.xexe;758;757;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h5 vs. DUT='h20
+    on index 20: gold='hfeb5a038 vs. DUT='h571f5878
+    on index 25: gold='h31 vs. DUT='h20
+13 miscompare(s) for 'mem':
+    on index 138988: gold='h5f550000 vs. DUT='h17950000
+    on index 151588: gold='he3 vs. DUT='hf4
+    on index 156640: gold='hbfd2 vs. DUT='h0
+    on index 159828: gold='h1b0000 vs. DUT='h0
+    on index 201596: gold='h2bcf vs. DUT='h0
+    on index 203464: gold='hcf vs. DUT='h0
+    on index 203748: gold='h12fc2bf5 vs. DUT='h12fe27b5
+    on index 205564: gold='h30000000 vs. DUT='h5c000000
+    on index 207712: gold='hfffdffee vs. DUT='hfffdffe0
+    on index 207812: gold='h5 vs. DUT='h0
+    on index 222832: gold='h5 vs. DUT='h20
+    on index 226264: gold='h5 vs. DUT='hffff0020
+    on index 226440: gold='h120000 vs. DUT='h200000
+;codix_risc_platform_ca;./xexes/out357.xexe;832;831;ok
+;codix_risc_platform_ca;./xexes/out358.xexe;838;837;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hffffde17 vs. DUT='hffffddf7
+3 miscompare(s) for 'mem':
+    on index 324: gold='h8182aa20 vs. DUT='h8182aa00
+    on index 150376: gold='h2d40000 vs. DUT='hb50000
+    on index 221436: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out359.xexe;809;808;fail
+1 miscompare(s) for 'mem':
+    on index 232: gold='he8000 vs. DUT='h8000
+;codix_risc_platform_ca;./xexes/out360.xexe;853;852;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h0 vs. DUT='hfffff700
+    on index 11: gold='hd200000 vs. DUT='hd234000
+    on index 14: gold='ha9e1b00 vs. DUT='haa0bc0e
+;codix_risc_platform_ca;./xexes/out361.xexe;786;785;fail
+3 miscompare(s) for 'mem':
+    on index 131836: gold='hb9 vs. DUT='hc5
+    on index 151764: gold='hc vs. DUT='h9
+    on index 204536: gold='hffffe802 vs. DUT='hffffd005
+;codix_risc_platform_ca;./xexes/out362.xexe;618;617;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h53edf vs. DUT='hfffefeea
+    on index 24: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out363.xexe;909;908;fail
+10 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h2424a vs. DUT='h2480a
+    on index 8: gold='h2424a vs. DUT='h2480a
+    on index 11: gold='h1a vs. DUT='h0
+    on index 13: gold='h1 vs. DUT='h1c82
+    on index 14: gold='h1b vs. DUT='h0
+    on index 17: gold='h3c25c vs. DUT='h71380000
+    on index 20: gold='h11 vs. DUT='h20000
+    on index 22: gold='h24d3 vs. DUT='h24b3
+    on index 25: gold='h5d372ca vs. DUT='hd9725c0a
+    on index 27: gold='h1d73e0 vs. DUT='h2a13400
+3 miscompare(s) for 'mem':
+    on index 132588: gold='h1b vs. DUT='h0
+    on index 208228: gold='h10 vs. DUT='h0
+    on index 210444: gold='h12 vs. DUT='h4020
+;codix_risc_platform_ca;./xexes/out364.xexe;831;830;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h0 vs. DUT='h42e00000
+    on index 10: gold='h207 vs. DUT='h2020000
+    on index 13: gold='h1b vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 153080: gold='h1a000000 vs. DUT='h20000000
+    on index 208720: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out365.xexe;944;943;fail
+2 miscompare(s) for 'mem':
+    on index 888: gold='h4040000 vs. DUT='h4000000
+    on index 216480: gold='h30000 vs. DUT='h69280000
+;codix_risc_platform_ca;./xexes/out366.xexe;702;701;fail
+2 miscompare(s) for 'mem':
+    on index 161384: gold='h2 vs. DUT='h20
+    on index 207068: gold='h7e11 vs. DUT='h7df3
+;codix_risc_platform_ca;./xexes/out367.xexe;644;643;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h2 vs. DUT='h42000000
+    on index 25: gold='h403c vs. DUT='hbc000000
+;codix_risc_platform_ca;./xexes/out368.xexe;752;751;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h20 vs. DUT='h0
+    on index 20: gold='h27fc0 vs. DUT='h27fa6
+    on index 24: gold='h1a vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 772: gold='h38030002 vs. DUT='h38030000
+    on index 151028: gold='h248f0 vs. DUT='h6248d0
+;codix_risc_platform_ca;./xexes/out369.xexe;673;672;fail
+1 miscompare(s) for 'mem':
+    on index 149748: gold='he0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out370.xexe;736;735;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h4 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 2480: gold='h908d8e06 vs. DUT='h0
+    on index 216660: gold='h30000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out371.xexe;804;803;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 19: gold='h5 vs. DUT='h4360
+2 miscompare(s) for 'mem':
+    on index 207876: gold='h20 vs. DUT='h0
+    on index 214616: gold='hc0b80000 vs. DUT='hc0980000
+;codix_risc_platform_ca;./xexes/out372.xexe;739;738;fail
+10 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hfffff453 vs. DUT='h3842
+    on index 5: gold='h5441 vs. DUT='h1040
+    on index 10: gold='hf vs. DUT='h20
+    on index 12: gold='h5cbb88a vs. DUT='h5a28496
+    on index 16: gold='h3853 vs. DUT='h3842
+    on index 20: gold='hf vs. DUT='h20
+    on index 21: gold='h4894 vs. DUT='h4882
+    on index 23: gold='h27c57 vs. DUT='h27c46
+    on index 24: gold='h292 vs. DUT='h602
+    on index 26: gold='h220 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 400: gold='ha2835760 vs. DUT='ha2830060
+    on index 664: gold='h90891729 vs. DUT='h0
+    on index 144720: gold='h44000000 vs. DUT='h0
+    on index 147388: gold='h4400 vs. DUT='h0
+    on index 224324: gold='h20 vs. DUT='h100
+;codix_risc_platform_ca;./xexes/out373.xexe;808;807;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h11 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 147336: gold='h50000 vs. DUT='h0
+    on index 159772: gold='h5 vs. DUT='h0
+    on index 202836: gold='h200000 vs. DUT='h0
+    on index 203608: gold='h80000000 vs. DUT='h9c000000
+;codix_risc_platform_ca;./xexes/out374.xexe;755;754;fail
+4 miscompare(s) for 'mem':
+    on index 740: gold='h820a0c80 vs. DUT='h0
+    on index 159640: gold='h20 vs. DUT='h0
+    on index 221596: gold='hffffffdd vs. DUT='hfffde8db
+    on index 224928: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out375.xexe;920;919;fail
+3 miscompare(s) for 'mem':
+    on index 159256: gold='h6029ae9e vs. DUT='hb11cd478
+    on index 213744: gold='h0 vs. DUT='hda0000
+    on index 229044: gold='h560000 vs. DUT='h160000
+;codix_risc_platform_ca;./xexes/out376.xexe;773;772;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h16 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 219476: gold='h0 vs. DUT='h8300000
+;codix_risc_platform_ca;./xexes/out377.xexe;786;785;fail
+3 miscompare(s) for 'mem':
+    on index 203996: gold='h20 vs. DUT='h0
+    on index 216076: gold='h1 vs. DUT='h0
+    on index 221936: gold='hdf vs. DUT='h1f
+;codix_risc_platform_ca;./xexes/out378.xexe;896;895;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h20 vs. DUT='h0
+    on index 6: gold='hffffffcd vs. DUT='hfffdffdf
+    on index 21: gold='hffffffff vs. DUT='hfffffdff
+4 miscompare(s) for 'mem':
+    on index 64: gold='h40000 vs. DUT='h0
+    on index 376: gold='h9288bced vs. DUT='h0
+    on index 147956: gold='h10000000 vs. DUT='hc0000000
+    on index 156796: gold='h10 vs. DUT='h42c0
+;codix_risc_platform_ca;./xexes/out379.xexe;901;900;fail
+9 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h21835ff1 vs. DUT='h35ff1
+    on index 5: gold='h21835ff1 vs. DUT='h35ff1
+    on index 6: gold='h0 vs. DUT='h98000000
+    on index 7: gold='hcf5ce7a0 vs. DUT='h836c8e82
+    on index 16: gold='h2182302f vs. DUT='h2302f
+    on index 23: gold='hddf03c95 vs. DUT='hff703c95
+    on index 24: gold='h259e0 vs. DUT='h17d76
+    on index 25: gold='h21803809 vs. DUT='h3809
+    on index 27: gold='hcf5caf97 vs. DUT='h836c5679
+12 miscompare(s) for 'mem':
+    on index 740: gold='h2066c014 vs. DUT='hc014
+    on index 808: gold='h38048001 vs. DUT='h38040000
+    on index 137304: gold='hed9c0000 vs. DUT='h79dc0000
+    on index 144768: gold='h200000 vs. DUT='h0
+    on index 148968: gold='h4b7 vs. DUT='h0
+    on index 152208: gold='h200000 vs. DUT='h0
+    on index 152924: gold='h10000 vs. DUT='h0
+    on index 154552: gold='h222d4 vs. DUT='h0
+    on index 154564: gold='h20000000 vs. DUT='h0
+    on index 209272: gold='h222d4 vs. DUT='h0
+    on index 211376: gold='h200000 vs. DUT='h0
+    on index 221716: gold='h1c vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out380.xexe;800;799;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 15: gold='h1a vs. DUT='h2400000
+1 miscompare(s) for 'mem':
+    on index 197868: gold='h1a00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out381.xexe;757;756;fail
+1 miscompare(s) for 'mem':
+    on index 780: gold='ha30a9e00 vs. DUT='h9e00
+;codix_risc_platform_ca;./xexes/out382.xexe;660;659;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='h63a05e4e vs. DUT='h891937d0
+    on index 26: gold='hfffe193c vs. DUT='hfffe1921
+5 miscompare(s) for 'mem':
+    on index 532: gold='h70be4c08 vs. DUT='h0
+    on index 134868: gold='h5 vs. DUT='h20
+    on index 137984: gold='h50000 vs. DUT='h200000
+    on index 162592: gold='h5 vs. DUT='h20
+    on index 218044: gold='h43b00000 vs. DUT='h1ad0000
+;codix_risc_platform_ca;./xexes/out383.xexe;568;567;fail
+4 miscompare(s) for 'mem':
+    on index 1768: gold='h40a0020 vs. DUT='h40a0000
+    on index 139640: gold='hc0000000 vs. DUT='ha0000000
+    on index 139876: gold='h200000 vs. DUT='h0
+    on index 203004: gold='h1a vs. DUT='he0f01723
+;codix_risc_platform_ca;./xexes/out384.xexe;798;797;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h200011 vs. DUT='h200360
+    on index 10: gold='h20f6 vs. DUT='h4880
+    on index 26: gold='h0 vs. DUT='h20f4
+6 miscompare(s) for 'mem':
+    on index 135472: gold='h20 vs. DUT='h0
+    on index 140176: gold='h20 vs. DUT='h0
+    on index 151068: gold='h200000 vs. DUT='h0
+    on index 223284: gold='h0 vs. DUT='h20f4
+    on index 226976: gold='h20f60000 vs. DUT='h48800000
+    on index 264784: gold='h200011 vs. DUT='h200360
+;codix_risc_platform_ca;./xexes/out385.xexe;744;743;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h15d20 vs. DUT='h5d20
+    on index 6: gold='h10000 vs. DUT='h0
+    on index 9: gold='h2 vs. DUT='h42a0
+    on index 19: gold='h103ae vs. DUT='h3ae
+    on index 24: gold='h5d1ffafa vs. DUT='hfffffafa
+3 miscompare(s) for 'mem':
+    on index 136092: gold='h200000 vs. DUT='h0
+    on index 221624: gold='h200000 vs. DUT='hff0000
+    on index 225352: gold='h1a vs. DUT='h3b19
+;codix_risc_platform_ca;./xexes/out386.xexe;513;512;ok
+;codix_risc_platform_ca;./xexes/out387.xexe;710;709;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h35210025 vs. DUT='h35210020
+    on index 21: gold='h25 vs. DUT='h20
+3 miscompare(s) for 'mem':
+    on index 209604: gold='h2000 vs. DUT='h0
+    on index 211808: gold='h2641 vs. DUT='h0
+    on index 224148: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out388.xexe;879;878;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h1a vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 163348: gold='h50000 vs. DUT='hbcff0000
+    on index 228404: gold='h20000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out389.xexe;897;896;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='hffff8032 vs. DUT='hffff8012
+5 miscompare(s) for 'mem':
+    on index 145696: gold='h20 vs. DUT='h0
+    on index 150952: gold='h20a84 vs. DUT='hfffffd4d
+    on index 208040: gold='h20 vs. DUT='h0
+    on index 220628: gold='h20000 vs. DUT='h0
+    on index 223616: gold='h20000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out390.xexe;653;652;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='hf vs. DUT='h10000
+    on index 13: gold='h1eed0 vs. DUT='heed7
+    on index 21: gold='h0 vs. DUT='h80000000
+    on index 24: gold='hc9cf88 vs. DUT='hcacf81
+3 miscompare(s) for 'mem':
+    on index 162404: gold='hce9f6 vs. DUT='hfe4e0
+    on index 163536: gold='h1a0000 vs. DUT='h200000
+    on index 224396: gold='h1c000000 vs. DUT='h9c000000
+;codix_risc_platform_ca;./xexes/out391.xexe;756;755;fail
+6 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 2208: gold='hd6db503 vs. DUT='hd6d0000
+    on index 135584: gold='h20 vs. DUT='h9
+    on index 161524: gold='h1a vs. DUT='h0
+    on index 205420: gold='h5 vs. DUT='h0
+    on index 223796: gold='hd77a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out392.xexe;625;624;fail
+8 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hf vs. DUT='h0
+    on index 5: gold='hf vs. DUT='h0
+    on index 6: gold='h1a vs. DUT='h20
+    on index 17: gold='hfffd88c0 vs. DUT='hfffd88c5
+    on index 19: gold='hf vs. DUT='h0
+    on index 21: gold='h21020 vs. DUT='h21000
+    on index 25: gold='h18a66 vs. DUT='h1
+    on index 26: gold='h3 vs. DUT='h1abfb
+4 miscompare(s) for 'mem':
+    on index 133912: gold='h1a vs. DUT='h20
+    on index 140088: gold='h1 vs. DUT='h0
+    on index 147964: gold='h3f0000 vs. DUT='hf20000
+    on index 326196: gold='hf vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out393.xexe;688;687;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 24: gold='h12 vs. DUT='h0
+    on index 25: gold='h1a vs. DUT='h225a9
+2 miscompare(s) for 'mem':
+    on index 158652: gold='h200 vs. DUT='h2000
+    on index 204392: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out394.xexe;536;535;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h8 vs. DUT='h20
+5 miscompare(s) for 'mem':
+    on index 153108: gold='h43b4 vs. DUT='h4394
+    on index 156228: gold='h2 vs. DUT='h0
+    on index 158888: gold='he vs. DUT='hfffd889c
+    on index 198676: gold='h10 vs. DUT='h0
+    on index 209132: gold='h23c1e vs. DUT='hfd623c18
+;codix_risc_platform_ca;./xexes/out395.xexe;744;743;fail
+2 miscompare(s) for 'mem':
+    on index 728: gold='ha30660e0 vs. DUT='h60e0
+    on index 143040: gold='h1a0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out396.xexe;858;857;fail
+2 miscompare(s) for 'mem':
+    on index 138496: gold='hf vs. DUT='h0
+    on index 139608: gold='h6bef0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out397.xexe;598;597;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h1a vs. DUT='h0
+    on index 14: gold='h7a119b9d vs. DUT='h7a0fbbdd
+3 miscompare(s) for 'mem':
+    on index 536: gold='h4020020 vs. DUT='h0
+    on index 133408: gold='h200000 vs. DUT='hd6b50000
+    on index 149220: gold='hfff86b08 vs. DUT='hf0006b08
+;codix_risc_platform_ca;./xexes/out398.xexe;778;777;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='h0 vs. DUT='hffffca46
+3 miscompare(s) for 'mem':
+    on index 201856: gold='h1a0000 vs. DUT='h4f0000
+    on index 206952: gold='h1000 vs. DUT='h0
+    on index 299896: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out399.xexe;900;899;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='hfffb vs. DUT='h10000
+    on index 23: gold='h5 vs. DUT='h0
+7 miscompare(s) for 'mem':
+    on index 148428: gold='h0 vs. DUT='he0
+    on index 209652: gold='h0 vs. DUT='he0
+    on index 213368: gold='hfffdafec vs. DUT='hffffb520
+    on index 214348: gold='h20 vs. DUT='h0
+    on index 217076: gold='h410000 vs. DUT='h20000
+    on index 217596: gold='h20 vs. DUT='h0
+    on index 220576: gold='hb2ce vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out400.xexe;889;888;fail
+3 miscompare(s) for 'mem':
+    on index 141732: gold='h13000000 vs. DUT='h14000000
+    on index 161916: gold='h3 vs. DUT='h10000
+    on index 225792: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out401.xexe;773;772;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h1a vs. DUT='h4038000
+    on index 6: gold='h1 vs. DUT='h26
+    on index 8: gold='h20001 vs. DUT='h20026
+    on index 14: gold='hfffe001b vs. DUT='h4018026
+    on index 16: gold='h20 vs. DUT='h0
+    on index 17: gold='h1 vs. DUT='h26
+2 miscompare(s) for 'mem':
+    on index 138744: gold='hffffffe0 vs. DUT='h0
+    on index 211944: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out402.xexe;763;762;fail
+2 miscompare(s) for 'mem':
+    on index 512: gold='h1c2b9fe vs. DUT='hb9fe
+    on index 227900: gold='h50000 vs. DUT='h200000
+;codix_risc_platform_ca;./xexes/out403.xexe;783;782;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 14: gold='h11 vs. DUT='h0
+    on index 16: gold='h23600000 vs. DUT='h0
+    on index 23: gold='h5 vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 209328: gold='h13 vs. DUT='h20b3a864
+    on index 216160: gold='h400 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out404.xexe;828;827;fail
+13 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h3a vs. DUT='ha0
+    on index 6: gold='hffff9e24 vs. DUT='h133b5c8
+    on index 8: gold='hffffbeec vs. DUT='h133b7ec
+    on index 12: gold='h0 vs. DUT='h49140
+    on index 13: gold='hfffd9e24 vs. DUT='h131b5c8
+    on index 15: gold='h231c vs. DUT='hffffdbfc
+    on index 21: gold='h1 vs. DUT='h0
+    on index 22: gold='h3a vs. DUT='ha0
+    on index 23: gold='h22ab vs. DUT='hffffff4e
+    on index 24: gold='h1a vs. DUT='h80
+    on index 25: gold='h20 vs. DUT='h0
+    on index 26: gold='h2 vs. DUT='hfffff9b4
+    on index 27: gold='hffffffc5 vs. DUT='hffffff5f
+3 miscompare(s) for 'mem':
+    on index 632: gold='h38068001 vs. DUT='h38008001
+    on index 161804: gold='h0 vs. DUT='hfb00
+    on index 210752: gold='h20020 vs. DUT='h20000
+;codix_risc_platform_ca;./xexes/out405.xexe;837;836;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h11 vs. DUT='h0
+    on index 18: gold='h1 vs. DUT='h20
+    on index 19: gold='hfff928b5 vs. DUT='hfff928d0
+4 miscompare(s) for 'mem':
+    on index 472: gold='h88d3bad vs. DUT='h3bad
+    on index 146308: gold='h15 vs. DUT='h0
+    on index 147460: gold='h0 vs. DUT='h400000
+    on index 317964: gold='h1 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out406.xexe;769;768;fail
+1 miscompare(s) for 'mem':
+    on index 161844: gold='h11 vs. DUT='h133
+;codix_risc_platform_ca;./xexes/out407.xexe;900;899;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h0 vs. DUT='hffff859f
+    on index 12: gold='h1 vs. DUT='hffffbcdf
+    on index 17: gold='h0 vs. DUT='h4180
+    on index 22: gold='h0 vs. DUT='hffffa607
+    on index 23: gold='h1 vs. DUT='h0
+    on index 24: gold='h5 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 135640: gold='h1a vs. DUT='h1
+    on index 218608: gold='h400000 vs. DUT='h3551e0
+    on index 220268: gold='h1a000000 vs. DUT='h1000000
+    on index 226688: gold='h2000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out408.xexe;757;756;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h12 vs. DUT='h0
+    on index 17: gold='h20 vs. DUT='h1
+    on index 24: gold='h2537b vs. DUT='h25373
+    on index 27: gold='h2537b vs. DUT='h25373
+5 miscompare(s) for 'mem':
+    on index 139620: gold='h1a00 vs. DUT='h0
+    on index 148860: gold='h2000 vs. DUT='h0
+    on index 200480: gold='h2 vs. DUT='h27f66
+    on index 223140: gold='h0 vs. DUT='heb58
+    on index 307904: gold='hdf3 vs. DUT='h8d57
+;codix_risc_platform_ca;./xexes/out409.xexe;725;724;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 26: gold='h11 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 152868: gold='h1000000 vs. DUT='h0
+    on index 203504: gold='h11 vs. DUT='h0
+    on index 212944: gold='h0 vs. DUT='h23470000
+;codix_risc_platform_ca;./xexes/out410.xexe;857;856;fail
+1 miscompare(s) for 'mem':
+    on index 872: gold='hc39516c vs. DUT='h516c
+;codix_risc_platform_ca;./xexes/out411.xexe;864;863;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='hffe0 vs. DUT='h10000
+    on index 18: gold='h1a vs. DUT='h20
+    on index 21: gold='hfffffc00 vs. DUT='h200000
+1 miscompare(s) for 'mem':
+    on index 153204: gold='ha4960000 vs. DUT='h30160000
+;codix_risc_platform_ca;./xexes/out412.xexe;897;896;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h0 vs. DUT='h2
+    on index 13: gold='h5 vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 203616: gold='h10000 vs. DUT='h590000
+    on index 224640: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out413.xexe;722;721;ok
+;codix_risc_platform_ca;./xexes/out414.xexe;783;782;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h20 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 144540: gold='hff9f vs. DUT='hbf1f
+    on index 154224: gold='h200000 vs. DUT='h0
+    on index 202004: gold='hfff35a40 vs. DUT='h10000
+;codix_risc_platform_ca;./xexes/out415.xexe;843;842;fail
+3 miscompare(s) for 'mem':
+    on index 146700: gold='h0 vs. DUT='h20
+    on index 207616: gold='h14 vs. DUT='h0
+    on index 208348: gold='h20 vs. DUT='h40
+;codix_risc_platform_ca;./xexes/out416.xexe;725;724;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='hffcc4a40 vs. DUT='hffcc4b40
+    on index 15: gold='h8082e9d2 vs. DUT='h433e9d2
+    on index 26: gold='h80848eab vs. DUT='h4358eab
+3 miscompare(s) for 'mem':
+    on index 137108: gold='heb0 vs. DUT='head
+    on index 149236: gold='hf0000 vs. DUT='h0
+    on index 200020: gold='hf200 vs. DUT='h9000
+;codix_risc_platform_ca;./xexes/out417.xexe;663;662;fail
+5 miscompare(s) for 'mem':
+    on index 844: gold='h191de57f vs. DUT='he57f
+    on index 136080: gold='h1c vs. DUT='h0
+    on index 201752: gold='hf000000 vs. DUT='h0
+    on index 208324: gold='h1a000000 vs. DUT='h0
+    on index 227964: gold='hc02e vs. DUT='hc014
+;codix_risc_platform_ca;./xexes/out418.xexe;765;764;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h1
+    on index 26: gold='h2 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out419.xexe;642;641;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 24: gold='h4 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 138372: gold='ha1180000 vs. DUT='ha1100000
+;codix_risc_platform_ca;./xexes/out420.xexe;798;797;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h5 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 140024: gold='h50000 vs. DUT='hbca00000
+    on index 140756: gold='ha000000 vs. DUT='h40000000
+    on index 227380: gold='h50000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out421.xexe;802;801;fail
+3 miscompare(s) for 'mem':
+    on index 155252: gold='h2000 vs. DUT='h0
+    on index 155980: gold='h20 vs. DUT='h0
+    on index 205304: gold='h0 vs. DUT='hffff0020
+;codix_risc_platform_ca;./xexes/out422.xexe;829;828;fail
+2 miscompare(s) for 'mem':
+    on index 162312: gold='h6500 vs. DUT='h0
+    on index 215708: gold='h650000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out423.xexe;754;753;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 24: gold='hfffff85f vs. DUT='hcc2b12d3
+1 miscompare(s) for 'mem':
+    on index 143548: gold='h19000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out424.xexe;896;895;fail
+6 miscompare(s) for 'mem':
+    on index 596: gold='h928bbb14 vs. DUT='h928b0000
+    on index 161904: gold='h20000 vs. DUT='h0
+    on index 199260: gold='hffa0 vs. DUT='h0
+    on index 202128: gold='hc2310000 vs. DUT='h0
+    on index 202376: gold='h7d070000 vs. DUT='h0
+    on index 205436: gold='h200000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out425.xexe;533;532;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out426.xexe;759;758;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h1a vs. DUT='h0
+    on index 20: gold='h20 vs. DUT='h0
+    on index 24: gold='h60c6 vs. DUT='hffff9f26
+2 miscompare(s) for 'mem':
+    on index 132756: gold='he0000 vs. DUT='h0
+    on index 151016: gold='h0 vs. DUT='hffffffe0
+;codix_risc_platform_ca;./xexes/out427.xexe;662;661;fail
+2 miscompare(s) for 'mem':
+    on index 137680: gold='h14080 vs. DUT='h1408
+    on index 197964: gold='h0 vs. DUT='h1
+;codix_risc_platform_ca;./xexes/out428.xexe;603;602;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hfffe0002 vs. DUT='hfffdffff
+2 miscompare(s) for 'mem':
+    on index 149268: gold='h200000 vs. DUT='h70d30000
+    on index 209068: gold='h10000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out429.xexe;935;934;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 23: gold='hfffe0021 vs. DUT='h4f08
+;codix_risc_platform_ca;./xexes/out430.xexe;734;733;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='ha0010020 vs. DUT='ha0010140
+    on index 22: gold='h11 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 716: gold='h4b280e2 vs. DUT='h80e2
+    on index 137084: gold='h1e00 vs. DUT='h2000
+    on index 154348: gold='h10000 vs. DUT='h0
+    on index 157396: gold='hffdf0000 vs. DUT='hffe00000
+    on index 199964: gold='h50000 vs. DUT='h41e00000
+;codix_risc_platform_ca;./xexes/out431.xexe;879;878;fail
+3 miscompare(s) for 'mem':
+    on index 133184: gold='hf9 vs. DUT='hfe
+    on index 136928: gold='h892a6 vs. DUT='hb43a26e
+    on index 146840: gold='h7c0000 vs. DUT='h810000
+;codix_risc_platform_ca;./xexes/out432.xexe;680;679;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h310 vs. DUT='h410
+1 miscompare(s) for 'mem':
+    on index 218004: gold='h2000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out433.xexe;865;864;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out434.xexe;797;796;fail
+6 miscompare(s) for 'mem':
+    on index 134560: gold='h6e39 vs. DUT='h6e59
+    on index 136080: gold='hffc5 vs. DUT='hffdf
+    on index 212436: gold='h4582407 vs. DUT='hffbd91a7
+    on index 221244: gold='hffffffc5 vs. DUT='hffffffdf
+    on index 226308: gold='h638 vs. DUT='h658
+    on index 228960: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out435.xexe;600;599;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='he vs. DUT='h0
+    on index 24: gold='h44d221 vs. DUT='hfffe0421
+2 miscompare(s) for 'mem':
+    on index 161024: gold='h2000 vs. DUT='h0
+    on index 226824: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out436.xexe;767;766;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h21a78 vs. DUT='h21a58
+1 miscompare(s) for 'mem':
+    on index 147172: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out437.xexe;764;763;fail
+1 miscompare(s) for 'mem':
+    on index 132696: gold='hffe0 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out438.xexe;821;820;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 22: gold='h4001a vs. DUT='h40000
+    on index 27: gold='h1a vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 202228: gold='h1a vs. DUT='h0
+    on index 220060: gold='h1a000 vs. DUT='h0
+    on index 222388: gold='h1a vs. DUT='h0
+    on index 226504: gold='he000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out439.xexe;815;814;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h93c43 vs. DUT='h40893c40
+    on index 9: gold='ha3c5a vs. DUT='ha3c3f
+    on index 12: gold='hffe9 vs. DUT='h40810001
+2 miscompare(s) for 'mem':
+    on index 161520: gold='hf000000 vs. DUT='h0
+    on index 202248: gold='h11132 vs. DUT='h11108
+;codix_risc_platform_ca;./xexes/out440.xexe;718;717;fail
+1 miscompare(s) for 'mem':
+    on index 209616: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out441.xexe;631;630;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+    on index 27: gold='h20 vs. DUT='h0
+5 miscompare(s) for 'mem':
+    on index 133952: gold='he8d20000 vs. DUT='hed600000
+    on index 152024: gold='h2000 vs. DUT='h0
+    on index 156820: gold='h4 vs. DUT='h0
+    on index 200124: gold='ha6 vs. DUT='h2
+    on index 205792: gold='hcbb50021 vs. DUT='hcbb4bd40
+;codix_risc_platform_ca;./xexes/out442.xexe;668;667;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h2f vs. DUT='h48b0
+    on index 10: gold='h21a60 vs. DUT='h21a40
+    on index 17: gold='hf vs. DUT='h4890
+    on index 26: gold='hf vs. DUT='h4890
+1 miscompare(s) for 'mem':
+    on index 135064: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out443.xexe;819;818;fail
+3 miscompare(s) for 'mem':
+    on index 156300: gold='h1a0000 vs. DUT='h0
+    on index 209388: gold='ha44f8b20 vs. DUT='ha2bb58a0
+    on index 227604: gold='hf vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out444.xexe;862;861;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='hf vs. DUT='h2200000
+    on index 13: gold='h0 vs. DUT='h1
+    on index 26: gold='h3fffc00 vs. DUT='h3fffc01
+3 miscompare(s) for 'mem':
+    on index 146136: gold='h7000000 vs. DUT='h47000000
+    on index 155024: gold='hf9018d16 vs. DUT='hf9012505
+    on index 213116: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out445.xexe;746;745;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h5 vs. DUT='h0
+    on index 27: gold='h10 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 228512: gold='h10 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out446.xexe;760;759;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h2 vs. DUT='h0
+    on index 22: gold='h20 vs. DUT='h0
+4 miscompare(s) for 'mem':
+    on index 137240: gold='hffffaace vs. DUT='h231a
+    on index 137336: gold='hf30000 vs. DUT='he50000
+    on index 141584: gold='h0 vs. DUT='hffff
+    on index 202564: gold='he vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out447.xexe;760;759;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='hffff8abb vs. DUT='hffff8ac3
+    on index 7: gold='h218 vs. DUT='h240
+    on index 22: gold='hac9e197 vs. DUT='hac9e16f
+    on index 23: gold='h7540 vs. DUT='h753c
+    on index 25: gold='hffff8abb vs. DUT='hffff8ac3
+6 miscompare(s) for 'mem':
+    on index 140560: gold='h20 vs. DUT='ha0
+    on index 202828: gold='h218 vs. DUT='h240
+    on index 203960: gold='h20 vs. DUT='ha0
+    on index 204328: gold='hf300 vs. DUT='h7300
+    on index 210752: gold='h4 vs. DUT='h0
+    on index 224508: gold='h200000 vs. DUT='ha00000
+;codix_risc_platform_ca;./xexes/out448.xexe;877;876;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 10: gold='h20 vs. DUT='h0
+    on index 25: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 206368: gold='h0 vs. DUT='he50000
+;codix_risc_platform_ca;./xexes/out449.xexe;656;655;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='hffff001f vs. DUT='hfffce748
+    on index 18: gold='h1 vs. DUT='h218d8
+    on index 22: gold='h0 vs. DUT='hffffbd60
+    on index 23: gold='hffff913b vs. DUT='hfff73d3b
+2 miscompare(s) for 'mem':
+    on index 840: gold='h880d0140 vs. DUT='h0
+    on index 202912: gold='h1a vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out450.xexe;847;846;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h20001 vs. DUT='h500139de
+    on index 19: gold='h1 vs. DUT='h4fff39de
+3 miscompare(s) for 'mem':
+    on index 496: gold='h4018020 vs. DUT='h8020
+    on index 138024: gold='h11 vs. DUT='hff
+    on index 151088: gold='h40000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out451.xexe;729;728;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 6: gold='h1f75c vs. DUT='h5f740
+    on index 14: gold='hffff91e0 vs. DUT='hffff9200
+    on index 26: gold='h20 vs. DUT='hfffffcdf
+6 miscompare(s) for 'mem':
+    on index 134288: gold='h110000 vs. DUT='h8f0000
+    on index 142592: gold='h1a1c vs. DUT='hffaa
+    on index 156032: gold='he vs. DUT='h20000
+    on index 159336: gold='h11000000 vs. DUT='h0
+    on index 160688: gold='h1a1c vs. DUT='h1634
+    on index 213760: gold='he0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out452.xexe;742;741;ok
+;codix_risc_platform_ca;./xexes/out453.xexe;763;762;fail
+8 miscompare(s) for 'mem':
+    on index 143824: gold='h20 vs. DUT='h0
+    on index 153224: gold='he0000000 vs. DUT='h0
+    on index 153248: gold='h20 vs. DUT='h22
+    on index 159200: gold='h20 vs. DUT='h0
+    on index 196856: gold='h200000 vs. DUT='h0
+    on index 200128: gold='h2000 vs. DUT='h2200
+    on index 202788: gold='h12 vs. DUT='h72
+    on index 217188: gold='h1fbf vs. DUT='h1fbb
+;codix_risc_platform_ca;./xexes/out454.xexe;904;903;fail
+4 miscompare(s) for 'mem':
+    on index 131552: gold='hfe0000 vs. DUT='hf20000
+    on index 158324: gold='h110000 vs. DUT='h0
+    on index 205468: gold='h50000 vs. DUT='h0
+    on index 226768: gold='h5 vs. DUT='h3b98
+;codix_risc_platform_ca;./xexes/out455.xexe;820;819;ok
+;codix_risc_platform_ca;./xexes/out456.xexe;875;874;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h31c23df9 vs. DUT='h3d023df9
+    on index 7: gold='h31c1eb99 vs. DUT='h3d01eb99
+    on index 9: gold='h31c23c59 vs. DUT='h3d023c59
+    on index 16: gold='hce3d8a88 vs. DUT='hc2fd8a88
+    on index 21: gold='h0 vs. DUT='h85c0
+;codix_risc_platform_ca;./xexes/out457.xexe;650;649;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h1f vs. DUT='h1
+    on index 9: gold='h11 vs. DUT='h0
+3 miscompare(s) for 'mem':
+    on index 141012: gold='h1f3a0000 vs. DUT='h1f420000
+    on index 155932: gold='he2cc vs. DUT='he2d2
+    on index 210232: gold='h7b443fec vs. DUT='h99c185ec
+;codix_risc_platform_ca;./xexes/out458.xexe;839;838;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hfffdaeda vs. DUT='hbe3daeda
+    on index 25: gold='hfffdbbb6 vs. DUT='hbe3dbbb3
+4 miscompare(s) for 'mem':
+    on index 153616: gold='h12 vs. DUT='h0
+    on index 158572: gold='hc000000 vs. DUT='h0
+    on index 210236: gold='h49 vs. DUT='h4c
+    on index 213244: gold='h10000 vs. DUT='h10020000
+;codix_risc_platform_ca;./xexes/out459.xexe;831;830;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h1562 vs. DUT='h11553
+    on index 5: gold='h62 vs. DUT='h53
+    on index 8: gold='h62 vs. DUT='h53
+    on index 19: gold='h5 vs. DUT='hfbfb7fe0
+    on index 24: gold='hf vs. DUT='h10000
+3 miscompare(s) for 'mem':
+    on index 772: gold='h8087e520 vs. DUT='h0
+    on index 207700: gold='h20 vs. DUT='h0
+    on index 213216: gold='ha00 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out460.xexe;958;957;fail
+3 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 140420: gold='h1f vs. DUT='hffff
+    on index 161708: gold='h1f vs. DUT='hffffffff
+;codix_risc_platform_ca;./xexes/out461.xexe;827;826;ok
+;codix_risc_platform_ca;./xexes/out462.xexe;884;883;fail
+4 miscompare(s) for 'mem':
+    on index 156196: gold='h11 vs. DUT='h0
+    on index 204840: gold='h20 vs. DUT='h0
+    on index 222276: gold='h200000 vs. DUT='h0
+    on index 226312: gold='hdea943e0 vs. DUT='h220c8fe0
+;codix_risc_platform_ca;./xexes/out463.xexe;839;838;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h20 vs. DUT='h0
+    on index 13: gold='hffff8cb1 vs. DUT='hffff8cd1
+1 miscompare(s) for 'mem':
+    on index 319940: gold='h0 vs. DUT='h60
+;codix_risc_platform_ca;./xexes/out464.xexe;636;635;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 9: gold='h2001a vs. DUT='h20000
+    on index 12: gold='hffffd39c vs. DUT='hffffd3bc
+    on index 13: gold='h2c63 vs. DUT='h2c43
+    on index 22: gold='h20 vs. DUT='h0
+    on index 27: gold='h1a vs. DUT='h20
+2 miscompare(s) for 'mem':
+    on index 138424: gold='h6020 vs. DUT='h6000
+    on index 151832: gold='h20000 vs. DUT='h5e440000
+;codix_risc_platform_ca;./xexes/out465.xexe;738;737;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='he vs. DUT='h2c00000
+1 miscompare(s) for 'mem':
+    on index 214560: gold='h7b vs. DUT='h81
+;codix_risc_platform_ca;./xexes/out466.xexe;736;735;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 16: gold='hbfac00 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 154508: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out467.xexe;673;672;fail
+1 miscompare(s) for 'mem':
+    on index 226708: gold='hd000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out468.xexe;807;806;fail
+3 miscompare(s) for 'mem':
+    on index 140472: gold='h20 vs. DUT='h0
+    on index 225552: gold='h0 vs. DUT='h25f6
+    on index 226344: gold='h0 vs. DUT='h25f6
+;codix_risc_platform_ca;./xexes/out469.xexe;721;720;fail
+1 miscompare(s) for 'mem':
+    on index 139936: gold='h4cf80000 vs. DUT='hffe00000
+;codix_risc_platform_ca;./xexes/out470.xexe;700;699;fail
+6 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='hcddd79e1 vs. DUT='hcde01620
+    on index 11: gold='h9fe vs. DUT='h9fd
+    on index 15: gold='h3222861f vs. DUT='h321fe9e0
+    on index 23: gold='hc81c31a0 vs. DUT='hc8201006
+    on index 24: gold='hcddd83ff vs. DUT='hcde0203d
+    on index 27: gold='h29f27aa vs. DUT='h29ee47f
+2 miscompare(s) for 'mem':
+    on index 524: gold='h818de5a0 vs. DUT='h818d00a0
+    on index 229188: gold='hff000000 vs. DUT='h3d000000
+;codix_risc_platform_ca;./xexes/out471.xexe;910;909;fail
+6 miscompare(s) for 'mem':
+    on index 684: gold='h8082b9c0 vs. DUT='h8082b900
+    on index 864: gold='h4068020 vs. DUT='h0
+    on index 201164: gold='h20 vs. DUT='h0
+    on index 204184: gold='h11 vs. DUT='h0
+    on index 218532: gold='h3e000000 vs. DUT='h1e000000
+    on index 218740: gold='hb7281732 vs. DUT='hb73dd8cc
+;codix_risc_platform_ca;./xexes/out472.xexe;624;623;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 17: gold='h20 vs. DUT='h1200000
+    on index 20: gold='h10 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 218016: gold='ha1 vs. DUT='hed
+    on index 219932: gold='h4159ff19 vs. DUT='h6419ee65
+;codix_risc_platform_ca;./xexes/out473.xexe;892;891;fail
+2 miscompare(s) for 'mem':
+    on index 131276: gold='h50000 vs. DUT='hbd5f0000
+    on index 227384: gold='hef0000 vs. DUT='he00000
+;codix_risc_platform_ca;./xexes/out474.xexe;598;597;fail
+3 miscompare(s) for 'codix_risc.regs':
+    on index 8: gold='h20 vs. DUT='h0
+    on index 16: gold='he vs. DUT='h20000
+    on index 27: gold='h0 vs. DUT='h20000
+1 miscompare(s) for 'mem':
+    on index 214976: gold='h3bbc0000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out475.xexe;919;918;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h6801e4ad vs. DUT='h6801e4a8
+    on index 21: gold='h5 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 144864: gold='h1 vs. DUT='h4060
+    on index 222508: gold='hb7f0 vs. DUT='hbaeb
+;codix_risc_platform_ca;./xexes/out476.xexe;838;837;fail
+7 miscompare(s) for 'mem':
+    on index 133336: gold='h500 vs. DUT='h0
+    on index 137312: gold='h50000 vs. DUT='h0
+    on index 150028: gold='h1 vs. DUT='h0
+    on index 157568: gold='h4000000 vs. DUT='hf5000000
+    on index 160256: gold='h0 vs. DUT='hff
+    on index 210972: gold='h0 vs. DUT='hfffffdff
+    on index 213760: gold='hc061 vs. DUT='hbfe7
+;codix_risc_platform_ca;./xexes/out477.xexe;848;847;fail
+3 miscompare(s) for 'mem':
+    on index 138412: gold='h94490000 vs. DUT='h94690000
+    on index 199344: gold='h1a vs. DUT='h20000
+    on index 222804: gold='hffffffed vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out478.xexe;863;862;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h7a3698c7 vs. DUT='h7a3698d0
+    on index 9: gold='h3 vs. DUT='h4
+    on index 18: gold='h7a34cf23 vs. DUT='h7a34cf2c
+    on index 26: gold='hfffe8f23 vs. DUT='hfffe8f2c
+8 miscompare(s) for 'mem':
+    on index 134040: gold='h20000000 vs. DUT='h0
+    on index 135748: gold='h8682 vs. DUT='h8679
+    on index 138168: gold='h4 vs. DUT='h16
+    on index 140300: gold='h8f23 vs. DUT='h8f2c
+    on index 145448: gold='h9 vs. DUT='h0
+    on index 196924: gold='h2e000000 vs. DUT='h20000000
+    on index 205420: gold='h1a0000 vs. DUT='h200000
+    on index 208756: gold='h50000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out479.xexe;732;731;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 4: gold='h0 vs. DUT='h1
+    on index 15: gold='hffffffe0 vs. DUT='hffffffc0
+2 miscompare(s) for 'mem':
+    on index 632: gold='h38068002 vs. DUT='h0
+    on index 145760: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out480.xexe;786;785;fail
+1 miscompare(s) for 'mem':
+    on index 144660: gold='h7 vs. DUT='h41bb
+;codix_risc_platform_ca;./xexes/out481.xexe;844;843;fail
+7 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h1a vs. DUT='h0
+    on index 6: gold='h20 vs. DUT='h0
+    on index 10: gold='hfffff9e4 vs. DUT='hfffff9ce
+    on index 16: gold='h3fff6a vs. DUT='h3ffff0
+    on index 21: gold='h1a vs. DUT='h20
+    on index 23: gold='h1a vs. DUT='h0
+    on index 26: gold='hfffdab95 vs. DUT='hffffc054
+3 miscompare(s) for 'mem':
+    on index 137916: gold='hffff80c0 vs. DUT='hffff80d0
+    on index 163644: gold='hb050 vs. DUT='hb03c
+    on index 202988: gold='h1a vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out482.xexe;860;859;fail
+3 miscompare(s) for 'mem':
+    on index 740: gold='h6511bd8c vs. DUT='h65110000
+    on index 215908: gold='h2000 vs. DUT='h0
+    on index 224860: gold='h5 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out483.xexe;926;925;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h3 vs. DUT='h0
+    on index 13: gold='h1a vs. DUT='hffffffe0
+7 miscompare(s) for 'mem':
+    on index 132244: gold='h1a0000 vs. DUT='h0
+    on index 132572: gold='h1e0000 vs. DUT='hc4d50000
+    on index 139464: gold='h0 vs. DUT='h4d
+    on index 145452: gold='h40930221 vs. DUT='h40930001
+    on index 198648: gold='h3 vs. DUT='h0
+    on index 203504: gold='he0000 vs. DUT='h0
+    on index 224464: gold='h6f000000 vs. DUT='ha7000000
+;codix_risc_platform_ca;./xexes/out484.xexe;798;797;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='hfffe5310 vs. DUT='hfffe4ff6
+    on index 21: gold='h11 vs. DUT='h80
+4 miscompare(s) for 'mem':
+    on index 300: gold='h4018020 vs. DUT='h4008020
+    on index 145576: gold='h1a0000 vs. DUT='h0
+    on index 160580: gold='hffffec99 vs. DUT='hffffec79
+    on index 198296: gold='had000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out485.xexe;776;775;fail
+2 miscompare(s) for 'codix_risc.regs':
+    on index 3: gold='h5 vs. DUT='h8eb60000
+    on index 8: gold='h25 vs. DUT='h8eb60020
+1 miscompare(s) for 'mem':
+    on index 147264: gold='h0 vs. DUT='hf06c5da0
+;codix_risc_platform_ca;./xexes/out486.xexe;882;881;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 24: gold='h2 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 131496: gold='hffe0 vs. DUT='h34c5
+;codix_risc_platform_ca;./xexes/out487.xexe;727;726;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h5 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out488.xexe;749;748;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h1 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 135788: gold='h200000 vs. DUT='h0
+    on index 220880: gold='h20 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out489.xexe;866;865;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 7: gold='h4 vs. DUT='h8e74b23
+    on index 9: gold='he71f698 vs. DUT='he7fecfb2
+    on index 18: gold='h5a08 vs. DUT='h65e929c6
+    on index 25: gold='h20 vs. DUT='h0
+2 miscompare(s) for 'mem':
+    on index 146544: gold='h0 vs. DUT='h2000
+    on index 148700: gold='h4b21 vs. DUT='h4b23
+;codix_risc_platform_ca;./xexes/out490.xexe;742;741;fail
+4 miscompare(s) for 'mem':
+    on index 145352: gold='h5 vs. DUT='hd5fc00
+    on index 147972: gold='h1a vs. DUT='h0
+    on index 207572: gold='h1b vs. DUT='hffdf
+    on index 227548: gold='h0 vs. DUT='h20
+;codix_risc_platform_ca;./xexes/out491.xexe;913;912;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 11: gold='h5 vs. DUT='h0
+6 miscompare(s) for 'mem':
+    on index 32: gold='h20000 vs. DUT='h0
+    on index 133508: gold='h4 vs. DUT='h0
+    on index 140832: gold='he0000000 vs. DUT='h0
+    on index 161344: gold='h20 vs. DUT='h0
+    on index 200444: gold='h45 vs. DUT='h25
+    on index 224948: gold='h9d58 vs. DUT='h9d61
+;codix_risc_platform_ca;./xexes/out492.xexe;731;730;fail
+4 miscompare(s) for 'mem':
+    on index 136364: gold='h1 vs. DUT='hbe1f
+    on index 136856: gold='h1 vs. DUT='hffffbe1f
+    on index 155876: gold='h20 vs. DUT='h0
+    on index 216644: gold='h1008af vs. DUT='h1008c0
+;codix_risc_platform_ca;./xexes/out493.xexe;884;883;fail
+6 miscompare(s) for 'mem':
+    on index 368: gold='h8201d500 vs. DUT='hd500
+    on index 160448: gold='he vs. DUT='hd20
+    on index 204868: gold='h74 vs. DUT='h6d
+    on index 204936: gold='h1002f vs. DUT='h30021
+    on index 208692: gold='h98000000 vs. DUT='hbe000000
+    on index 228832: gold='hb90000 vs. DUT='h9b0000
+;codix_risc_platform_ca;./xexes/out494.xexe;684;683;fail
+1 miscompare(s) for 'mem':
+    on index 225788: gold='hfff0 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out495.xexe;869;868;fail
+2 miscompare(s) for 'mem':
+    on index 516: gold='h40c8020 vs. DUT='h4008020
+    on index 136892: gold='h259e vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out496.xexe;761;760;fail
+1 miscompare(s) for 'mem':
+    on index 135996: gold='h14 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out497.xexe;697;696;fail
+2 miscompare(s) for 'mem':
+    on index 148792: gold='h0 vs. DUT='hb88
+    on index 211540: gold='he6c40 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out498.xexe;802;801;fail
+4 miscompare(s) for 'codix_risc.regs':
+    on index 5: gold='h2 vs. DUT='h0
+    on index 8: gold='hf767c65e vs. DUT='hb7d4eee0
+    on index 13: gold='h12 vs. DUT='h20
+    on index 17: gold='hfffff700 vs. DUT='hfffff000
+5 miscompare(s) for 'mem':
+    on index 150708: gold='hfffff700 vs. DUT='hfffff000
+    on index 151868: gold='hab0000 vs. DUT='hb10000
+    on index 162772: gold='h43a6 vs. DUT='h4394
+    on index 220728: gold='h20 vs. DUT='h0
+    on index 229160: gold='h6000000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out499.xexe;784;783;fail
+5 miscompare(s) for 'codix_risc.regs':
+    on index 12: gold='h70000000 vs. DUT='h1238000
+    on index 15: gold='hffffe594 vs. DUT='hffffe5a7
+    on index 18: gold='hffff7cf9 vs. DUT='hffff7d0c
+    on index 19: gold='hffff7cf8 vs. DUT='hffff7d0c
+    on index 21: gold='hffff7cfa vs. DUT='hffff7d0d
+4 miscompare(s) for 'mem':
+    on index 133788: gold='h100000 vs. DUT='h0
+    on index 148496: gold='h7 vs. DUT='h0
+    on index 157204: gold='h4a14 vs. DUT='h20
+    on index 222456: gold='h120000 vs. DUT='h0
+;codix_risc_platform_ca;./xexes/out500.xexe;721;720;fail
+1 miscompare(s) for 'codix_risc.regs':
+    on index 13: gold='h20 vs. DUT='h0
+1 miscompare(s) for 'mem':
+    on index 162768: gold='he vs. DUT='h0
